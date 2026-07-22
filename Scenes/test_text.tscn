@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://dkwfre6i3wp7p"]
+
+[node name="Node2D" type="Node2D" unique_id=1512729039]
+
+[node name="TextEdit" type="TextEdit" parent="." unique_id=1751870363]
+offset_right = 568.0
+offset_bottom = 275.0
+text = "Hi guys im abuffzucchini 
+"

@@ -3,7 +3,9 @@
 [node name="Node2D" type="Node2D" unique_id=1512729039]
 
 [node name="TextEdit" type="TextEdit" parent="." unique_id=1751870363]
-offset_right = 568.0
-offset_bottom = 275.0
+offset_left = -65.0
+offset_top = -55.0
+offset_right = 503.0
+offset_bottom = 220.0
 text = "Hi guys im abuffzucchini 
 "

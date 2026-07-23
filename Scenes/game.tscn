@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://bqs8nmjb61r2v"]
+
+[ext_resource type="AudioStream" uid="uid://o0qih8wouqm6" path="res://Assets/Audio/Music/1_Strings.ogg" id="1_ebmjs"]
+
+[node name="game" type="Node2D" unique_id=923579984]
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=207214386]
+stream = ExtResource("1_ebmjs")
+autoplay = true

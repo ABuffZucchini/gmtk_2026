@@ -1,76 +1,46 @@
 extends CharacterBody2D
 
-var dir 
-var movetimer = 0.2
-var cooldownTimer = 0.0
-const gridSize = 16
-var speed = 0.2
-var targetPos = Vector2.ZERO
+const GRID_SIZE = 16
+const MOVE_SPEED = 7.0 
 
-@onready var animationFish:AnimatedSprite2D = $AnimatedSprite2D
-@onready var ray:RayCast2D = $RayCast2D
+@onready var ray = $RayCast2D
 
-@export var maxSpeed: int
-
+var target_position = Vector2.ZERO
+var is_moving = false
 
 func _ready() -> void:
-	#targetPos = position
-	pass
-
-
+	target_position = position
 
 func _physics_process(delta: float) -> void:
-	if cooldownTimer > 0:
-		cooldownTimer -= delta
+	if position != target_position:
+		position = position.lerp(target_position, MOVE_SPEED * delta)
+		
+		if position.distance_to(target_position) < 0.5:
+			position = target_position
+			is_moving = false
+			
+	if is_moving:
 		return
-	
-	var input_dir = Vector2.ZERO
-	
+
+	var move_dir = Vector2.ZERO
 	if Input.is_action_pressed("ui_right"):
-		#MoveWithGrid(Vector2.RIGHT)
-		input_dir = Vector2.RIGHT
+		move_dir = Vector2.RIGHT
 	elif Input.is_action_pressed("ui_left"):
-		#MoveWithGrid(Vector2.LEFT)
-		input_dir = Vector2.LEFT
+		move_dir = Vector2.LEFT
 	elif Input.is_action_pressed("ui_up"):
-		#MoveWithGrid(Vector2.UP)
-		input_dir = Vector2.UP
+		move_dir = Vector2.UP
 	elif Input.is_action_pressed("ui_down"):
-		#MoveWithGrid(Vector2.DOWN)
-		input_dir = Vector2.DOWN
-		
-	if input_dir != Vector2.ZERO:
-		MoveWithGrid(input_dir)
+		move_dir = Vector2.DOWN
 
+	if move_dir != Vector2.ZERO:
+		try_move(move_dir)
 
-func _input(event: InputEvent) -> void:
-	animationFish.play("default")
-	
-	
-	if event.is_action_pressed("ui_right"):
-		MoveWithGrid(Vector2.RIGHT)
-		#input_dir = Vector2.RIGHT
-	elif event.is_action_pressed("ui_left"):
-		MoveWithGrid(Vector2.LEFT)
-		#input_dir = Vector2.LEFT
-	elif event.is_action_pressed("ui_up"):
-		MoveWithGrid(Vector2.UP)
-		#input_dir = Vector2.UP
-	elif event.is_action_pressed("ui_down"):
-		MoveWithGrid(Vector2.DOWN)
-		#input_dir = Vector2.DOWN
-		
-	#if input_dir != Vector2.ZERO:
-		#MoveWithGrid(input_dir)
-
-
-func MoveWithGrid(dir:Vector2):
-	
-	ray.target_position = dir * gridSize
+func try_move(direction: Vector2):
+	ray.target_position = direction * GRID_SIZE
 	ray.force_raycast_update()
 	
-	if !ray.is_colliding():
-		position+=dir*gridSize
-		$AnimatedSprite2D.look_at(global_position + dir)
+	if not ray.is_colliding():
+		target_position = position + (direction * GRID_SIZE)
+		is_moving = true
 		
-	cooldownTimer = movetimer
+		$AnimatedSprite2D.look_at(global_position + direction)

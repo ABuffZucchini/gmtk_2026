@@ -4,6 +4,7 @@
 [ext_resource type="Script" uid="uid://b5b621ru0kp8p" path="res://scripts/level_1.gd" id="2_xfk5q"]
 [ext_resource type="Texture2D" uid="uid://jttsrgyouth4" path="res://Assets/Sprites/Tiles/blue_coral.png" id="3_7p6j4"]
 [ext_resource type="Texture2D" uid="uid://dku261i08g4jq" path="res://Assets/Sprites/base_grid_blue.png" id="3_xfk5q"]
+[ext_resource type="PackedScene" uid="uid://hh8gmtqxgany" path="res://water_bubbles.tscn" id="5_6444e"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6444e"]
 texture = ExtResource("3_7p6j4")
@@ -78,7 +79,7 @@ size = Vector2(46, 77)
 script = ExtResource("1_8ffim")
 level_name = "level_1"
 
-[node name="Node2D" type="Node2D" parent="." unique_id=1748607302]
+[node name="playerSpawn" type="Node2D" parent="." unique_id=1748607302]
 script = ExtResource("2_xfk5q")
 
 [node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=1377145312]
@@ -101,3 +102,5 @@ physics_material_override = SubResource("PhysicsMaterial_7p6j4")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=566138959]
 position = Vector2(698, 281.5)
 shape = SubResource("RectangleShape2D_1ol56")
+
+[node name="water_bubbles" parent="." unique_id=1608813279 instance=ExtResource("5_6444e")]

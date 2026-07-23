@@ -1,0 +1,67 @@
+[gd_scene format=3 uid="uid://r6pv7txny2n0"]
+
+[ext_resource type="Script" uid="uid://cag2n8vovleck" path="res://water_bubbles.gd" id="1_ugh0b"]
+[ext_resource type="Texture2D" uid="uid://sncixwfhhsae" path="res://Assets/Sprites/Objects/water/untitled_0001.png" id="2_y1xrl"]
+[ext_resource type="Texture2D" uid="uid://htjlcgcn51sb" path="res://Assets/Sprites/Objects/water/untitled_0002.png" id="3_yig10"]
+[ext_resource type="Texture2D" uid="uid://c3e7eq0hqmu0k" path="res://Assets/Sprites/Objects/water/untitled_0003.png" id="4_gtb16"]
+[ext_resource type="Texture2D" uid="uid://uncvx1l27akg" path="res://Assets/Sprites/Objects/water/untitled_0004.png" id="5_vv6ui"]
+[ext_resource type="Texture2D" uid="uid://45o0xeqn1gsv" path="res://Assets/Sprites/Objects/water/untitled_0005.png" id="6_dmdpu"]
+[ext_resource type="Texture2D" uid="uid://sqpq0ppm4i6k" path="res://Assets/Sprites/Objects/water/untitled_0006.png" id="7_2s1pq"]
+[ext_resource type="Texture2D" uid="uid://u1dcr0ubaucb" path="res://Assets/Sprites/Objects/water/untitled_0007.png" id="8_qu60p"]
+[ext_resource type="Texture2D" uid="uid://wytneykshi8w" path="res://Assets/Sprites/Objects/water/untitled_0008.png" id="9_4oqla"]
+[ext_resource type="Texture2D" uid="uid://cpng8m6hlceoi" path="res://Assets/Sprites/Objects/water/untitled_0009.png" id="10_ms5h2"]
+[ext_resource type="Texture2D" uid="uid://r42nh13djicq" path="res://Assets/Sprites/Objects/water/untitled_0010.png" id="11_ln0u8"]
+[ext_resource type="Texture2D" uid="uid://cvk4jbsieralw" path="res://Assets/Sprites/Objects/water/untitled_0011.png" id="12_pphiv"]
+[ext_resource type="Texture2D" uid="uid://s5t4m36rmr4v" path="res://Assets/Sprites/Objects/water/untitled_0012.png" id="13_plnum"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_hutlr"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_y1xrl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_yig10")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_gtb16")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_vv6ui")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_dmdpu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_2s1pq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_qu60p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_4oqla")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_ms5h2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_ln0u8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_pphiv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_plnum")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="water_bubbles" type="Node2D" unique_id=263977611]
+script = ExtResource("1_ugh0b")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1466607031]
+sprite_frames = SubResource("SpriteFrames_hutlr")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=2074819250]

@@ -3,7 +3,9 @@ extends Node
 const MUTE = -60
 const NORMAL = 0
 @onready var MusicLayers:Array[float]=[MUTE,MUTE,MUTE,MUTE,MUTE,NORMAL]
-@onready var moves:int=5
+@onready var max_moves:int=10
+@onready var moves:int=10
+@onready var level_index:int=0
 
 
 func MusicLayerChange(index:int,polarity:bool):

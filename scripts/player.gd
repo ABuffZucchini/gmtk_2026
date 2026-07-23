@@ -14,6 +14,7 @@ func _ready() -> void:
 	target_position = position
 
 func _physics_process(delta: float) -> void:
+	
 	if position != target_position:
 		position = position.lerp(target_position, MOVE_SPEED * delta)
 		
@@ -21,7 +22,7 @@ func _physics_process(delta: float) -> void:
 			position = target_position
 			is_moving = false
 			set_collision_layer_value(1,true)
-			
+				
 	if is_moving:
 		set_collision_layer_value(1,false)
 		return
@@ -44,7 +45,10 @@ func try_move(direction: Vector2):
 	ray.force_raycast_update()
 	
 	if not ray.is_colliding():
-		target_position = position + (direction * GRID_SIZE)
-		is_moving = true
+		if G.moves!=0:
+			target_position = position + (direction * GRID_SIZE)
+			is_moving = true
+			G.moves-=1
+		
 		
 		$AnimatedSprite2D.look_at(global_position + direction)

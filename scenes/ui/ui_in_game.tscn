@@ -5,6 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://xq0jpxpt3jdu" path="res://assets/sprites/ui/bottom_bar.png" id="3_jkcdj"]
 [ext_resource type="FontFile" uid="uid://db5seoh7hn4tb" path="res://assets/fonts/PressStart2P.ttf" id="4_28x6l"]
 [ext_resource type="Script" uid="uid://b5p1df87b1e4g" path="res://scripts/moves_ui.gd" id="5_jkcdj"]
+[ext_resource type="Script" uid="uid://cupo4mdfbwek8" path="res://scripts/levelindex_ui.gd" id="6_ttk7k"]
 
 [node name="UI_in_game" type="Node2D" unique_id=291824594]
 script = ExtResource("1_vqa78")
@@ -20,19 +21,38 @@ texture = ExtResource("3_jkcdj")
 
 [node name="MovesText" type="Label" parent="." unique_id=1473262187]
 z_index = 111
-offset_left = -72.0
+offset_left = -216.0
 offset_top = 152.0
-offset_right = 56.0
+offset_right = -88.0
 offset_bottom = 168.0
 theme_override_fonts/font = ExtResource("4_28x6l")
 text = "Moves:"
 
 [node name="MovesCount" type="Label" parent="." unique_id=790571643]
 z_index = 111
-offset_left = 32.0
+offset_left = -112.0
 offset_top = 152.0
-offset_right = 160.0
+offset_right = -80.0
 offset_bottom = 168.0
 theme_override_fonts/font = ExtResource("4_28x6l")
 text = "#"
 script = ExtResource("5_jkcdj")
+
+[node name="LevelIndexText" type="Label" parent="." unique_id=1554654979]
+z_index = 111
+offset_left = 80.0
+offset_top = 152.0
+offset_right = 208.0
+offset_bottom = 168.0
+theme_override_fonts/font = ExtResource("4_28x6l")
+text = "Level:"
+
+[node name="LevelIndexCount" type="Label" parent="." unique_id=134927759]
+z_index = 111
+offset_left = 184.0
+offset_top = 152.0
+offset_right = 216.0
+offset_bottom = 168.0
+theme_override_fonts/font = ExtResource("4_28x6l")
+text = "#"
+script = ExtResource("6_ttk7k")

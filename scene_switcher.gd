@@ -14,7 +14,10 @@ func handle_level_changed(current_level_name: String) -> void:
 		"lvlStart":
 			next_level_name = "test_text"
 		"lvl1":
-			next_level_name = "lvlstart"
+			next_level_name = "level_select"
+		"level_select":
+			next_level_name = "level_1"
+
 		_:
 			return
 	

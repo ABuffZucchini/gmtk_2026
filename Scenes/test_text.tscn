@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dkwfre6i3wp7p"]
 
-[ext_resource type="Script" uid="uid://de276yjxo6ftp" path="res://Level.gd" id="1_7ks8o"]
+[ext_resource type="Script" uid="uid://de276yjxo6ftp" path="res://scripts/Level.gd" id="1_7ks8o"]
 
 [node name="Node2D" type="Node2D" unique_id=1512729039]
 position = Vector2(99, 104)
@@ -20,5 +20,9 @@ offset_top = 178.0
 offset_right = 314.0
 offset_bottom = 209.0
 text = "Switch level"
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1975266448]
+position = Vector2(270, 105)
+zoom = Vector2(1.17, 1.17)
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

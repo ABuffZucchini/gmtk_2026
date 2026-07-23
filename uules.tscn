@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://hh8gmtqxgany"]
+
+[ext_resource type="Texture2D" uid="uid://bvpqn08qr1ceu" path="res://Assets/Sprites/Objects/urchin.png" id="1_hutlr"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_i3mrr"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_hutlr")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="uules" type="Node" unique_id=1608813279]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1258278472]
+sprite_frames = SubResource("SpriteFrames_i3mrr")

@@ -6,7 +6,7 @@
 [ext_resource type="AudioStream" uid="uid://c1n8qof312st7" path="res://Assets/Audio/Music/4_MainPercussion.ogg" id="3_nnqcb"]
 [ext_resource type="AudioStream" uid="uid://dii3rcvafefu" path="res://Assets/Audio/Music/5_OtherPercussion.ogg" id="4_cy1if"]
 [ext_resource type="AudioStream" uid="uid://dudblunwn2b4k" path="res://Assets/Audio/Music/6_Ambience.ogg" id="5_hilfb"]
-[ext_resource type="Script" uid="uid://ctug88honn6ko" path="res://Scripts/music_layers.gd" id="6_ut3a0"]
+[ext_resource type="Script" uid="uid://ctug88honn6ko" path="res://scripts/music_layers.gd" id="6_ut3a0"]
 
 [sub_resource type="AudioStreamSynchronized" id="AudioStreamSynchronized_vydsi"]
 stream_count = 6

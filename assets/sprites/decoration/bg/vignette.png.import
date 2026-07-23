@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bvpqn08qr1ceu"
-path="res://.godot/imported/urchin.png-4ea970d7b323161ceedfa9f30173de2a.ctex"
+uid="uid://dco0402m7jldn"
+path="res://.godot/imported/vignette.png-02060d0a29a690af71022d9a2d6da6f8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/objects/urchin.png"
-dest_files=["res://.godot/imported/urchin.png-4ea970d7b323161ceedfa9f30173de2a.ctex"]
+source_file="res://assets/sprites/decoration/bg/vignette.png"
+dest_files=["res://.godot/imported/vignette.png-02060d0a29a690af71022d9a2d6da6f8.ctex"]
 
 [params]
 

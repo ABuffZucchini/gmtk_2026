@@ -6,7 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://boaviusniyvhs" path="res://thistiles.png" id="4_2seuv"]
 [ext_resource type="Texture2D" uid="uid://dku261i08g4jq" path="res://Assets/Sprites/base_grid_blue.png" id="5_pwp5f"]
 [ext_resource type="Texture2D" uid="uid://jttsrgyouth4" path="res://Assets/Sprites/Tiles/blue_coral.png" id="6_tjx3i"]
-[ext_resource type="PackedScene" uid="uid://ctayfrsk7hvj5" path="res://Scenes/player.tscn" id="7_x2rfe"]
+[ext_resource type="PackedScene" uid="uid://ctayfrsk7hvj5" path="res://Scenes/player_clone.tscn" id="7_x2rfe"]
 
 [sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_qnv1s"]
 

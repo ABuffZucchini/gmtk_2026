@@ -11,8 +11,8 @@ func MusicLayerChange(index:int,polarity:bool):
 	else:
 		MusicLayers[index]=MUTE
 
-
-func _input(event):
+# debug music layer testing
+func _input(_event):
 	if Input.is_action_just_pressed("debugmusic"):
 		MusicLayerChange(1,true)
 		MusicLayerChange(2,true)

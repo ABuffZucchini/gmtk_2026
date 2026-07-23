@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://jttsrgyouth4"
-path="res://.godot/imported/blue_coral.png-bff45acf452a055d762fecdec3fd4946.ctex"
+path="res://.godot/imported/blue_coral.png-b9207d2571d41c3f4063aabaa685a992.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/Tiles/blue_coral.png"
-dest_files=["res://.godot/imported/blue_coral.png-bff45acf452a055d762fecdec3fd4946.ctex"]
+source_file="res://assets/sprites/tiles/blue_coral.png"
+dest_files=["res://.godot/imported/blue_coral.png-b9207d2571d41c3f4063aabaa685a992.ctex"]
 
 [params]
 

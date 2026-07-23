@@ -16,12 +16,12 @@ func handle_level_changed(current_level_name: String) -> void:
 		"lvl1":
 			next_level_name = "level_select"
 		"level_select":
-			next_level_name = "level_1"
+			next_level_name = "levels/level_01"
 
 		_:
 			return
 	
-	next_level = load("res://Scenes/" + next_level_name +".tscn").instantiate()
+	next_level = load("res://scenes/" + next_level_name +".tscn").instantiate()
 	add_child(next_level)
 	
 	#next_level.connect("level_changed",self,"handle_level_changed")

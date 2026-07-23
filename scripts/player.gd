@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
 const GRID_SIZE = 16
-const MOVE_SPEED = 7.0 
+const MOVE_SPEED = 10
 
 @onready var ray = $RayCast2D
 

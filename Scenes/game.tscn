@@ -1,9 +1,7 @@
 [gd_scene format=3 uid="uid://bqs8nmjb61r2v"]
 
-[ext_resource type="AudioStream" uid="uid://o0qih8wouqm6" path="res://Assets/Audio/Music/1_Strings.ogg" id="1_ebmjs"]
+[ext_resource type="PackedScene" uid="uid://0tqlsoqq4vrv" path="res://Scenes/music_player.tscn" id="1_ebmjs"]
 
 [node name="game" type="Node2D" unique_id=923579984]
 
-[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=207214386]
-stream = ExtResource("1_ebmjs")
-autoplay = true
+[node name="MusicPlayer" parent="." unique_id=441910514 instance=ExtResource("1_ebmjs")]

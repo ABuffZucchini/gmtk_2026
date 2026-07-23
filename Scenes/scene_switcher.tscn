@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://dp4g6fh2gy3s7"]
+
+[ext_resource type="Script" uid="uid://cncs5usi7xq07" path="res://scene_switcher.gd" id="1_a656l"]
+[ext_resource type="PackedScene" uid="uid://dkvx8geifn1yb" path="res://Scenes/lvlstart.tscn" id="2_a656l"]
+
+[node name="Scene_Switcher" type="Node" unique_id=673184003]
+script = ExtResource("1_a656l")
+
+[node name="lvlStart" parent="." unique_id=1176643460 instance=ExtResource("2_a656l")]

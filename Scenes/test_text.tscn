@@ -1,11 +1,24 @@
 [gd_scene format=3 uid="uid://dkwfre6i3wp7p"]
 
+[ext_resource type="Script" uid="uid://de276yjxo6ftp" path="res://Level.gd" id="1_7ks8o"]
+
 [node name="Node2D" type="Node2D" unique_id=1512729039]
+position = Vector2(99, 104)
+script = ExtResource("1_7ks8o")
+level_name = "lvl1"
 
 [node name="TextEdit" type="TextEdit" parent="." unique_id=1751870363]
-offset_left = -65.0
-offset_top = -55.0
-offset_right = 503.0
-offset_bottom = 220.0
+offset_left = 1.0
+offset_right = 569.0
+offset_bottom = 275.0
 text = "Hi guys im abuffzucchini 
 "
+
+[node name="Button" type="Button" parent="." unique_id=1734436411]
+offset_left = 223.0
+offset_top = 178.0
+offset_right = 314.0
+offset_bottom = 209.0
+text = "Switch level"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

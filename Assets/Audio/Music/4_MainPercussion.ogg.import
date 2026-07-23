@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://c1n8qof312st7"
-path="res://.godot/imported/4_MainPercussion.ogg-7a20ca7e92147177c53b51ab34cf381c.oggvorbisstr"
+path="res://.godot/imported/4_MainPercussion.ogg-361e0c492a6b08a0410270178f72df8f.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/audio/music/4_MainPercussion.ogg"
-dest_files=["res://.godot/imported/4_MainPercussion.ogg-7a20ca7e92147177c53b51ab34cf381c.oggvorbisstr"]
+source_file="res://assets/audio/Music/4_MainPercussion.ogg"
+dest_files=["res://.godot/imported/4_MainPercussion.ogg-361e0c492a6b08a0410270178f72df8f.oggvorbisstr"]
 
 [params]
 

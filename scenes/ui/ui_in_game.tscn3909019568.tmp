@@ -1,0 +1,38 @@
+[gd_scene format=3 uid="uid://chjg06thubupt"]
+
+[ext_resource type="Script" uid="uid://yridvtxo1s15" path="res://scripts/make_visible_on_ready.gd" id="1_vqa78"]
+[ext_resource type="Texture2D" uid="uid://dco0402m7jldn" path="res://assets/sprites/decoration/bg/vignette.png" id="2_28x6l"]
+[ext_resource type="Texture2D" uid="uid://xq0jpxpt3jdu" path="res://assets/sprites/ui/bottom_bar.png" id="3_jkcdj"]
+[ext_resource type="FontFile" uid="uid://db5seoh7hn4tb" path="res://assets/fonts/PressStart2P.ttf" id="4_28x6l"]
+[ext_resource type="Script" uid="uid://b5p1df87b1e4g" path="res://scripts/moves_ui.gd" id="5_jkcdj"]
+
+[node name="UI_in_game" type="Node2D" unique_id=291824594]
+script = ExtResource("1_vqa78")
+
+[node name="Vignette" type="Sprite2D" parent="." unique_id=158108753]
+z_index = 100
+texture = ExtResource("2_28x6l")
+
+[node name="BottomBar" type="Sprite2D" parent="." unique_id=2082768705]
+z_index = 110
+position = Vector2(0, 160)
+texture = ExtResource("3_jkcdj")
+
+[node name="MovesText" type="Label" parent="." unique_id=1473262187]
+z_index = 111
+offset_left = -64.0
+offset_top = 152.0
+offset_right = 64.0
+offset_bottom = 168.0
+theme_override_fonts/font = ExtResource("4_28x6l")
+text = "Moves:"
+
+[node name="MovesCount" type="Label" parent="." unique_id=790571643]
+z_index = 111
+offset_left = 40.0
+offset_top = 152.0
+offset_right = 168.0
+offset_bottom = 168.0
+theme_override_fonts/font = ExtResource("4_28x6l")
+text = "hello"
+script = ExtResource("5_jkcdj")

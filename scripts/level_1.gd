@@ -1,6 +1,6 @@
 extends Node2D
 
-@onready var scene = load("res://scenes/player_clone.tscn")
+@onready var scene = load("res://scenes/level_objects/player.tscn")
 
 func _ready() -> void:
 	#for i in 10:

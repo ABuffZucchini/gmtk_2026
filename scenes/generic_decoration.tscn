@@ -1,8 +1,0 @@
-[gd_scene format=3 uid="uid://crgeok1gxxw4d"]
-
-[ext_resource type="Texture2D" uid="uid://dco0402m7jldn" path="res://Assets/Sprites/decoration/bg/vignette.png" id="1_deat1"]
-
-[node name="GenericDecoration" type="Node2D" unique_id=1418989825]
-
-[node name="Vignette" type="Sprite2D" parent="." unique_id=879124320]
-texture = ExtResource("1_deat1")

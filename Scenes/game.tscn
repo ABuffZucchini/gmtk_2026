@@ -1,7 +1,12 @@
 [gd_scene format=3 uid="uid://bqs8nmjb61r2v"]
 
-[ext_resource type="PackedScene" uid="uid://0tqlsoqq4vrv" path="res://Scenes/music_player.tscn" id="1_ebmjs"]
+[ext_resource type="PackedScene" uid="uid://0tqlsoqq4vrv" path="res://scenes/music_player.tscn" id="1_ebmjs"]
+[ext_resource type="Script" uid="uid://dpqc42svfk1xi" path="res://scripts/game.gd" id="1_qxrlw"]
+[ext_resource type="Script" uid="uid://ijqd43eqb2xr" path="res://scripts/level_resource.gd" id="2_3dryh"]
+[ext_resource type="Resource" uid="uid://iedyu6ar6kgr" path="res://resources/level_01.tres" id="3_wowpa"]
 
 [node name="game" type="Node2D" unique_id=923579984]
+script = ExtResource("1_qxrlw")
+level_set = Array[ExtResource("2_3dryh")]([ExtResource("3_wowpa")])
 
 [node name="MusicPlayer" parent="." unique_id=441910514 instance=ExtResource("1_ebmjs")]

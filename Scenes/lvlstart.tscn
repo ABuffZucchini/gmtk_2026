@@ -1,12 +1,12 @@
 [gd_scene format=3 uid="uid://dkvx8geifn1yb"]
 
 [ext_resource type="Script" uid="uid://de276yjxo6ftp" path="res://scripts/Level.gd" id="1_epcar"]
-[ext_resource type="Texture2D" uid="uid://bvpqn08qr1ceu" path="res://Assets/Sprites/Objects/urchin.png" id="2_x2rfe"]
+[ext_resource type="Texture2D" uid="uid://bvpqn08qr1ceu" path="res://assets/sprites/objects/urchin.png" id="2_x2rfe"]
 [ext_resource type="VideoStream" uid="uid://ccuhnarohmq6v" path="res://Startup+animation.ogv" id="3_qnv1s"]
 [ext_resource type="Texture2D" uid="uid://boaviusniyvhs" path="res://thistiles.png" id="4_2seuv"]
-[ext_resource type="Texture2D" uid="uid://dku261i08g4jq" path="res://Assets/Sprites/base_grid_blue.png" id="5_pwp5f"]
-[ext_resource type="Texture2D" uid="uid://jttsrgyouth4" path="res://Assets/Sprites/Tiles/blue_coral.png" id="6_tjx3i"]
-[ext_resource type="PackedScene" uid="uid://ctayfrsk7hvj5" path="res://Scenes/player_clone.tscn" id="7_x2rfe"]
+[ext_resource type="Texture2D" uid="uid://dku261i08g4jq" path="res://assets/sprites/base_grid_blue.png" id="5_pwp5f"]
+[ext_resource type="Texture2D" uid="uid://jttsrgyouth4" path="res://assets/sprites/tiles/blue_coral.png" id="6_tjx3i"]
+[ext_resource type="PackedScene" uid="uid://ctayfrsk7hvj5" path="res://scenes/level_objects/player.tscn" id="7_x2rfe"]
 
 [sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_qnv1s"]
 

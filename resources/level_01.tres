@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Level" format=3 uid="uid://iedyu6ar6kgr"]
+
+[ext_resource type="Script" uid="uid://ijqd43eqb2xr" path="res://scripts/level_resource.gd" id="1_51tjb"]
+
+[resource]
+script = ExtResource("1_51tjb")
+moves = 8
+layers = Array[bool]([true, true, false, true, true])
+metadata/_custom_type_script = "uid://ijqd43eqb2xr"

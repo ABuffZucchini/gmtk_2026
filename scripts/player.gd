@@ -1,4 +1,6 @@
 extends CharacterBody2D
+# clones can't get the crown at the end or whatever we end up using
+@export var is_clone:bool
 
 const GRID_SIZE = 16
 const MOVE_SPEED = 10
@@ -18,8 +20,10 @@ func _physics_process(delta: float) -> void:
 		if position.distance_to(target_position) < 0.5:
 			position = target_position
 			is_moving = false
+			set_collision_layer_value(1,true)
 			
 	if is_moving:
+		set_collision_layer_value(1,false)
 		return
 
 	var move_dir = Vector2.ZERO

@@ -8,7 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://b13yyvg60vma5" path="res://scenes/tiles.tscn" id="7_alkix"]
 [ext_resource type="PackedScene" uid="uid://ctayfrsk7hvj5" path="res://scenes/player_clone.tscn" id="7_j4i7h"]
 [ext_resource type="PackedScene" uid="uid://crgeok1gxxw4d" path="res://scenes/generic_decoration.tscn" id="8_w2125"]
-[ext_resource type="Script" uid="uid://yridvtxo1s15" path="res://Scripts/make_visible_on_ready.gd" id="9_jqcbt"]
+[ext_resource type="Script" uid="uid://yridvtxo1s15" path="res://scripts/make_visible_on_ready.gd" id="9_jqcbt"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6444e"]
 texture = ExtResource("3_jqcbt")

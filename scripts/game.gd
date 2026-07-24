@@ -5,9 +5,9 @@ extends Node2D
 
 	
 func ResetLevel():
-	G.moves=G.max_moves
 	LoadSceneFromResource(G.level_index)
 func LoadSceneFromResource(index):
+	G.moves=G.max_moves
 	if current_level:
 		current_level.queue_free()
 	var next_level

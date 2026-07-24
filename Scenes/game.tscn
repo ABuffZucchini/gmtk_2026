@@ -8,6 +8,16 @@
 [ext_resource type="PackedScene" uid="uid://chjg06thubupt" path="res://scenes/ui/ui_in_game.tscn" id="5_wowpa"]
 [ext_resource type="PackedScene" uid="uid://dukb0tj821fkq" path="res://scenes/levels/level_00.tscn" id="7_1l0tm"]
 
+[sub_resource type="Environment" id="Environment_35ju6"]
+background_mode = 3
+glow_enabled = true
+glow_intensity = 1.76
+glow_strength = 0.55
+glow_bloom = 0.14
+glow_blend_mode = 0
+adjustment_brightness = 0.92
+adjustment_contrast = 1.08
+
 [node name="game" type="Node2D" unique_id=923579984]
 script = ExtResource("1_qxrlw")
 level_set = Array[ExtResource("2_3dryh")]([ExtResource("3_i6g32"), ExtResource("3_wowpa")])
@@ -20,3 +30,6 @@ bus = &"Music"
 [node name="UI_in_game" parent="." unique_id=291824594 instance=ExtResource("5_wowpa")]
 
 [node name="level00" parent="." unique_id=528149217 instance=ExtResource("7_1l0tm")]
+
+[node name="BeautifulBeautifulBloom" type="WorldEnvironment" parent="." unique_id=142518222]
+environment = SubResource("Environment_35ju6")

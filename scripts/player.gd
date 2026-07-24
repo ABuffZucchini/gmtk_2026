@@ -5,7 +5,7 @@ extends CharacterBody2D
 const GRID_SIZE = 16
 const MOVE_SPEED = 10
 
-@onready var ray = $RayCast2D
+@onready var ray: RayCast2D = $RayCast2D
 
 var target_position = Vector2.ZERO
 var is_moving = false
@@ -45,12 +45,27 @@ func try_move(direction: Vector2):
 	ray.target_position = direction * GRID_SIZE
 	ray.force_raycast_update()
 	
+	if ray.is_colliding():
+		var collider = ray.get_collider()
+		print(collider)
+		
+		if collider!=null:
+			if collider.is_in_group("box"):
+				if collider.try_move_box(direction):
+					if G.moves!=0:
+						target_position = position + (direction * GRID_SIZE)
+						is_moving = true
+						if not is_clone:
+							G.moves-=1
+			
+			
+			
+	
 	if not ray.is_colliding():
 		if G.moves!=0:
 			target_position = position + (direction * GRID_SIZE)
 			is_moving = true
 			if not is_clone:
 				G.moves-=1
-		
 		
 		$AnimatedSprite2D.look_at(global_position + direction)

@@ -7,6 +7,121 @@
 [ext_resource type="Script" uid="uid://b5p1df87b1e4g" path="res://scripts/moves_ui.gd" id="5_jkcdj"]
 [ext_resource type="Script" uid="uid://fbr6o8qm5tq4" path="res://scripts/levelname_ui.gd" id="5_p82k1"]
 [ext_resource type="Script" uid="uid://cupo4mdfbwek8" path="res://scripts/levelindex_ui.gd" id="6_ttk7k"]
+[ext_resource type="Texture2D" uid="uid://pqwjtiesyloc" path="res://Assets/Sprites/Objects/vfx/glassShimmer.png" id="8_wq7yr"]
+[ext_resource type="Script" uid="uid://b8r7kcraafd22" path="res://scenes/ui/shimmer_animation.gd" id="9_mc3jo"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mc3jo"]
+atlas = ExtResource("8_wq7yr")
+region = Rect2(0, 0, 640, 360)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_abh22"]
+atlas = ExtResource("8_wq7yr")
+region = Rect2(640, 0, 640, 360)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_24w5r"]
+atlas = ExtResource("8_wq7yr")
+region = Rect2(1280, 0, 640, 360)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8g3yu"]
+atlas = ExtResource("8_wq7yr")
+region = Rect2(1920, 0, 640, 360)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_41daa"]
+atlas = ExtResource("8_wq7yr")
+region = Rect2(2560, 0, 640, 360)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0tbyx"]
+atlas = ExtResource("8_wq7yr")
+region = Rect2(3200, 0, 640, 360)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_27c5g"]
+atlas = ExtResource("8_wq7yr")
+region = Rect2(3840, 0, 640, 360)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yor5n"]
+atlas = ExtResource("8_wq7yr")
+region = Rect2(4480, 0, 640, 360)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_biufs"]
+atlas = ExtResource("8_wq7yr")
+region = Rect2(5120, 0, 640, 360)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pophc"]
+atlas = ExtResource("8_wq7yr")
+region = Rect2(5760, 0, 640, 360)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nk88a"]
+atlas = ExtResource("8_wq7yr")
+region = Rect2(6400, 0, 640, 360)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ctk0e"]
+atlas = ExtResource("8_wq7yr")
+region = Rect2(7040, 0, 640, 360)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8rcwo"]
+atlas = ExtResource("8_wq7yr")
+region = Rect2(7680, 0, 640, 360)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1ey6k"]
+atlas = ExtResource("8_wq7yr")
+region = Rect2(8320, 0, 640, 360)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mwmc8"]
+atlas = ExtResource("8_wq7yr")
+region = Rect2(8960, 0, 640, 360)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_yr122"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mc3jo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_abh22")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_24w5r")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8g3yu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_41daa")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0tbyx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_27c5g")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yor5n")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_biufs")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pophc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nk88a")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ctk0e")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8rcwo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1ey6k")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mwmc8")
+}],
+"loop": 0,
+"name": &"default",
+"speed": 12.0
+}]
 
 [node name="UI_in_game" type="Node2D" unique_id=291824594]
 script = ExtResource("1_vqa78")
@@ -67,3 +182,8 @@ offset_bottom = 168.0
 theme_override_fonts/font = ExtResource("4_28x6l")
 text = "#"
 script = ExtResource("6_ttk7k")
+
+[node name="shimmerAnimation" type="AnimatedSprite2D" parent="." unique_id=1194643282]
+z_index = 112
+sprite_frames = SubResource("SpriteFrames_yr122")
+script = ExtResource("9_mc3jo")

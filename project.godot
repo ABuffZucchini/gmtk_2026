@@ -32,10 +32,6 @@ window/stretch/mode="viewport"
 window/stretch/aspect="expand"
 window/stretch/scale_mode="integer"
 
-[global_group]
-
-waterbubble=""
-
 [input]
 
 debugmusic={

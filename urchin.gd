@@ -5,7 +5,7 @@ const gridSize = 16
 @onready var ray: RayCast2D = $CollisionShape2D/RayCast2D
 
 
-func try_move_boxs(direction: Vector2):
+func try_move_box(direction: Vector2):
 	ray.target_position = direction * gridSize
 	ray.force_raycast_update()
 	

@@ -2,8 +2,8 @@
 
 [ext_resource type="Script" uid="uid://de276yjxo6ftp" path="res://scripts/Level.gd" id="1_qodw5"]
 [ext_resource type="Script" uid="uid://b5b621ru0kp8p" path="res://scripts/level_1.gd" id="2_pgydl"]
-[ext_resource type="Texture2D" uid="uid://jttsrgyouth4" path="res://Assets/Sprites/Tiles/blue_coral.png" id="3_o053b"]
-[ext_resource type="Texture2D" uid="uid://dku261i08g4jq" path="res://Assets/Sprites/base_grid_blue.png" id="4_c1dsv"]
+[ext_resource type="Texture2D" uid="uid://mi343ajpq62h" path="res://assets_folder/sprites/tiles/blue_coral.png" id="3_o053b"]
+[ext_resource type="Texture2D" uid="uid://bx8sulydlpqkj" path="res://assets_folder/sprites/base_grid_blue.png" id="4_c1dsv"]
 [ext_resource type="PackedScene" uid="uid://hh8gmtqxgany" path="res://water_bubbles.tscn" id="5_50mu0"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6444e"]

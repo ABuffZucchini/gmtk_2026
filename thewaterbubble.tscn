@@ -1,0 +1,50 @@
+[gd_scene format=3 uid="uid://c4711gm13uh5y"]
+
+[ext_resource type="Texture2D" uid="uid://bnrxd1egx5kqc" path="res://assets_folder/sprites/particles/bubble.png" id="2_em4h7"]
+
+[sub_resource type="GDScript" id="GDScript_4s6xh"]
+script/source = "extends CharacterBody2D
+
+const gridSize = 16
+
+@onready var ray: RayCast2D = $CollisionShape2D/RayCast2D
+
+func try_move_waterbubble(direction: Vector2):
+	ray.target_position = direction * gridSize
+	ray.force_raycast_update()
+	
+	if ray.is_colliding():
+		var collider = ray.get_collider()
+		if collider != null:
+			if collider.has_method(\"try_move_water\"):
+				position += direction * gridSize
+		return false
+		
+	position+=direction*gridSize
+	return true
+	#
+"
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_4s6xh"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_em4h7")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1ol56"]
+
+[node name="CharacterBody2D" type="CharacterBody2D" unique_id=1259068722 groups=["waterbubble_group"]]
+script = SubResource("GDScript_4s6xh")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=624381593]
+sprite_frames = SubResource("SpriteFrames_4s6xh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2048845934]
+shape = SubResource("RectangleShape2D_1ol56")
+
+[node name="RayCast2D" type="RayCast2D" parent="CollisionShape2D" unique_id=1821253257]

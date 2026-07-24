@@ -86,10 +86,10 @@ position = Vector2(-25, 11)
 [node name="CharacterBody2D" parent="Node/Entities" unique_id=23606013 instance=ExtResource("11_j6jkn")]
 position = Vector2(-56, 56)
 
-[node name="CharacterBody2D2" parent="Node/Entities" unique_id=770287474 instance=ExtResource("12_gfjph")]
+[node name="CharacterBody2D2" parent="Node/Entities" unique_id=770287474 groups=["water_bubble"] instance=ExtResource("12_gfjph")]
 position = Vector2(-56, 72)
 
-[node name="CharacterBody2D3" parent="Node/Entities" unique_id=131787361 instance=ExtResource("12_gfjph")]
+[node name="CharacterBody2D3" parent="Node/Entities" unique_id=131787361 groups=["water_bubble"] instance=ExtResource("12_gfjph")]
 position = Vector2(-40, 72)
 
 [node name="Decorations" type="Node" parent="Node" unique_id=1235809323]

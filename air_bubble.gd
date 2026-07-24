@@ -14,6 +14,10 @@ func try_move_waterbubble(direction: Vector2):
 		if collider != null and collider.has_method("try_move_waterbubble") and  collider.try_move_waterbubble(direction):
 			position += direction * gridSize
 			
+		if collider != null and collider.is_in_group("box") and collider.has_method("try_move_box") and  collider.try_move_box(direction):
+			position += direction * gridSize
+		
+		#return true
 		return false
 		#
 	position+=direction*gridSize

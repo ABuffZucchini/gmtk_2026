@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://dlebcef8rkaya"]
 
 [ext_resource type="Script" uid="uid://btfdelhy7w0bg" path="res://air_bubble.gd" id="1_lxhou"]
-[ext_resource type="Texture2D" uid="uid://d4kuxvfs6bmau" path="res://Assets/Sprites/Objects/xirxle.png" id="2_185hw"]
+[ext_resource type="Texture2D" uid="uid://dovyc6jdmawy0" path="res://assets_folder/sprites/objects/xirxle.png" id="2_185hw"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_srvo7"]
 animations = [{

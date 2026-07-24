@@ -71,7 +71,7 @@ animations = [{
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_sh265"]
 
-[node name="MainPlayer" type="CharacterBody2D" unique_id=884091595 node_paths=PackedStringArray("sounds", "ray")]
+[node name="MainPlayer" type="CharacterBody2D" unique_id=884091595 node_paths=PackedStringArray("sounds", "ray", "timer")]
 z_index = 2
 script = ExtResource("1_cvnsp")
 directional_sounds = Array[AudioStreamOggVorbis]([ExtResource("2_jwx35"), ExtResource("3_5875d"), ExtResource("4_pvbkg"), ExtResource("5_ejfrc")])
@@ -80,6 +80,7 @@ cant_move_sound = ExtResource("7_t20k5")
 out_of_moves_sound = ExtResource("8_3mik2")
 sounds = NodePath("Sounds")
 ray = NodePath("CollisionShape2D/RayCast2D")
+timer = NodePath("Timer")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1044389775]
 sprite_frames = SubResource("SpriteFrames_cvnsp")
@@ -94,6 +95,11 @@ scale = Vector2(1.6411226, 1.4013104)
 target_position = Vector2(0, 24.999996)
 
 [node name="Sounds" type="AudioStreamPlayer2D" parent="." unique_id=2046452793]
-process_mode = 3
 max_polyphony = 2
 bus = &"SFX"
+
+[node name="Timer" type="Timer" parent="." unique_id=657214580]
+wait_time = 0.1
+one_shot = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

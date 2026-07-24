@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://cqms0ddv5x5jc"]
 
-[ext_resource type="Texture2D" uid="uid://cw86vdxtmkltu" path="res://assets/sprites/decoration/decals/decals_atlas.png" id="1_dchn5"]
+[ext_resource type="Texture2D" uid="uid://cw86vdxtmkltu" path="res://assets_folder/sprites/decoration/decals/decals_atlas.png" id="1_dchn5"]
 
 [node name="decal_starfish" type="Sprite2D" unique_id=1042929158]
 z_index = 10

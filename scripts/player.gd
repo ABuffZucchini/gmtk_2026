@@ -58,6 +58,13 @@ func try_move(direction: Vector2):
 						if not is_clone:
 							G.moves-=1
 			
+			if collider.is_in_group("waterbubble"):
+				if collider.try_move_waterbubble(direction):
+					if G.moves!=0:
+						target_position = position + (direction * GRID_SIZE)
+						is_moving = true
+						if not is_clone:
+							G.moves-=1
 			
 			
 	

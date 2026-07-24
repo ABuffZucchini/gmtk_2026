@@ -10,6 +10,7 @@
 [ext_resource type="PackedScene" uid="uid://cvu6th43hbq1y" path="res://scenes/tiles_pink.tscn" id="10_2ptqj"]
 [ext_resource type="PackedScene" uid="uid://ctayfrsk7hvj5" path="res://scenes/level_objects/player.tscn" id="11_5yeic"]
 [ext_resource type="PackedScene" uid="uid://cdjj3mj2iatuo" path="res://urchin.tscn" id="11_j6jkn"]
+[ext_resource type="PackedScene" uid="uid://dlebcef8rkaya" path="res://water_bubble.tscn" id="12_gfjph"]
 [ext_resource type="PackedScene" uid="uid://c28xyd5ye5sda" path="res://scenes/level_objects/complete_square.tscn" id="12_okio2"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6444e"]
@@ -85,11 +86,18 @@ tile_map_data = PackedByteArray("AADs/wsAAQACAAIAAADs/woAAQACAAIAAADs/wkAAQACAAI
 
 [node name="Player" parent="Node/Entities" unique_id=884091595 instance=ExtResource("11_5yeic")]
 position = Vector2(-72, 56)
+is_clone = false
 
 [node name="CompleteSquare" parent="Node/Entities" unique_id=7729194 instance=ExtResource("12_okio2")]
 position = Vector2(-25, 11)
 
 [node name="CharacterBody2D" parent="Node/Entities" unique_id=23606013 instance=ExtResource("11_j6jkn")]
 position = Vector2(-54, 56)
+
+[node name="CharacterBody2D2" parent="Node/Entities" unique_id=770287474 instance=ExtResource("12_gfjph")]
+position = Vector2(-57, 73)
+
+[node name="CharacterBody2D3" parent="Node/Entities" unique_id=131787361 instance=ExtResource("12_gfjph")]
+position = Vector2(-43, 74)
 
 [node name="Decorations" type="Node" parent="Node" unique_id=1235809323]

@@ -4,12 +4,15 @@ const gridSize = 16
 
 @onready var ray: RayCast2D = $CollisionShape2D/RayCast2D
 
-
-func try_move_box(direction: Vector2):
+func try_move_waterbubble(direction: Vector2):
 	ray.target_position = direction * gridSize
 	ray.force_raycast_update()
 	
 	if ray.is_colliding():
+		var collider = ray.get_collider()
+		if collider != null:
+			if collider.has_method("try_move_water"):
+				position += direction * gridSize
 		return false
 		
 	position+=direction*gridSize

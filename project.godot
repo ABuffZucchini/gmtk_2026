@@ -35,6 +35,7 @@ window/stretch/scale_mode="integer"
 [global_group]
 
 box="pushable"
+waterbubble="waterbubble group"
 
 [input]
 

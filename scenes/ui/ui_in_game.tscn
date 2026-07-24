@@ -1,9 +1,9 @@
 [gd_scene format=3 uid="uid://chjg06thubupt"]
 
 [ext_resource type="Script" uid="uid://yridvtxo1s15" path="res://scripts/make_visible_on_ready.gd" id="1_vqa78"]
-[ext_resource type="Texture2D" uid="uid://dco0402m7jldn" path="res://assets/sprites/decoration/bg/vignette.png" id="2_28x6l"]
-[ext_resource type="Texture2D" uid="uid://dqnwt85si2mqf" path="res://assets/sprites/ui/game_bar.png" id="3_ttk7k"]
-[ext_resource type="FontFile" uid="uid://db5seoh7hn4tb" path="res://assets/fonts/PressStart2P.ttf" id="4_28x6l"]
+[ext_resource type="Texture2D" uid="uid://dco0402m7jldn" path="res://assets_folder/sprites/decoration/bg/vignette.png" id="2_28x6l"]
+[ext_resource type="Texture2D" uid="uid://dqnwt85si2mqf" path="res://assets_folder/sprites/ui/game_bar.png" id="3_ttk7k"]
+[ext_resource type="FontFile" uid="uid://db5seoh7hn4tb" path="res://assets_folder/fonts/PressStart2P.ttf" id="4_28x6l"]
 [ext_resource type="Script" uid="uid://b5p1df87b1e4g" path="res://scripts/moves_ui.gd" id="5_jkcdj"]
 [ext_resource type="Script" uid="uid://fbr6o8qm5tq4" path="res://scripts/levelname_ui.gd" id="5_p82k1"]
 [ext_resource type="Script" uid="uid://cupo4mdfbwek8" path="res://scripts/levelindex_ui.gd" id="6_ttk7k"]

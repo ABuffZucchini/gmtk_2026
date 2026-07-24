@@ -7,7 +7,7 @@
 [ext_resource type="Script" uid="uid://b5p1df87b1e4g" path="res://scripts/moves_ui.gd" id="5_jkcdj"]
 [ext_resource type="Script" uid="uid://fbr6o8qm5tq4" path="res://scripts/levelname_ui.gd" id="5_p82k1"]
 [ext_resource type="Script" uid="uid://cupo4mdfbwek8" path="res://scripts/levelindex_ui.gd" id="6_ttk7k"]
-[ext_resource type="Texture2D" uid="uid://pqwjtiesyloc" path="res://Assets/Sprites/Objects/vfx/glassShimmer.png" id="8_wq7yr"]
+[ext_resource type="Texture2D" uid="uid://pqwjtiesyloc" path="res://assets_folder/sprites/objects/vfx/glassShimmer.png" id="8_wq7yr"]
 [ext_resource type="Script" uid="uid://b8r7kcraafd22" path="res://scenes/ui/shimmer_animation.gd" id="9_mc3jo"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_mc3jo"]
@@ -127,7 +127,7 @@ animations = [{
 script = ExtResource("1_vqa78")
 
 [node name="Vignette" type="Sprite2D" parent="." unique_id=158108753]
-z_index = 113
+z_index = 1000
 texture = ExtResource("2_28x6l")
 
 [node name="Bars" type="Sprite2D" parent="." unique_id=2082768705]

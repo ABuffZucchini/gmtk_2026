@@ -2,6 +2,8 @@ extends Node2D
 
 @export var level_set:Array[Level]
 @onready var current_level: Node2D = $level00
+@export var ui: Control
+@export var credits: ColorRect
 
 	
 func ResetLevel():
@@ -29,3 +31,21 @@ func _input(_event):
 		ResetLevel()	
 	if Input.is_action_just_pressed("debugscene"):
 		LoadSceneFromResource(G.level_index+1)
+		
+		
+# ui spawn
+	if Input.is_action_just_pressed("ui"):
+		if G.paused:
+			ui.visible=false
+			G.paused=false
+		else:
+			ui.OpenUi()
+			ui.visible=true
+			G.paused=true
+		if G.credits:
+			G.credits=false
+			ui.credits_rect.visible=false
+			ui.sfx_slider.visible=false
+			ui.music_slider.visible=false
+			ui.credits_button.visible=false
+		

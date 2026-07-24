@@ -3,7 +3,6 @@
 [ext_resource type="AudioStream" uid="uid://datip3nelctcg" path="res://assets_folder/audio/music/1_Strings.ogg" id="1_ftm3w"]
 [ext_resource type="AudioStream" uid="uid://c56icft1i7ce5" path="res://assets_folder/audio/music/2_Bass.ogg" id="2_nnqcb"]
 [ext_resource type="AudioStream" uid="uid://ck7pe8bg4td7m" path="res://assets_folder/audio/music/3_Melodies.ogg" id="2_ut3a0"]
-[ext_resource type="AudioStream" uid="uid://1t3bvgnykq60" path="res://assets_folder/audio/music/4_MainPercussion.ogg" id="3_nnqcb"]
 [ext_resource type="AudioStream" uid="uid://1t3bvgnykq60" path="res://assets_folder/audio/music/4_MainPercussion.ogg" id="4_cy1if"]
 [ext_resource type="AudioStream" uid="uid://fn6wxgedlvb2" path="res://assets_folder/audio/music/5_OtherPercussion.ogg" id="5_hilfb"]
 [ext_resource type="Script" uid="uid://ctug88honn6ko" path="res://scripts/music_layers.gd" id="6_ut3a0"]
@@ -16,7 +15,7 @@ stream_1/stream = ExtResource("2_nnqcb")
 stream_1/volume = -60.0
 stream_2/stream = ExtResource("2_ut3a0")
 stream_2/volume = -60.0
-stream_3/stream = ExtResource("3_nnqcb")
+stream_3/stream = ExtResource("4_cy1if")
 stream_3/volume = -60.0
 stream_4/stream = ExtResource("4_cy1if")
 stream_4/volume = -60.0
@@ -26,6 +25,7 @@ stream_5/volume = 0.0
 [node name="MusicPlayer" type="AudioStreamPlayer" unique_id=441910514]
 stream = SubResource("AudioStreamSynchronized_vydsi")
 autoplay = true
+bus = &"Music"
 script = ExtResource("6_ut3a0")
 
 [node name="LayerTimer" type="Timer" parent="." unique_id=1728061131]

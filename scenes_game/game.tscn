@@ -7,6 +7,7 @@
 [ext_resource type="Resource" uid="uid://iedyu6ar6kgr" path="res://resources/level_01.tres" id="3_wowpa"]
 [ext_resource type="PackedScene" uid="uid://chjg06thubupt" path="res://scenes/ui/ui_in_game.tscn" id="5_wowpa"]
 [ext_resource type="PackedScene" uid="uid://dukb0tj821fkq" path="res://scenes/levels/level_00.tscn" id="7_1l0tm"]
+[ext_resource type="PackedScene" uid="uid://cukq8qu6gf6y6" path="res://scenes_game/pause_ui.tscn" id="8_qxket"]
 
 [sub_resource type="Environment" id="Environment_35ju6"]
 background_mode = 3
@@ -18,9 +19,10 @@ glow_blend_mode = 0
 adjustment_brightness = 0.92
 adjustment_contrast = 1.08
 
-[node name="game" type="Node2D" unique_id=923579984]
+[node name="game" type="Node2D" unique_id=923579984 node_paths=PackedStringArray("ui")]
 script = ExtResource("1_qxrlw")
 level_set = Array[ExtResource("2_3dryh")]([ExtResource("3_i6g32"), ExtResource("3_wowpa")])
+ui = NodePath("UI")
 
 [node name="MusicPlayer" parent="." unique_id=441910514 instance=ExtResource("1_ebmjs")]
 
@@ -32,3 +34,9 @@ level_set = Array[ExtResource("2_3dryh")]([ExtResource("3_i6g32"), ExtResource("
 
 [node name="BeautifulBeautifulBloom" type="WorldEnvironment" parent="." unique_id=142518222]
 environment = SubResource("Environment_35ju6")
+
+[node name="UI" parent="." unique_id=1118075041 instance=ExtResource("8_qxket")]
+offset_left = -344.0
+offset_top = -184.0
+offset_right = 336.0
+offset_bottom = 216.0

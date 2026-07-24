@@ -7,6 +7,8 @@ const NORMAL = 0
 @onready var moves:int=max_moves
 @onready var level_index:int=0
 @onready var level_name:String="Beginnings"
+@onready var paused:bool=false
+@onready var credits:bool=false
 
 
 

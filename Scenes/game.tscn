@@ -3,10 +3,20 @@
 [ext_resource type="PackedScene" uid="uid://0tqlsoqq4vrv" path="res://scenes/music_player.tscn" id="1_ebmjs"]
 [ext_resource type="Script" uid="uid://dpqc42svfk1xi" path="res://scripts/game.gd" id="1_qxrlw"]
 [ext_resource type="Script" uid="uid://ijqd43eqb2xr" path="res://scripts/level_resource.gd" id="2_3dryh"]
+[ext_resource type="Resource" uid="uid://cmbfr17ru3ue1" path="res://resources/level_00.tres" id="3_i6g32"]
 [ext_resource type="Resource" uid="uid://iedyu6ar6kgr" path="res://resources/level_01.tres" id="3_wowpa"]
+[ext_resource type="PackedScene" uid="uid://chjg06thubupt" path="res://scenes/ui/ui_in_game.tscn" id="5_wowpa"]
+[ext_resource type="PackedScene" uid="uid://dukb0tj821fkq" path="res://scenes/levels/level_00.tscn" id="7_1l0tm"]
 
 [node name="game" type="Node2D" unique_id=923579984]
 script = ExtResource("1_qxrlw")
-level_set = Array[ExtResource("2_3dryh")]([ExtResource("3_wowpa")])
+level_set = Array[ExtResource("2_3dryh")]([ExtResource("3_i6g32"), ExtResource("3_wowpa")])
 
 [node name="MusicPlayer" parent="." unique_id=441910514 instance=ExtResource("1_ebmjs")]
+bus = &"Music"
+
+[node name="Camera" type="Camera2D" parent="." unique_id=1452844561]
+
+[node name="UI_in_game" parent="." unique_id=291824594 instance=ExtResource("5_wowpa")]
+
+[node name="level00" parent="." unique_id=528149217 instance=ExtResource("7_1l0tm")]

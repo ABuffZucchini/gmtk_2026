@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://ck4gnekao5gdq"]
+
+[ext_resource type="Texture2D" uid="uid://bnrxd1egx5kqc" path="res://assets/sprites/particles/bubble.png" id="1_efob8"]
+
+[sub_resource type="Gradient" id="Gradient_vydsi"]
+offsets = PackedFloat32Array(0, 0.2777778, 0.59876543, 1)
+colors = PackedColorArray(1, 1, 1, 0, 1, 1, 1, 0.627451, 0.5882353, 0.87058824, 0.98039216, 0.6156863, 1, 1, 1, 0)
+
+[sub_resource type="Curve" id="Curve_35ju6"]
+_limits = [-1.0, 1.0, 0.0, 1.0]
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(1, 1), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[node name="BubbleParticles" type="CPUParticles2D" unique_id=2008761849]
+amount = 3
+texture = ExtResource("1_efob8")
+lifetime = 1.24
+speed_scale = 0.5
+direction = Vector2(0, 0)
+spread = 180.0
+gravity = Vector2(0, -30)
+initial_velocity_max = 10.0
+color_ramp = SubResource("Gradient_vydsi")
+hue_variation_curve = SubResource("Curve_35ju6")

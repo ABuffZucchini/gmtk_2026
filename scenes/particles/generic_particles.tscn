@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://w38xmj2xxbgk"]
+
+[sub_resource type="Gradient" id="Gradient_35ju6"]
+offsets = PackedFloat32Array(0, 0.3148148, 1)
+colors = PackedColorArray(1, 1, 1, 0, 0.7647059, 1, 1, 0.49411765, 1, 1, 1, 0)
+
+[node name="GenericParticles" type="CPUParticles2D" unique_id=1587524907]
+z_index = 90
+amount = 100
+lifetime = 1.4000000000000001
+emission_shape = 3
+emission_rect_extents = Vector2(320, 180)
+direction = Vector2(0, 0)
+spread = 180.0
+gravity = Vector2(0, 0)
+initial_velocity_min = 2.0
+initial_velocity_max = 4.0
+color_ramp = SubResource("Gradient_35ju6")

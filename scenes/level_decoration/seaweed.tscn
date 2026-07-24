@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://dl445e0hfhttj"]
+
+[ext_resource type="Texture2D" uid="uid://cw86vdxtmkltu" path="res://assets/sprites/decoration/decals/decals_atlas.png" id="1_s8ypg"]
+
+[node name="decal_seaweed" type="Sprite2D" unique_id=1042929158]
+z_index = 10
+texture = ExtResource("1_s8ypg")
+region_enabled = true
+region_rect = Rect2(0, 0, 16, 16)

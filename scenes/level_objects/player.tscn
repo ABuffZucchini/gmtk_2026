@@ -14,6 +14,7 @@
 [ext_resource type="Texture2D" uid="uid://ducte3hwmvx4f" path="res://assets/sprites/objects/fish/untitled_0011.png" id="12_3dv3h"]
 [ext_resource type="Texture2D" uid="uid://ck6b153hrp21i" path="res://assets/sprites/objects/fish/untitled_0012.png" id="13_a7w1w"]
 [ext_resource type="Texture2D" uid="uid://8jyhushqijbh" path="res://assets/sprites/objects/fish/untitled_0013.png" id="14_yicvc"]
+[ext_resource type="PackedScene" uid="uid://ck4gnekao5gdq" path="res://scenes/particles/bubbles.tscn" id="15_xkckn"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_cvnsp"]
 animations = [{
@@ -70,6 +71,7 @@ z_index = 2
 script = ExtResource("1_e0823")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1044389775]
+z_index = 50
 sprite_frames = SubResource("SpriteFrames_cvnsp")
 autoplay = "default"
 frame_progress = 0.87337166
@@ -80,3 +82,12 @@ debug_color = Color(0.17882031, 0.109327264, 0.057639055, 0.76862746)
 
 [node name="RayCast2D" type="RayCast2D" parent="." unique_id=1522825894]
 target_position = Vector2(0, 16)
+
+[node name="BubbleParticles" parent="." unique_id=2008761849 instance=ExtResource("15_xkckn")]
+z_index = 200
+
+[node name="Timer" type="Timer" parent="." unique_id=608522106]
+wait_time = 0.1
+one_shot = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

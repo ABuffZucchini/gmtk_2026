@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://ljbjmmfkiwgl"]
+
+[ext_resource type="Texture2D" uid="uid://cw86vdxtmkltu" path="res://assets/sprites/decoration/decals/decals_atlas.png" id="1_crybo"]
+
+[node name="decal_coral_pink_holes" type="Sprite2D" unique_id=1042929158]
+z_index = 10
+texture = ExtResource("1_crybo")
+region_enabled = true
+region_rect = Rect2(16, 16, 16, 16)

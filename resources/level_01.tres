@@ -1,9 +1,12 @@
 [gd_resource type="Resource" script_class="Level" format=3 uid="uid://iedyu6ar6kgr"]
 
 [ext_resource type="Script" uid="uid://ijqd43eqb2xr" path="res://scripts/level_resource.gd" id="1_51tjb"]
+[ext_resource type="PackedScene" uid="uid://dukb0tj821fkq" path="res://scenes/levels/level_00.tscn" id="1_dxe1b"]
 
 [resource]
 script = ExtResource("1_51tjb")
-moves = 8
-layers = Array[bool]([true, true, false, true, true])
+moves = 10
+level_name = "The Bubble"
+level = ExtResource("1_dxe1b")
+layers = Array[bool]([false, true, true, false, false, true])
 metadata/_custom_type_script = "uid://ijqd43eqb2xr"

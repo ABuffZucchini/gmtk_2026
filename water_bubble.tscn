@@ -17,7 +17,7 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_di3n2"]
 size = Vector2(11, 11)
 
-[node name="CharacterBody2D" type="CharacterBody2D" unique_id=770287474 groups=["waterbubble"]]
+[node name="CharacterBody2D" type="CharacterBody2D" unique_id=770287474]
 script = ExtResource("1_lxhou")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=915578980]

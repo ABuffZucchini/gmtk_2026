@@ -1,11 +1,11 @@
 [gd_scene format=3 uid="uid://0tqlsoqq4vrv"]
 
-[ext_resource type="AudioStream" uid="uid://o0qih8wouqm6" path="res://Assets/Audio/Music/1_Strings.ogg" id="1_ftm3w"]
-[ext_resource type="AudioStream" uid="uid://dmtiq5oh74bib" path="res://Assets/Audio/Music/2_Bass.ogg" id="2_nnqcb"]
-[ext_resource type="AudioStream" uid="uid://bcmr2qol3ifk6" path="res://Assets/Audio/Music/3_Melodies.ogg" id="2_ut3a0"]
-[ext_resource type="AudioStream" uid="uid://c1n8qof312st7" path="res://Assets/Audio/Music/4_MainPercussion.ogg" id="3_nnqcb"]
-[ext_resource type="AudioStream" uid="uid://dii3rcvafefu" path="res://Assets/Audio/Music/5_OtherPercussion.ogg" id="4_cy1if"]
-[ext_resource type="AudioStream" uid="uid://dudblunwn2b4k" path="res://Assets/Audio/Music/6_Ambience.ogg" id="5_hilfb"]
+[ext_resource type="AudioStream" uid="uid://o0qih8wouqm6" path="res://assets/audio/music/1_Strings.ogg" id="1_ftm3w"]
+[ext_resource type="AudioStream" uid="uid://dmtiq5oh74bib" path="res://assets/audio/music/2_Bass.ogg" id="2_nnqcb"]
+[ext_resource type="AudioStream" uid="uid://bcmr2qol3ifk6" path="res://assets/audio/music/3_Melodies.ogg" id="2_ut3a0"]
+[ext_resource type="AudioStream" uid="uid://c1n8qof312st7" path="res://assets/audio/music/4_MainPercussion.ogg" id="3_nnqcb"]
+[ext_resource type="AudioStream" uid="uid://dii3rcvafefu" path="res://assets/audio/music/5_OtherPercussion.ogg" id="4_cy1if"]
+[ext_resource type="AudioStream" uid="uid://dudblunwn2b4k" path="res://assets/audio/music/6_Ambience.ogg" id="5_hilfb"]
 [ext_resource type="Script" uid="uid://ctug88honn6ko" path="res://scripts/music_layers.gd" id="6_ut3a0"]
 
 [sub_resource type="AudioStreamSynchronized" id="AudioStreamSynchronized_vydsi"]

@@ -10,6 +10,9 @@
 [ext_resource type="PackedScene" uid="uid://bjhv78lrygtba" path="res://scenes/tiles_dead.tscn" id="7_ji8tr"]
 [ext_resource type="PackedScene" uid="uid://c28xyd5ye5sda" path="res://scenes/level_objects/complete_square.tscn" id="8_0ot5m"]
 [ext_resource type="PackedScene" uid="uid://ckfoqvgpqnqw7" path="res://scenes/level_objects/player_spawn_point.tscn" id="9_vuyry"]
+[ext_resource type="PackedScene" uid="uid://cdjj3mj2iatuo" path="res://scenes/level_objects/urchin.tscn" id="10_nfdkg"]
+[ext_resource type="PackedScene" uid="uid://dlebcef8rkaya" path="res://scenes/level_objects/pushable_bubble.tscn" id="12_k1r5j"]
+[ext_resource type="PackedScene" uid="uid://qsaqt07ruams" path="res://scenes/level_decoration/turtle.tscn" id="13_k1r5j"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6444e"]
 texture = ExtResource("2_ji8tr")
@@ -70,10 +73,10 @@ tile_set = SubResource("TileSet_cvnsp")
 script = ExtResource("4_nfdkg")
 
 [node name="CoralTilesGreen" parent="Node/Tiles" unique_id=1842618096 instance=ExtResource("5_k1r5j")]
-tile_map_data = PackedByteArray()
+tile_map_data = PackedByteArray("AAD2/wYAAQACAAMAAAD2/wUAAQACAAIAAAD2/wQAAQACAAIAAAD1/wYAAQACAAMAAAD1/wUAAQACAAIAAAD1/wQAAQACAAIAAAD0/wYAAQACAAMAAAD0/wUAAQACAAIAAAD0/wQAAQACAAIAAADz/wYAAQACAAMAAADz/wUAAQACAAIAAADz/wQAAQACAAIAAADy/wYAAQABAAMAAADy/wUAAQABAAIAAADy/wQAAQAFAAIAAAAEAAcAAQADAAMAAAAEAAYAAQADAAIAAAAEAAUAAQADAAIAAAAEAAQAAQADAAEAAAADAAcAAQACAAMAAAADAAYAAQACAAIAAAADAAUAAQACAAIAAAADAAQAAQACAAEAAAACAAcAAQACAAMAAAACAAYAAQACAAIAAAACAAUAAQACAAIAAAACAAQAAQACAAEAAAABAAcAAQAFAAMAAAABAAYAAQACAAIAAAABAAUAAQAFAAEAAAABAAQAAQABAAEAAAAAAAcAAQACAAIAAAAAAAYAAQACAAIAAAAAAAUAAQACAAEAAAABAAgAAQADAAMAAAAAAAgAAQACAAMAAAD//wgAAQACAAMAAAD//wcAAQACAAIAAAD//wYAAQACAAIAAAD//wUAAQACAAEAAAD+/wgAAQAFAAMAAAD+/wcAAQACAAIAAAD+/wYAAQAFAAEAAAD+/wUAAQABAAEAAAD+/wkAAQADAAMAAAD9/wkAAQACAAMAAAD9/wgAAQACAAIAAAD9/wcAAQACAAIAAAD9/wYAAQACAAEAAAD8/wkAAQACAAMAAAD8/wgAAQACAAIAAAD8/wcAAQACAAIAAAD8/wYAAQACAAEAAAD7/wkAAQACAAMAAAD7/wgAAQACAAIAAAD7/wcAAQACAAIAAAD7/wYAAQAFAAAAAAD6/wkAAQACAAMAAAD6/wgAAQACAAIAAAD6/wcAAQACAAIAAAD6/wYAAQACAAIAAAD5/wkAAQACAAMAAAD5/wgAAQACAAIAAAD5/wcAAQACAAIAAAD5/wYAAQACAAIAAAD4/wkAAQACAAMAAAD4/wgAAQACAAIAAAD4/wcAAQACAAIAAAD4/wYAAQACAAIAAAD3/wkAAQABAAMAAAD3/wgAAQABAAIAAAD3/wcAAQABAAIAAAD3/wYAAQAFAAIAAAD5/wUAAQACAAIAAAD4/wUAAQACAAIAAAD3/wUAAQACAAIAAAD4/wQAAQACAAEAAAD3/wQAAQAFAAAAAAD3/wIAAQADAAIAAAD3/wEAAQADAAIAAAD3/wAAAQADAAEAAAD2/wIAAQACAAIAAAD2/wEAAQACAAIAAAD2/wAAAQACAAEAAAD1/wIAAQACAAIAAAD1/wEAAQACAAIAAAD1/wAAAQACAAEAAAD0/wIAAQACAAIAAAD0/wEAAQACAAIAAAD0/wAAAQACAAEAAADz/wIAAQACAAIAAADz/wEAAQACAAIAAADz/wAAAQACAAEAAADy/wIAAQACAAIAAADy/wEAAQAFAAEAAADy/wAAAQABAAEAAADz/wMAAQACAAIAAADy/wMAAQACAAIAAADx/wQAAQABAAMAAADx/wMAAQABAAIAAADx/wIAAQABAAIAAADx/wEAAQABAAEAAAAKAP//AQACAAIAAAAKAP7/AQACAAIAAAAKAP3/AQAFAAAAAAAKAPz/AQADAAEAAAAJAP//AQAFAAIAAAAJAP7/AQACAAIAAAAJAP3/AQACAAIAAAAJAPz/AQACAAEAAAAIAP//AQACAAMAAAAIAP7/AQACAAIAAAAIAP3/AQACAAIAAAAIAPz/AQACAAEAAAAHAP//AQABAAMAAAAHAP7/AQABAAIAAAAHAP3/AQABAAIAAAAHAPz/AQABAAEAAAALAAEAAQADAAMAAAALAAAAAQADAAIAAAALAP//AQADAAIAAAALAP7/AQADAAIAAAALAP3/AQADAAEAAAAKAAEAAQAFAAMAAAAKAAAAAQACAAIAAAAJAAEAAQABAAIAAAAJAAAAAQABAAIAAAAKAAMAAQADAAMAAAAKAAIAAQADAAIAAAAJAAMAAQABAAMAAAAJAAIAAQABAAIAAAD3/wMAAQADAAIAAAD2/wMAAQACAAIAAAD1/wMAAQACAAIAAAD0/wMAAQACAAIAAAD6/wUAAQAFAAAAAAD5/wQAAQACAAEAAAD6/wQAAQADAAEAAAD7/wUAAQADAAEAAAA=")
 
 [node name="CoralTilesPink" parent="Node/Tiles" unique_id=1083934853 instance=ExtResource("6_6njev")]
-tile_map_data = PackedByteArray()
+tile_map_data = PackedByteArray("AADs////AQACAAMAAADs//7/AQACAAEAAADs//v/AQACAAMAAADs//r/AQACAAIAAADs//n/AQACAAIAAADs//j/AQACAAIAAADs//f/AQACAAIAAADs//b/AQACAAIAAADs//X/AQACAAIAAADs//T/AQACAAIAAADr////AQACAAMAAADr//7/AQACAAEAAADr//v/AQACAAMAAADr//r/AQACAAIAAADr//n/AQACAAIAAADr//j/AQACAAIAAADr//f/AQACAAIAAADr//b/AQACAAIAAADr//X/AQACAAIAAADr//T/AQACAAIAAAD4//X/AQADAAIAAAD4//T/AQADAAIAAAD3//X/AQACAAIAAAD3//T/AQACAAIAAAD2//X/AQACAAIAAAD2//T/AQACAAIAAAD1//X/AQACAAIAAAD1//T/AQACAAIAAAD0//X/AQACAAIAAAD0//T/AQACAAIAAADz//X/AQACAAIAAADz//T/AQACAAIAAADy//X/AQACAAIAAADy//T/AQACAAIAAADx//X/AQACAAIAAADx//T/AQACAAIAAADw//X/AQACAAIAAADw//T/AQACAAIAAADv//X/AQACAAIAAADv//T/AQACAAIAAADu//X/AQACAAIAAADu//T/AQACAAIAAADt//X/AQACAAIAAADt//T/AQACAAIAAAABAAIAAQADAAMAAAABAAEAAQADAAIAAAABAAAAAQADAAEAAAAAAAIAAQACAAMAAAAAAAEAAQACAAIAAAAAAAAAAQAFAAAAAAD//wIAAQABAAMAAAD//wEAAQAFAAIAAAD//wAAAQACAAIAAAD/////AQAFAAEAAAD+/wEAAQACAAMAAAD+/wAAAQACAAIAAAD+////AQACAAEAAAD9/wEAAQABAAMAAAD9/wAAAQABAAIAAAD9////AQABAAEAAAAAAP//AQADAAIAAAAAAP7/AQADAAEAAAD///7/AQABAAEAAADy//n/AQADAAMAAADy//j/AQADAAIAAADy//f/AQADAAIAAADy//b/AQAFAAMAAADx//n/AQACAAMAAADx//j/AQACAAIAAADx//f/AQACAAIAAADx//b/AQACAAIAAADw//n/AQAFAAMAAADw//j/AQACAAIAAADw//f/AQACAAIAAADw//b/AQACAAIAAADv//n/AQACAAIAAADv//j/AQACAAIAAADv//f/AQACAAIAAADv//b/AQACAAIAAADu//n/AQACAAIAAADu//j/AQACAAIAAADu//f/AQACAAIAAADu//b/AQACAAIAAADw//v/AQADAAMAAADw//r/AQADAAIAAADv//v/AQACAAMAAADv//r/AQACAAIAAADu//v/AQAEAAAAAADu//r/AQACAAIAAADt//v/AQACAAMAAADt//r/AQACAAIAAADt//n/AQACAAIAAADt//j/AQACAAIAAADt//f/AQACAAIAAADq//v/AQABAAMAAADq//r/AQABAAIAAADq//n/AQABAAIAAADq//j/AQABAAIAAADq//f/AQABAAIAAAD3//b/AQACAAIAAAD3//P/AQACAAEAAAD2//b/AQAFAAIAAAD2//P/AQACAAEAAAD1//b/AQACAAMAAAD1//P/AQACAAEAAAD0//b/AQACAAMAAAD0//P/AQACAAEAAADz//b/AQACAAMAAADz//P/AQACAAEAAADy//P/AQAFAAAAAADx//P/AQACAAIAAADw//P/AQACAAIAAADy//L/AQADAAEAAADx//L/AQACAAEAAADw//L/AQACAAEAAADv//P/AQACAAIAAADv//L/AQACAAEAAADu//P/AQACAAIAAADu//L/AQACAAEAAADt//b/AQACAAIAAADt//P/AQACAAIAAADt//L/AQACAAEAAADs//P/AQACAAIAAADs//L/AQACAAEAAADr//P/AQACAAIAAADr//L/AQACAAEAAADq//b/AQABAAIAAADq//X/AQABAAIAAADq//T/AQABAAIAAADq//P/AQABAAIAAADq//L/AQABAAEAAAD4//f/AQADAAMAAAD4//b/AQADAAIAAAD4//P/AQADAAEAAAD3//f/AQACAAMAAAD2//f/AQABAAMAAADu//7/AQAJAAEAAADu//3/AQAAAAEAAADu//z/AQAAAAEAAADt//7/AQACAAEAAADu////AQADAAMAAADt////AQACAAMAAADq////AQABAAMAAADq//7/AQABAAEAAAA=")
 
 [node name="CoralTilesDead" parent="Node/Tiles" unique_id=449281211 instance=ExtResource("7_ji8tr")]
 tile_map_data = PackedByteArray()
@@ -84,9 +87,75 @@ texture = ExtResource("7_iupsi")
 [node name="Entities" type="Node" parent="Node" unique_id=341219396]
 
 [node name="CompleteSquare" parent="Node/Entities" unique_id=7729194 instance=ExtResource("8_0ot5m")]
-position = Vector2(56, -8)
+position = Vector2(-56, -88)
+
+[node name="Urchin" parent="Node/Entities" unique_id=23606013 instance=ExtResource("10_nfdkg")]
+position = Vector2(-120, 56)
+
+[node name="Urchin2" parent="Node/Entities" unique_id=704815842 instance=ExtResource("10_nfdkg")]
+position = Vector2(-104, 24)
+
+[node name="Urchin3" parent="Node/Entities" unique_id=835369827 instance=ExtResource("10_nfdkg")]
+position = Vector2(-88, -24)
+
+[node name="Urchin4" parent="Node/Entities" unique_id=853166187 instance=ExtResource("10_nfdkg")]
+position = Vector2(-40, -40)
+
+[node name="Urchin5" parent="Node/Entities" unique_id=28440135 instance=ExtResource("10_nfdkg")]
+position = Vector2(-152, -72)
+
+[node name="Urchin6" parent="Node/Entities" unique_id=1158447783 instance=ExtResource("10_nfdkg")]
+position = Vector2(-216, -40)
+
+[node name="Urchin7" parent="Node/Entities" unique_id=1929326116 instance=ExtResource("10_nfdkg")]
+position = Vector2(120, 72)
+
+[node name="Urchin8" parent="Node/Entities" unique_id=2137983513 instance=ExtResource("10_nfdkg")]
+position = Vector2(216, -104)
+
+[node name="Urchin9" parent="Node/Entities" unique_id=1630959967 instance=ExtResource("10_nfdkg")]
+position = Vector2(248, -88)
+
+[node name="Urchin10" parent="Node/Entities" unique_id=905400932 instance=ExtResource("10_nfdkg")]
+position = Vector2(232, -40)
 
 [node name="Decorations" type="Node" parent="Node" unique_id=1235809323]
 
 [node name="PlayerSpawn" parent="." unique_id=838411621 instance=ExtResource("9_vuyry")]
-position = Vector2(-8, -8)
+position = Vector2(88, 24)
+
+[node name="PushableBubble5" parent="." unique_id=1736594286 instance=ExtResource("12_k1r5j")]
+position = Vector2(-104, 56)
+
+[node name="PushableBubble6" parent="." unique_id=465175835 instance=ExtResource("12_k1r5j")]
+position = Vector2(-88, 56)
+
+[node name="PushableBubble7" parent="." unique_id=225236339 instance=ExtResource("12_k1r5j")]
+position = Vector2(-72, 56)
+
+[node name="PushableBubble8" parent="." unique_id=1180929649 instance=ExtResource("12_k1r5j")]
+position = Vector2(-56, 56)
+
+[node name="PushableBubble9" parent="." unique_id=1316955207 instance=ExtResource("12_k1r5j")]
+position = Vector2(-40, 56)
+
+[node name="PushableBubble10" parent="." unique_id=1337216329 instance=ExtResource("12_k1r5j")]
+position = Vector2(-24, 56)
+
+[node name="PushableBubble11" parent="." unique_id=1499667894 instance=ExtResource("12_k1r5j")]
+position = Vector2(-8, 56)
+
+[node name="PushableBubble12" parent="." unique_id=63994966 instance=ExtResource("12_k1r5j")]
+position = Vector2(8, 56)
+
+[node name="PushableBubble13" parent="." unique_id=1266891789 instance=ExtResource("12_k1r5j")]
+position = Vector2(24, 56)
+
+[node name="PushableBubble14" parent="." unique_id=58645519 instance=ExtResource("12_k1r5j")]
+position = Vector2(40, 56)
+
+[node name="Turtle" parent="." unique_id=1567539023 instance=ExtResource("13_k1r5j")]
+position = Vector2(-312, -40)
+
+[node name="Turtle2" parent="." unique_id=309268379 instance=ExtResource("13_k1r5j")]
+position = Vector2(-296, -56)

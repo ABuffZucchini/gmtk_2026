@@ -23,7 +23,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_sh265"]
-size = Vector2(13.128981, 11.210484)
+size = Vector2(10.062893, 10.062893)
 
 [node name="MainPlayer" type="CharacterBody2D" unique_id=884091595 node_paths=PackedStringArray("ray") groups=["player"]]
 process_mode = 3
@@ -41,12 +41,12 @@ sprite_frames = SubResource("SpriteFrames_cvnsp")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=606723173 groups=["player"]]
 position = Vector2(-1.1920929e-07, 1.1920929e-07)
-scale = Vector2(0.60933906, 0.7136178)
+scale = Vector2(0.795, 0.795)
 shape = SubResource("RectangleShape2D_sh265")
 debug_color = Color(0.17882031, 0.109327264, 0.057639055, 0.76862746)
 
 [node name="RayCast2D" type="RayCast2D" parent="CollisionShape2D" unique_id=1522825894]
-scale = Vector2(1.6411226, 1.4013104)
+scale = Vector2(1.395, 1.395)
 target_position = Vector2(0, 24.999996)
 
 [node name="Sounds" type="AudioStreamPlayer2D" parent="." unique_id=2046452793]

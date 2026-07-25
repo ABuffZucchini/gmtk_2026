@@ -86,7 +86,8 @@ func _physics_process(delta: float) -> void:
 
 
 func try_move(direction: Vector2):
-	if G.moves==0:
+	if G.moves==0 and not is_clone:
+		
 		if not G.out_of_moves:
 			loader.OutOfMoves()
 

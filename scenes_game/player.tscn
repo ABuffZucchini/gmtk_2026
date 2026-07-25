@@ -23,8 +23,9 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_sh265"]
+size = Vector2(13.128981, 11.210484)
 
-[node name="MainPlayer" type="CharacterBody2D" unique_id=884091595 node_paths=PackedStringArray("sounds", "ray") groups=["player"]]
+[node name="MainPlayer" type="CharacterBody2D" unique_id=884091595 node_paths=PackedStringArray("ray") groups=["player"]]
 process_mode = 3
 z_index = 11
 script = ExtResource("1_cvnsp")
@@ -32,7 +33,6 @@ directional_sounds = Array[AudioStreamOggVorbis]([ExtResource("2_jwx35"), ExtRes
 fish_sound = ExtResource("6_a710w")
 cant_move_sound = ExtResource("7_jwx35")
 out_of_moves_sound = ExtResource("8_3mik2")
-sounds = NodePath("Sounds")
 ray = NodePath("CollisionShape2D/RayCast2D")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1044389775]
@@ -40,6 +40,7 @@ z_index = 11
 sprite_frames = SubResource("SpriteFrames_cvnsp")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=606723173 groups=["player"]]
+position = Vector2(-1.1920929e-07, 1.1920929e-07)
 scale = Vector2(0.60933906, 0.7136178)
 shape = SubResource("RectangleShape2D_sh265")
 debug_color = Color(0.17882031, 0.109327264, 0.057639055, 0.76862746)

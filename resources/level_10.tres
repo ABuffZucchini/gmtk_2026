@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Level" format=3 uid="uid://cmu8ym7sj4467"]
+
+[ext_resource type="PackedScene" uid="uid://cq06hfvprvjex" path="res://scenes/levels/level_07.tscn" id="1_w1saj"]
+[ext_resource type="Script" uid="uid://ijqd43eqb2xr" path="res://scripts/level_resource.gd" id="2_tq52u"]
+
+[resource]
+script = ExtResource("2_tq52u")
+moves = 6
+level_name = "Bleached"
+level = ExtResource("1_w1saj")
+layers = Array[bool]([true, true, false, false, false, true])
+metadata/_custom_type_script = "uid://ijqd43eqb2xr"

@@ -10,8 +10,10 @@ extends Node2D
 @export var pop_sound: AudioStreamPlayer2D
 @export var ui_in_game: Node2D
 @export var start_timer: Timer
+@export var player_sounds: AudioStreamPlayer2D
+@export var fish_sounds: AudioStreamPlayer2D
 
-	
+
 func ResetLevel():
 	LoadSceneFromResource(G.level_index)
 

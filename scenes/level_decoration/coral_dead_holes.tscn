@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://c7cy0mif6bcok"]
+
+[ext_resource type="Texture2D" uid="uid://o04biftc6j3f" path="res://assets_folder/sprites/decoration/decals/dead_corals_atlas.png" id="1_a8bpb"]
+
+[node name="decal_coral_dead_holes" type="Sprite2D" unique_id=1042929158]
+z_index = 10
+texture = ExtResource("1_a8bpb")
+region_enabled = true
+region_rect = Rect2(0, 0, 16, 16)

@@ -1,0 +1,88 @@
+[gd_scene format=3 uid="uid://qsaqt07ruams"]
+
+[ext_resource type="Texture2D" uid="uid://cbuq4pdtewuop" path="res://assets_folder/sprites/objects/turtle.png" id="1_5gyqq"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0ttbb"]
+atlas = ExtResource("1_5gyqq")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_btfew"]
+atlas = ExtResource("1_5gyqq")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x8tqi"]
+atlas = ExtResource("1_5gyqq")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u4lh4"]
+atlas = ExtResource("1_5gyqq")
+region = Rect2(48, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p0kuv"]
+atlas = ExtResource("1_5gyqq")
+region = Rect2(64, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ce60m"]
+atlas = ExtResource("1_5gyqq")
+region = Rect2(80, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uqt4k"]
+atlas = ExtResource("1_5gyqq")
+region = Rect2(96, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8l02k"]
+atlas = ExtResource("1_5gyqq")
+region = Rect2(112, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b1mxl"]
+atlas = ExtResource("1_5gyqq")
+region = Rect2(128, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ogw3p"]
+atlas = ExtResource("1_5gyqq")
+region = Rect2(144, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_35ju6"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0ttbb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_btfew")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_x8tqi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u4lh4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_p0kuv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ce60m")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uqt4k")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8l02k")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_b1mxl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ogw3p")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 8.0
+}]
+
+[node name="Turtle" type="AnimatedSprite2D" unique_id=1567539023]
+z_index = 10
+sprite_frames = SubResource("SpriteFrames_35ju6")
+autoplay = "default"
+frame = 3
+frame_progress = 0.0036457689

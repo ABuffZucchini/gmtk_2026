@@ -5,9 +5,11 @@ extends CharacterBody2D
 @export var fish_sound:AudioStreamOggVorbis
 @export var cant_move_sound:AudioStreamOggVorbis
 @export var out_of_moves_sound:AudioStreamOggVorbis
-@export var sounds: AudioStreamPlayer2D
+@onready var sounds: AudioStreamPlayer2D
 @export var ray: RayCast2D
 @onready var can_play:bool=true
+
+
 
 
 const GRID_SIZE = 16
@@ -20,7 +22,12 @@ var is_moving = false
 
 func _ready() -> void:
 	target_position = position
-
+	var loader=get_tree().get_root().get_node("game")	
+	print("doing")
+	if not is_clone:
+		sounds=loader.player_sounds
+	else:
+		sounds=loader.fish_sounds
 func _physics_process(delta: float) -> void:
 	if not G.paused and not G.dead and G.started:	
 
@@ -84,14 +91,17 @@ func try_move(direction: Vector2):
 			if collider.is_in_group("urchin"):
 				if collider.try_move_box(direction):
 					if G.moves!=0:
+						PlaySound()
 						target_position = position + (direction * GRID_SIZE)
 						is_moving = true
 						if not is_clone:
 							G.moves-=1
 			
 			if collider.is_in_group("bubble"):
+				
 				if collider.try_move_waterbubble(direction):
 					if G.moves!=0:
+						PlaySound()
 						target_position = position + (direction * GRID_SIZE)
 						is_moving = true
 						if not is_clone:
@@ -101,16 +111,22 @@ func try_move(direction: Vector2):
 	
 	if not ray.is_colliding():
 		if G.moves!=0:
+			PlaySound()
 			target_position = position + (direction * GRID_SIZE)
 			is_moving = true
-
-			
 			if not is_clone:
 				G.moves-=1
-			sounds.play()
+		
+			
+		
+
 	
 	
 	$AnimatedSprite2D.look_at(global_position + direction)
+	
+func PlaySound():
+	sounds.play()
+		
 	
 
 	

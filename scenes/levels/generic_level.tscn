@@ -6,6 +6,7 @@
 [ext_resource type="Script" uid="uid://yridvtxo1s15" path="res://scripts/make_visible_on_ready.gd" id="4_4ndrs"]
 [ext_resource type="PackedScene" uid="uid://b13yyvg60vma5" path="res://scenes/tiles_green.tscn" id="5_or2g2"]
 [ext_resource type="PackedScene" uid="uid://cvu6th43hbq1y" path="res://scenes/tiles_pink.tscn" id="6_qew3u"]
+[ext_resource type="PackedScene" uid="uid://bjhv78lrygtba" path="res://scenes/tiles_dead.tscn" id="7_hthll"]
 [ext_resource type="Texture2D" uid="uid://cx5gmj7iwwdx4" path="res://assets_folder/sprites/borders.png" id="7_q7dt6"]
 [ext_resource type="PackedScene" uid="uid://c28xyd5ye5sda" path="res://scenes/level_objects/complete_square.tscn" id="8_pscgy"]
 [ext_resource type="PackedScene" uid="uid://ckfoqvgpqnqw7" path="res://scenes/level_objects/player_spawn_point.tscn" id="11_o5mu2"]
@@ -74,7 +75,10 @@ tile_map_data = PackedByteArray()
 [node name="CoralTilesPink" parent="Node/Tiles" unique_id=1083934853 instance=ExtResource("6_qew3u")]
 tile_map_data = PackedByteArray()
 
-[node name="Borders" type="Sprite2D" parent="Node/Tiles" unique_id=1330939778]
+[node name="CoralTilesDead" parent="Node/Tiles" unique_id=449281211 instance=ExtResource("7_hthll")]
+tile_map_data = PackedByteArray()
+
+[node name="Borders" type="Sprite2D" parent="Node/Tiles/CoralTilesDead" unique_id=1330939778]
 texture = ExtResource("7_q7dt6")
 
 [node name="Entities" type="Node" parent="Node" unique_id=341219396]

@@ -1,13 +1,13 @@
 [gd_scene format=3 uid="uid://dlebcef8rkaya"]
 
-[ext_resource type="Script" uid="uid://btfdelhy7w0bg" path="res://air_bubble.gd" id="1_lxhou"]
-[ext_resource type="Texture2D" uid="uid://dovyc6jdmawy0" path="res://assets_folder/sprites/objects/xirxle.png" id="2_185hw"]
+[ext_resource type="Script" uid="uid://btfdelhy7w0bg" path="res://air_bubble.gd" id="1_bk3i3"]
+[ext_resource type="Texture2D" uid="uid://d2f0yvhfngag5" path="res://assets_folder/sprites/objects/bubble/bubble.png" id="2_4hlkd"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_srvo7"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("2_185hw")
+"texture": ExtResource("2_4hlkd")
 }],
 "loop": 1,
 "name": &"default",
@@ -17,11 +17,10 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_di3n2"]
 size = Vector2(11, 11)
 
-[node name="CharacterBody2D" type="CharacterBody2D" unique_id=770287474 groups=["waterbubble"]]
-script = ExtResource("1_lxhou")
+[node name="PushableBubble" type="CharacterBody2D" unique_id=770287474 groups=["bubble"]]
+script = ExtResource("1_bk3i3")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=915578980]
-position = Vector2(7, 12)
 sprite_frames = SubResource("SpriteFrames_srvo7")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1283002665]

@@ -9,8 +9,8 @@ const NORMAL = 0
 @onready var level_name:String="Beginnings"
 @onready var paused:bool=false
 @onready var credits:bool=false
-@onready var bubbles:Array[Vector2]
-@onready var urchins:Array[Vector2]
+@onready var dead:bool=false
+@onready var started:bool=true
 
 
 

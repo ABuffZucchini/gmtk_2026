@@ -3,7 +3,7 @@ extends AudioStreamPlayer
 @onready var layer_timer: Timer = $LayerTimer
 @onready var layer_changing:bool=false
 @onready var layer_vol_hold:float=G.MUTE
-const SEEK_SPEED:float=0.95
+const SEEK_SPEED:float=0.975
 const SEEK_SPEED_BACKWARDS:float=0.9974
 
 

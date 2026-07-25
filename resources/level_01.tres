@@ -8,5 +8,5 @@ script = ExtResource("1_51tjb")
 moves = 10
 level_name = "The Bubble"
 level = ExtResource("1_dxe1b")
-layers = Array[bool]([false, true, true, false, false, true])
+layers = Array[bool]([false, false, true, false, false, true])
 metadata/_custom_type_script = "uid://ijqd43eqb2xr"

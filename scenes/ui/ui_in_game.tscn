@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://chjg06thubupt"]
 
-[ext_resource type="Script" uid="uid://yridvtxo1s15" path="res://scripts/make_visible_on_ready.gd" id="1_vqa78"]
+[ext_resource type="Script" uid="uid://dpt38jcskkxpb" path="res://scripts/ui_ingame.gd" id="1_mc3jo"]
 [ext_resource type="Texture2D" uid="uid://dco0402m7jldn" path="res://assets_folder/sprites/decoration/bg/vignette.png" id="2_28x6l"]
 [ext_resource type="Texture2D" uid="uid://dqnwt85si2mqf" path="res://assets_folder/sprites/ui/game_bar.png" id="3_ttk7k"]
 [ext_resource type="FontFile" uid="uid://db5seoh7hn4tb" path="res://assets_folder/fonts/PressStart2P.ttf" id="4_28x6l"]
@@ -123,8 +123,9 @@ animations = [{
 "speed": 12.0
 }]
 
-[node name="UI_in_game" type="Node2D" unique_id=291824594]
-script = ExtResource("1_vqa78")
+[node name="UI_in_game" type="Node2D" unique_id=291824594 node_paths=PackedStringArray("moves_count")]
+script = ExtResource("1_mc3jo")
+moves_count = NodePath("MovesCount")
 
 [node name="Vignette" type="Sprite2D" parent="." unique_id=158108753]
 z_index = 1000
@@ -145,13 +146,14 @@ text = "Moves:"
 
 [node name="LevelText" type="Label" parent="." unique_id=1028673487]
 z_index = 111
-offset_left = -64.0
+offset_left = -312.0
 offset_top = -168.0
-offset_right = 64.0
+offset_right = 312.0
 offset_bottom = -152.0
 theme_override_fonts/font = ExtResource("4_28x6l")
 text = "name"
 horizontal_alignment = 1
+vertical_alignment = 1
 script = ExtResource("5_p82k1")
 
 [node name="MovesCount" type="Label" parent="." unique_id=790571643]
@@ -161,7 +163,7 @@ offset_top = 152.0
 offset_right = -56.0
 offset_bottom = 168.0
 theme_override_fonts/font = ExtResource("4_28x6l")
-text = "#"
+text = "10"
 script = ExtResource("5_jkcdj")
 
 [node name="LevelIndexText" type="Label" parent="." unique_id=1554654979]

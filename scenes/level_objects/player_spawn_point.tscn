@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://ckfoqvgpqnqw7"]
+
+[ext_resource type="Texture2D" uid="uid://ckis01mskg86s" path="res://assets_folder/sprites/objects/player_spawn.png" id="1_7yaxo"]
+[ext_resource type="PackedScene" uid="uid://cnt7cah78t0v5" path="res://scenes_game/player.tscn" id="2_hoxjy"]
+
+[node name="PlayerSpawn" type="Sprite2D" unique_id=838411621]
+texture = ExtResource("1_7yaxo")
+
+[node name="MainPlayer" parent="." unique_id=884091595 instance=ExtResource("2_hoxjy")]

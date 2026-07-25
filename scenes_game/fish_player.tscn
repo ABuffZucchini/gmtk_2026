@@ -73,6 +73,8 @@ animations = [{
 
 [node name="FishClone" type="CharacterBody2D" unique_id=884091595 node_paths=PackedStringArray("sounds", "ray")]
 z_index = 2
+collision_layer = 3
+collision_mask = 3
 script = ExtResource("1_pn1sw")
 is_clone = true
 directional_sounds = Array[AudioStreamOggVorbis]([ExtResource("2_aj8qr"), ExtResource("3_8ah0a"), ExtResource("4_tlyiw"), ExtResource("5_d2r8o")])
@@ -94,6 +96,7 @@ debug_color = Color(0.17882031, 0.109327264, 0.057639055, 0.76862746)
 [node name="RayCast2D" type="RayCast2D" parent="CollisionShape2D" unique_id=1522825894]
 scale = Vector2(1.6411226, 1.4013104)
 target_position = Vector2(0, 24.999996)
+collision_mask = 3
 
 [node name="Sounds" type="AudioStreamPlayer2D" parent="." unique_id=2046452793]
 process_mode = 3

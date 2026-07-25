@@ -1,68 +1,21 @@
 [gd_scene format=3 uid="uid://cnt7cah78t0v5"]
 
 [ext_resource type="Script" uid="uid://kx72k8epid1u" path="res://scripts/player.gd" id="1_cvnsp"]
-[ext_resource type="Texture2D" uid="uid://wtxjgfmyvy6c" path="res://assets_folder/sprites/objects/fish/untitled_0001.png" id="2_7dp3o"]
 [ext_resource type="AudioStream" uid="uid://bg33wxofvpa8m" path="res://assets_folder/audio/sound/dir/up.ogg" id="2_jwx35"]
 [ext_resource type="AudioStream" uid="uid://rs3t3temcist" path="res://assets_folder/audio/sound/dir/right.ogg" id="3_5875d"]
-[ext_resource type="Texture2D" uid="uid://buyksla2tgunn" path="res://assets_folder/sprites/objects/fish/untitled_0002.png" id="3_h4iuc"]
-[ext_resource type="Texture2D" uid="uid://on6he1ixrmqq" path="res://assets_folder/sprites/objects/fish/untitled_0003.png" id="4_fd4e3"]
 [ext_resource type="AudioStream" uid="uid://c5btpxkdqndrr" path="res://assets_folder/audio/sound/dir/down.ogg" id="4_pvbkg"]
 [ext_resource type="AudioStream" uid="uid://bombrfwybel7b" path="res://assets_folder/audio/sound/dir/left.ogg" id="5_ejfrc"]
-[ext_resource type="Texture2D" uid="uid://wa2dox8ub8qs" path="res://assets_folder/sprites/objects/fish/untitled_0004.png" id="5_qqcod"]
 [ext_resource type="AudioStream" uid="uid://f2rcwbnrk38s" path="res://assets_folder/audio/sound/fish_move.ogg" id="6_a710w"]
-[ext_resource type="Texture2D" uid="uid://bftg6ayejhvau" path="res://assets_folder/sprites/objects/fish/untitled_0005.png" id="6_igrcy"]
-[ext_resource type="Texture2D" uid="uid://btduemq1d0dep" path="res://assets_folder/sprites/objects/fish/untitled_0006.png" id="7_fs7ks"]
-[ext_resource type="AudioStream" uid="uid://gnxlq6vycoya" path="res://assets_folder/audio/sound/cannot_move.ogg" id="7_t20k5"]
+[ext_resource type="AudioStream" uid="uid://gnxlq6vycoya" path="res://assets_folder/audio/sound/cannot_move.ogg" id="7_jwx35"]
 [ext_resource type="AudioStream" uid="uid://d1rhinjnocqo0" path="res://assets_folder/audio/sound/out_of_moves.ogg" id="8_3mik2"]
-[ext_resource type="Texture2D" uid="uid://dmrve4m61dw46" path="res://assets_folder/sprites/objects/fish/untitled_0007.png" id="8_l6n3p"]
-[ext_resource type="Texture2D" uid="uid://brky4v8tmaf8c" path="res://assets_folder/sprites/objects/fish/untitled_0008.png" id="9_olqyp"]
-[ext_resource type="Texture2D" uid="uid://dmidxfwus130f" path="res://assets_folder/sprites/objects/fish/untitled_0009.png" id="10_wpjfl"]
-[ext_resource type="Texture2D" uid="uid://b4imt0hunpyki" path="res://assets_folder/sprites/objects/fish/untitled_0010.png" id="11_bi64h"]
-[ext_resource type="Texture2D" uid="uid://cv5l0hg0bdggl" path="res://assets_folder/sprites/objects/fish/untitled_0011.png" id="12_2ijsl"]
-[ext_resource type="Texture2D" uid="uid://bkn2rfvky3i1a" path="res://assets_folder/sprites/objects/fish/untitled_0012.png" id="13_p1odr"]
-[ext_resource type="Texture2D" uid="uid://bcxbb528y7xj8" path="res://assets_folder/sprites/objects/fish/untitled_0013.png" id="14_0gysh"]
+[ext_resource type="Texture2D" uid="uid://cxmy8251owr7b" path="res://assets_folder/sprites/objects/player/player00.png" id="9_4tyjw"]
+[ext_resource type="PackedScene" uid="uid://ck4gnekao5gdq" path="res://scenes/particles/bubbles.tscn" id="10_6oy6y"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_cvnsp"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("2_7dp3o")
-}, {
-"duration": 1.0,
-"texture": ExtResource("3_h4iuc")
-}, {
-"duration": 1.0,
-"texture": ExtResource("4_fd4e3")
-}, {
-"duration": 1.0,
-"texture": ExtResource("5_qqcod")
-}, {
-"duration": 1.0,
-"texture": ExtResource("6_igrcy")
-}, {
-"duration": 1.0,
-"texture": ExtResource("7_fs7ks")
-}, {
-"duration": 1.0,
-"texture": ExtResource("8_l6n3p")
-}, {
-"duration": 1.0,
-"texture": ExtResource("9_olqyp")
-}, {
-"duration": 1.0,
-"texture": ExtResource("10_wpjfl")
-}, {
-"duration": 1.0,
-"texture": ExtResource("11_bi64h")
-}, {
-"duration": 1.0,
-"texture": ExtResource("12_2ijsl")
-}, {
-"duration": 1.0,
-"texture": ExtResource("13_p1odr")
-}, {
-"duration": 1.0,
-"texture": ExtResource("14_0gysh")
+"texture": ExtResource("9_4tyjw")
 }],
 "loop": 1,
 "name": &"default",
@@ -71,20 +24,22 @@ animations = [{
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_sh265"]
 
-[node name="MainPlayer" type="CharacterBody2D" unique_id=884091595 node_paths=PackedStringArray("sounds", "ray")]
-z_index = 2
+[node name="MainPlayer" type="CharacterBody2D" unique_id=884091595 node_paths=PackedStringArray("sounds", "ray") groups=["player"]]
+process_mode = 3
+z_index = 11
 script = ExtResource("1_cvnsp")
 directional_sounds = Array[AudioStreamOggVorbis]([ExtResource("2_jwx35"), ExtResource("3_5875d"), ExtResource("4_pvbkg"), ExtResource("5_ejfrc")])
 fish_sound = ExtResource("6_a710w")
-cant_move_sound = ExtResource("7_t20k5")
+cant_move_sound = ExtResource("7_jwx35")
 out_of_moves_sound = ExtResource("8_3mik2")
 sounds = NodePath("Sounds")
 ray = NodePath("CollisionShape2D/RayCast2D")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1044389775]
+z_index = 11
 sprite_frames = SubResource("SpriteFrames_cvnsp")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=606723173]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=606723173 groups=["player"]]
 scale = Vector2(0.60933906, 0.7136178)
 shape = SubResource("RectangleShape2D_sh265")
 debug_color = Color(0.17882031, 0.109327264, 0.057639055, 0.76862746)
@@ -97,3 +52,6 @@ target_position = Vector2(0, 24.999996)
 process_mode = 3
 max_polyphony = 2
 bus = &"SFX"
+
+[node name="BubbleParticles" parent="." unique_id=2008761849 instance=ExtResource("10_6oy6y")]
+z_index = 12

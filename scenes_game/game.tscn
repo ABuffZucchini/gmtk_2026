@@ -5,10 +5,18 @@
 [ext_resource type="Script" uid="uid://ijqd43eqb2xr" path="res://scripts/level_resource.gd" id="2_3dryh"]
 [ext_resource type="Resource" uid="uid://cmbfr17ru3ue1" path="res://resources/level_00.tres" id="3_i6g32"]
 [ext_resource type="Resource" uid="uid://iedyu6ar6kgr" path="res://resources/level_01.tres" id="3_wowpa"]
+[ext_resource type="Resource" uid="uid://cm83tb1ptww6y" path="res://resources/level_02.tres" id="5_6omba"]
 [ext_resource type="PackedScene" uid="uid://chjg06thubupt" path="res://scenes/ui/ui_in_game.tscn" id="5_wowpa"]
+[ext_resource type="Resource" uid="uid://f88l3ew7mloy" path="res://resources/level_03.tres" id="6_5pp3u"]
 [ext_resource type="PackedScene" uid="uid://dukb0tj821fkq" path="res://scenes/levels/level_00.tscn" id="7_1l0tm"]
+[ext_resource type="Resource" uid="uid://7arman3kmm87" path="res://resources/level_04.tres" id="7_meg4t"]
 [ext_resource type="PackedScene" uid="uid://cukq8qu6gf6y6" path="res://scenes_game/pause_ui.tscn" id="8_qxket"]
+[ext_resource type="Resource" uid="uid://crgkonubgbv5g" path="res://resources/level_05.tres" id="8_sgqkm"]
+[ext_resource type="Resource" uid="uid://dlmqymm6sp1xf" path="res://resources/level_06.tres" id="9_05h0w"]
 [ext_resource type="AudioStream" uid="uid://cdn20w8mbtq7m" path="res://assets_folder/audio/sound/level_complete.ogg" id="9_34vk4"]
+[ext_resource type="AudioStream" uid="uid://tfulp3mj5r1k" path="res://assets_folder/audio/sound/urchin_prick.ogg" id="10_a1fp5"]
+[ext_resource type="PackedScene" uid="uid://w38xmj2xxbgk" path="res://scenes/particles/generic_particles.tscn" id="11_6gdpk"]
+[ext_resource type="AudioStream" uid="uid://ilv8wche6ogg" path="res://assets_folder/audio/sound/bubble_pop.ogg" id="12_byugn"]
 
 [sub_resource type="Environment" id="Environment_35ju6"]
 background_mode = 3
@@ -20,17 +28,21 @@ glow_blend_mode = 0
 adjustment_brightness = 0.92
 adjustment_contrast = 1.08
 
-[node name="game" type="Node2D" unique_id=923579984 node_paths=PackedStringArray("ui", "level_sounds")]
+[node name="game" type="Node2D" unique_id=923579984 node_paths=PackedStringArray("ui", "level_sounds", "level_urchin_sounds", "death_timer", "death_rect", "pop_sound", "ui_in_game", "start_timer")]
 script = ExtResource("1_qxrlw")
-level_set = Array[ExtResource("2_3dryh")]([ExtResource("3_i6g32"), ExtResource("3_wowpa")])
+level_set = Array[ExtResource("2_3dryh")]([ExtResource("3_i6g32"), ExtResource("3_wowpa"), ExtResource("5_6omba"), ExtResource("6_5pp3u"), ExtResource("7_meg4t"), ExtResource("8_sgqkm"), ExtResource("9_05h0w")])
 ui = NodePath("UI")
 level_sounds = NodePath("LevelWinSound")
+level_urchin_sounds = NodePath("LevelUrchinSound")
+death_timer = NodePath("DeathTimer")
+death_rect = NodePath("DeathRect")
+pop_sound = NodePath("PopSound")
+ui_in_game = NodePath("UI_in_game")
+start_timer = NodePath("StartTimer")
 
 [node name="MusicPlayer" parent="." unique_id=441910514 instance=ExtResource("1_ebmjs")]
 
 [node name="Camera" type="Camera2D" parent="." unique_id=1452844561]
-
-[node name="UI_in_game" parent="." unique_id=291824594 instance=ExtResource("5_wowpa")]
 
 [node name="level00" parent="." unique_id=528149217 instance=ExtResource("7_1l0tm")]
 
@@ -47,3 +59,36 @@ offset_bottom = 216.0
 stream = ExtResource("9_34vk4")
 max_polyphony = 2
 bus = &"SFX"
+
+[node name="LevelUrchinSound" type="AudioStreamPlayer2D" parent="." unique_id=473924434]
+stream = ExtResource("10_a1fp5")
+max_polyphony = 2
+bus = &"SFX"
+
+[node name="DeathTimer" type="Timer" parent="." unique_id=1291976061]
+wait_time = 0.4
+one_shot = true
+
+[node name="GenericParticles" parent="." unique_id=1587524907 instance=ExtResource("11_6gdpk")]
+
+[node name="DeathRect" type="ColorRect" parent="." unique_id=1596021024]
+visible = false
+z_index = 29
+offset_left = -320.0
+offset_top = -184.0
+offset_right = 320.0
+offset_bottom = 184.0
+color = Color(0.2833441, 2.8734059e-05, 0.25906268, 0.5294118)
+
+[node name="PopSound" type="AudioStreamPlayer2D" parent="." unique_id=1668428961]
+process_mode = 3
+stream = ExtResource("12_byugn")
+bus = &"SFX"
+
+[node name="StartTimer" type="Timer" parent="." unique_id=943917568]
+wait_time = 0.2
+
+[node name="UI_in_game" parent="." unique_id=291824594 instance=ExtResource("5_wowpa")]
+
+[connection signal="timeout" from="DeathTimer" to="." method="_on_death_timer_timeout"]
+[connection signal="timeout" from="StartTimer" to="." method="_on_start_timer_timeout"]

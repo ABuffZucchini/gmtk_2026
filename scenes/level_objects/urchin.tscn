@@ -1,0 +1,46 @@
+[gd_scene format=3 uid="uid://cdjj3mj2iatuo"]
+
+[ext_resource type="Script" uid="uid://d3ukcypi8afmj" path="res://urchin.gd" id="1_ua7ah"]
+[ext_resource type="Texture2D" uid="uid://brgqf30xs00yo" path="res://assets_folder/sprites/objects/urchin.png" id="2_cer7n"]
+[ext_resource type="Script" uid="uid://cxdrylmdyqdx4" path="res://scripts/killbox.gd" id="3_cer7n"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_tc2o2"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_cer7n")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ompvl"]
+size = Vector2(12, 12)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_35ju6"]
+size = Vector2(6, 6)
+
+[node name="Urchin" type="CharacterBody2D" unique_id=23606013 groups=["urchin"]]
+collision_layer = 2
+collision_mask = 2
+script = ExtResource("1_ua7ah")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1732108714]
+sprite_frames = SubResource("SpriteFrames_tc2o2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1983224970 groups=["urchin"]]
+shape = SubResource("RectangleShape2D_ompvl")
+
+[node name="RayCast2D" type="RayCast2D" parent="CollisionShape2D" unique_id=36732324]
+target_position = Vector2(0, 16)
+collision_mask = 2
+
+[node name="Killbox" type="Area2D" parent="." unique_id=915874639]
+script = ExtResource("3_cer7n")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killbox" unique_id=1061217797]
+shape = SubResource("RectangleShape2D_35ju6")
+debug_color = Color(0.69901377, 2.8878452e-07, 0.34954116, 0.41960785)
+
+[connection signal="body_entered" from="Killbox" to="Killbox" method="_on_body_entered"]

@@ -32,6 +32,12 @@ window/stretch/mode="viewport"
 window/stretch/aspect="expand"
 window/stretch/scale_mode="integer"
 
+[global_group]
+
+player=""
+bubble=""
+urchin=""
+
 [input]
 
 debugmusic={

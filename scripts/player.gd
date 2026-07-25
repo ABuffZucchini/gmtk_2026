@@ -96,6 +96,7 @@ func try_move(direction: Vector2):
 	ray.target_position = direction * GRID_SIZE
 	ray.force_raycast_update()
 
+
 	if ray.is_colliding():
 	
 		var collider = ray.get_collider()

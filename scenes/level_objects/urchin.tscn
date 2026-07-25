@@ -30,6 +30,7 @@ script = ExtResource("1_ua7ah")
 sprite_frames = SubResource("SpriteFrames_tc2o2")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1983224970 groups=["urchin"]]
+visible = false
 shape = SubResource("RectangleShape2D_ompvl")
 
 [node name="RayCast2D" type="RayCast2D" parent="CollisionShape2D" unique_id=36732324]
@@ -41,6 +42,7 @@ script = ExtResource("3_cer7n")
 timer = NodePath("Timer")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Killbox" unique_id=1061217797]
+visible = false
 shape = SubResource("RectangleShape2D_35ju6")
 debug_color = Color(0.69901377, 2.8878452e-07, 0.34954116, 0.41960785)
 

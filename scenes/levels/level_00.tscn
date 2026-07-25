@@ -12,7 +12,6 @@
 [ext_resource type="PackedScene" uid="uid://ckfoqvgpqnqw7" path="res://scenes/level_objects/player_spawn_point.tscn" id="11_fsoq6"]
 [ext_resource type="Texture2D" uid="uid://cx5gmj7iwwdx4" path="res://assets_folder/sprites/borders.png" id="12_gfjph"]
 [ext_resource type="PackedScene" uid="uid://c28xyd5ye5sda" path="res://scenes/level_objects/complete_square.tscn" id="12_okio2"]
-[ext_resource type="PackedScene" uid="uid://c1m4qoly8rtu7" path="res://scenes/level_objects/fish_spawn_point.tscn" id="13_7smhd"]
 [ext_resource type="PackedScene" uid="uid://cdjj3mj2iatuo" path="res://scenes/level_objects/urchin.tscn" id="14_lq0d2"]
 [ext_resource type="PackedScene" uid="uid://dlebcef8rkaya" path="res://scenes/level_objects/pushable_bubble.tscn" id="15_7ehfh"]
 
@@ -93,6 +92,13 @@ position = Vector2(-56, 56)
 [node name="decal_coral_teal_holes" parent="." unique_id=1170172405 instance=ExtResource("10_gfjph")]
 position = Vector2(-24, 40)
 
+[node name="decal_coral_teal_holes2" parent="." unique_id=1764717801 instance=ExtResource("10_gfjph")]
+position = Vector2(184, -104)
+flip_h = true
+
+[node name="decal_coral_teal_holes3" parent="." unique_id=446057810 instance=ExtResource("10_gfjph")]
+position = Vector2(200, -72)
+
 [node name="decal_coral_teal_stalk" parent="." unique_id=1438125611 instance=ExtResource("11_7smhd")]
 position = Vector2(-72, -8)
 
@@ -106,11 +112,11 @@ texture = ExtResource("12_gfjph")
 [node name="PlayerSpawn" parent="." unique_id=1025526845 instance=ExtResource("11_fsoq6")]
 position = Vector2(-88, 40)
 
-[node name="FishSpawn" parent="." unique_id=838411621 instance=ExtResource("13_7smhd")]
-position = Vector2(-72, 24)
+[node name="PushableBubble" parent="." unique_id=770287474 instance=ExtResource("15_7ehfh")]
+position = Vector2(-72, 56)
+
+[node name="PushableBubble2" parent="." unique_id=1840697770 instance=ExtResource("15_7ehfh")]
+position = Vector2(-88, 56)
 
 [node name="Urchin" parent="." unique_id=23606013 instance=ExtResource("14_lq0d2")]
-position = Vector2(-8, 40)
-
-[node name="PushableBubble" parent="." unique_id=770287474 instance=ExtResource("15_7ehfh")]
-position = Vector2(-40, 40)
+position = Vector2(-104, 56)

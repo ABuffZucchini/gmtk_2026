@@ -6,7 +6,7 @@
 [resource]
 script = ExtResource("2_d8aca")
 moves = 15
-level_name = "Lung Chasm"
+level_name = "Long Chasm"
 level = ExtResource("1_12pl0")
 layers = Array[bool]([false, true, true, false, false, true])
 metadata/_custom_type_script = "uid://ijqd43eqb2xr"

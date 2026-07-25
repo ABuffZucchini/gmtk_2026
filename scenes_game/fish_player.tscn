@@ -23,7 +23,7 @@
 [ext_resource type="Texture2D" uid="uid://bcxbb528y7xj8" path="res://assets_folder/sprites/objects/fish/untitled_0013.png" id="21_eouai"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_sh265"]
-size = Vector2(12.578616, 12.578616)
+size = Vector2(10.062893, 12.578616)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_cvnsp"]
 animations = [{

@@ -11,8 +11,8 @@ func try_move_box(direction: Vector2):
 	if ray.is_colliding():
 		var collider = ray.get_collider()
 		
-		#if collider != null and collider.has_method("try_move_box") and  collider.try_move_box(direction):
-			#position += direction * gridSize
+		if collider != null and collider.has_method("try_move_box") and  collider.try_move_box(direction):
+			position += direction * gridSize
 		
 		if collider != null and collider.has_method("try_move_waterbubble") and  collider.try_move_waterbubble(direction):
 			position += direction * gridSize

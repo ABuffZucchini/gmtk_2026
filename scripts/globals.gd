@@ -28,8 +28,6 @@ func _input(_event):
 	if Input.is_action_just_pressed("debugmusic"):
 		MusicLayerChange(1,true)
 		MusicLayerChange(2,true)
-	if Input.is_action_just_pressed("refill_bubble"):	
-		moves=max_moves	
 
 	
 	

@@ -5,7 +5,7 @@
 
 [resource]
 script = ExtResource("2_mwort")
-moves = 8
+moves = 10
 level_name = "Damselfish"
 level = ExtResource("1_xcbev")
 layers = Array[bool]([false, false, false, false, true, true])

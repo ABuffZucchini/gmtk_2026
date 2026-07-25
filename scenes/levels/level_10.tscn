@@ -66,6 +66,9 @@ sources/1 = SubResource("TileSetAtlasSource_evi0p")
 script = ExtResource("1_7e7ni")
 level_name = "level_1"
 
+[node name="FishSpawn" parent="." unique_id=350573225 instance=ExtResource("12_r3n8r")]
+position = Vector2(-184, -88)
+
 [node name="Node" type="Node" parent="." unique_id=356596373]
 
 [node name="Tiles" type="Node" parent="Node" unique_id=1043418106]
@@ -99,9 +102,6 @@ texture = ExtResource("7_ko8rk")
 position = Vector2(184, 56)
 
 [node name="Decorations" type="Node" parent="Node" unique_id=1235809323]
-
-[node name="FishSpawn" parent="." unique_id=1472618728 instance=ExtResource("12_r3n8r")]
-position = Vector2(-184, -88)
 
 [node name="Urchin" parent="." unique_id=23606013 instance=ExtResource("13_ko8rk")]
 position = Vector2(-56, -152)
@@ -160,17 +160,14 @@ position = Vector2(-136, -88)
 [node name="PushableBubble2" parent="." unique_id=827697741 instance=ExtResource("14_r3n8r")]
 position = Vector2(-72, -72)
 
-[node name="PushableBubble3" parent="." unique_id=1781299312 instance=ExtResource("14_r3n8r")]
-position = Vector2(40, -88)
+[node name="PushableBubble6" parent="." unique_id=1714995636 instance=ExtResource("14_r3n8r")]
+position = Vector2(-8, -40)
 
-[node name="PushableBubble4" parent="." unique_id=1624017772 instance=ExtResource("14_r3n8r")]
-position = Vector2(-8, -56)
+[node name="PushableBubble7" parent="." unique_id=724950774 instance=ExtResource("14_r3n8r")]
+position = Vector2(120, 72)
 
 [node name="PushableBubble5" parent="." unique_id=727069987 instance=ExtResource("14_r3n8r")]
 position = Vector2(-8, -104)
-
-[node name="PlayerSpawn" parent="." unique_id=838411621 instance=ExtResource("9_n3gcc")]
-position = Vector2(-104, 56)
 
 [node name="decal_seaweed" parent="." unique_id=1042929158 instance=ExtResource("15_ilo0b")]
 position = Vector2(-248, -72)
@@ -217,3 +214,6 @@ position = Vector2(24, 88)
 
 [node name="decal_coral_dead_holes" parent="." unique_id=209315048 instance=ExtResource("19_ctyhw")]
 position = Vector2(152, -40)
+
+[node name="PlayerSpawn" parent="." unique_id=838411621 instance=ExtResource("9_n3gcc")]
+position = Vector2(-104, 56)

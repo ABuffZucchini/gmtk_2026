@@ -9,13 +9,15 @@ extends CharacterBody2D
 @export var ray: RayCast2D
 @onready var can_play:bool=true
 @onready var loader
+@export var timer: Timer
+@onready var can_move:bool=true
 
 
 
 
 
 const GRID_SIZE = 16
-const MOVE_SPEED = 16
+const MOVE_SPEED = 26
 
 
 
@@ -39,7 +41,7 @@ func _physics_process(delta: float) -> void:
 			position = position.lerp(target_position, MOVE_SPEED * delta)
 			
 			if position.distance_to(target_position) < 0.5 or (Input.is_action_just_pressed("right") or Input.is_action_just_pressed("left") or Input.is_action_just_pressed("up") or Input.is_action_just_pressed("down")):
-					
+				
 				position = target_position
 				is_moving = false
 					
@@ -69,7 +71,7 @@ func _physics_process(delta: float) -> void:
 				sounds.stream=directional_sounds[2]
 
 
-		if move_dir != Vector2.ZERO:
+		if move_dir != Vector2.ZERO and can_move:
 			if is_clone:
 				sounds.stream=fish_sound
 				sounds.pitch_scale=randf_range(0.8,1.2)
@@ -101,6 +103,8 @@ func try_move(direction: Vector2):
 		if collider!=null and G.moves!=0:
 			if collider.is_in_group("urchin"):
 				if collider.try_move_box(direction):
+					timer.start()
+					can_move=false
 					if G.moves!=0:
 						PlaySound()
 						target_position = position + (direction * GRID_SIZE)
@@ -109,8 +113,9 @@ func try_move(direction: Vector2):
 							G.moves-=1
 			
 			if collider.is_in_group("bubble"):
-				
 				if collider.try_move_waterbubble(direction):
+					timer.start()
+					can_move=false
 					if G.moves!=0:
 						PlaySound()
 						target_position = position + (direction * GRID_SIZE)
@@ -123,6 +128,8 @@ func try_move(direction: Vector2):
 	if not ray.is_colliding():
 	
 		if G.moves!=0:
+			timer.start()
+			can_move=false
 			PlaySound()
 			target_position = position + (direction * GRID_SIZE)
 			is_moving = true
@@ -142,10 +149,8 @@ func PlaySound():
 		
 	
 
-	
-	
-	
-	
-	
-	
-		
+
+
+func _on_timer_timeout() -> void:
+	can_move=true
+	pass # Replace with function body.

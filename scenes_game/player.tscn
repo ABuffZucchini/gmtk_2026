@@ -23,36 +23,41 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_sh265"]
-size = Vector2(10.062893, 10.062893)
+size = Vector2(12.578616, 12.578616)
 
-[node name="MainPlayer" type="CharacterBody2D" unique_id=884091595 node_paths=PackedStringArray("ray") groups=["player"]]
+[node name="MainPlayer" type="CharacterBody2D" unique_id=884091595 node_paths=PackedStringArray("ray", "timer") groups=["player"]]
 process_mode = 3
 z_index = 11
+collision_layer = 5
+collision_mask = 5
 script = ExtResource("1_cvnsp")
 directional_sounds = Array[AudioStreamOggVorbis]([ExtResource("2_jwx35"), ExtResource("3_5875d"), ExtResource("4_pvbkg"), ExtResource("5_ejfrc")])
 fish_sound = ExtResource("6_a710w")
 cant_move_sound = ExtResource("7_jwx35")
 out_of_moves_sound = ExtResource("8_3mik2")
 ray = NodePath("CollisionShape2D/RayCast2D")
+timer = NodePath("Timer")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1044389775]
 z_index = 11
 sprite_frames = SubResource("SpriteFrames_cvnsp")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=606723173 groups=["player"]]
-position = Vector2(-1.1920929e-07, 1.1920929e-07)
+position = Vector2(5.9604645e-08, -5.9604645e-08)
 scale = Vector2(0.795, 0.795)
 shape = SubResource("RectangleShape2D_sh265")
 debug_color = Color(0.17882031, 0.109327264, 0.057639055, 0.76862746)
 
 [node name="RayCast2D" type="RayCast2D" parent="CollisionShape2D" unique_id=1522825894]
-scale = Vector2(1.395, 1.395)
+scale = Vector2(1.525, 1.525)
 target_position = Vector2(0, 24.999996)
-
-[node name="Sounds" type="AudioStreamPlayer2D" parent="." unique_id=2046452793]
-process_mode = 3
-max_polyphony = 2
-bus = &"SFX"
+collision_mask = 5
 
 [node name="BubbleParticles" parent="." unique_id=2008761849 instance=ExtResource("10_6oy6y")]
 z_index = 12
+
+[node name="Timer" type="Timer" parent="." unique_id=129537424]
+wait_time = 0.171
+one_shot = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

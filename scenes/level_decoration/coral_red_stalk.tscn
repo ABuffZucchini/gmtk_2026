@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://8utka7s2ach6"]
+
+[ext_resource type="Texture2D" uid="uid://dy1lsy3mfbw7s" path="res://assets_folder/sprites/decoration/decals/red_corals_atlas.png" id="1_j2i6t"]
+
+[node name="decal_coral_red_stalk" type="Sprite2D" unique_id=1042929158]
+z_index = 10
+texture = ExtResource("1_j2i6t")
+region_enabled = true
+region_rect = Rect2(16, 0, 16, 16)

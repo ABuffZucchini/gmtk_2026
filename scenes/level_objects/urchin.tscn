@@ -36,11 +36,17 @@ shape = SubResource("RectangleShape2D_ompvl")
 target_position = Vector2(0, 16)
 collision_mask = 2
 
-[node name="Killbox" type="Area2D" parent="." unique_id=915874639]
+[node name="Killbox" type="Area2D" parent="." unique_id=915874639 node_paths=PackedStringArray("timer")]
 script = ExtResource("3_cer7n")
+timer = NodePath("Timer")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Killbox" unique_id=1061217797]
 shape = SubResource("RectangleShape2D_35ju6")
 debug_color = Color(0.69901377, 2.8878452e-07, 0.34954116, 0.41960785)
 
+[node name="Timer" type="Timer" parent="Killbox" unique_id=938777135]
+wait_time = 0.064
+one_shot = true
+
 [connection signal="body_entered" from="Killbox" to="Killbox" method="_on_body_entered"]
+[connection signal="timeout" from="Killbox/Timer" to="Killbox" method="_on_timer_timeout"]

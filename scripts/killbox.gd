@@ -1,4 +1,5 @@
 extends Area2D
+@export var timer: Timer
 
 func _on_body_entered(body: Node2D) -> void:
 
@@ -12,5 +13,10 @@ func _on_body_entered(body: Node2D) -> void:
 		var loader=get_tree().get_root().get_node("game")
 		loader.pop_sound.play()
 		body.queue_free()
-		G.moves=G.max_moves
+		timer.start()
 	pass
+
+
+func _on_timer_timeout() -> void:
+	G.moves=G.max_moves
+	

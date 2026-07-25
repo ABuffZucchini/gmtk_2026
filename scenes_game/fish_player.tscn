@@ -72,10 +72,10 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_sh265"]
 size = Vector2(10.062893, 10.062893)
 
-[node name="FishClone" type="CharacterBody2D" unique_id=884091595 node_paths=PackedStringArray("ray")]
+[node name="FishClone" type="CharacterBody2D" unique_id=884091595 node_paths=PackedStringArray("ray", "timer")]
 z_index = 2
-collision_layer = 3
-collision_mask = 3
+collision_layer = 7
+collision_mask = 7
 script = ExtResource("1_pn1sw")
 is_clone = true
 directional_sounds = Array[AudioStreamOggVorbis]([ExtResource("2_aj8qr"), ExtResource("3_8ah0a"), ExtResource("4_tlyiw"), ExtResource("5_d2r8o")])
@@ -83,6 +83,7 @@ fish_sound = ExtResource("6_cwpbs")
 cant_move_sound = ExtResource("7_1ecjf")
 out_of_moves_sound = ExtResource("8_ltatt")
 ray = NodePath("CollisionShape2D/RayCast2D")
+timer = NodePath("Timer")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1044389775]
 z_index = 13
@@ -99,7 +100,6 @@ scale = Vector2(1.395, 1.395)
 target_position = Vector2(0, 24.999996)
 collision_mask = 3
 
-[node name="Sounds" type="AudioStreamPlayer2D" parent="." unique_id=2046452793]
-process_mode = 3
-max_polyphony = 2
-bus = &"SFX"
+[node name="Timer" type="Timer" parent="." unique_id=964382569]
+wait_time = 0.171
+one_shot = true

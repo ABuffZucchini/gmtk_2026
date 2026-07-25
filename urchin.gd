@@ -1,7 +1,6 @@
 extends CharacterBody2D
 
 const gridSize = 16
-
 @onready var ray: RayCast2D = $CollisionShape2D/RayCast2D
 
 
@@ -14,11 +13,12 @@ func try_move_box(direction: Vector2):
 		
 		if collider != null and collider.has_method("try_move_box") and  collider.try_move_box(direction):
 			position += direction * gridSize
+		
+		if collider != null and collider.has_method("try_move_waterbubble") and  collider.try_move_waterbubble(direction):
+			#position += direction * gridSize
+			G.moves += 1
 			
-		if collider != null and collider.is_in_group("waterbubble") and collider.has_method("try_move_bubble") and  collider.try_move_bubble(direction):
-			position += direction * gridSize
-			
-		#return true
+		return false
 		
 	position+=direction*gridSize
 	return true

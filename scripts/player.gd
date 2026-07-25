@@ -8,6 +8,8 @@ extends CharacterBody2D
 @onready var sounds: AudioStreamPlayer2D
 @export var ray: RayCast2D
 @onready var can_play:bool=true
+@onready var loader
+
 
 
 
@@ -22,13 +24,14 @@ var is_moving = false
 
 func _ready() -> void:
 	target_position = position
-	var loader=get_tree().get_root().get_node("game")	
-	print("doing")
+	loader=get_tree().get_root().get_node("game")	
 	if not is_clone:
 		sounds=loader.player_sounds
 	else:
 		sounds=loader.fish_sounds
+
 func _physics_process(delta: float) -> void:
+
 	if not G.paused and not G.dead and G.started:	
 
 		
@@ -72,13 +75,21 @@ func _physics_process(delta: float) -> void:
 				sounds.pitch_scale=randf_range(0.8,1.2)
 			try_move(move_dir)
 		if (Input.is_action_just_pressed("right") or Input.is_action_just_pressed("left") or Input.is_action_just_pressed("up") or Input.is_action_just_pressed("down")):
-			if G.moves==0:
-				sounds.stream=cant_move_sound
+			if G.moves==0 and not G.out_of_moves:
+				PlaySound()
+	
+			
 			
 			
 
 
 func try_move(direction: Vector2):
+	if G.moves==0:
+		if not G.out_of_moves:
+			loader.OutOfMoves()
+
+		
+
 	ray.target_position = direction * GRID_SIZE
 	ray.force_raycast_update()
 
@@ -110,6 +121,7 @@ func try_move(direction: Vector2):
 			
 	
 	if not ray.is_colliding():
+	
 		if G.moves!=0:
 			PlaySound()
 			target_position = position + (direction * GRID_SIZE)
@@ -126,6 +138,7 @@ func try_move(direction: Vector2):
 	
 func PlaySound():
 	sounds.play()
+
 		
 	
 

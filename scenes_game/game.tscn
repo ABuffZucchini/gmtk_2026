@@ -21,6 +21,8 @@
 [ext_resource type="Resource" uid="uid://dtwiimjhhgj6m" path="res://resources/level_09.tres" id="12_627i3"]
 [ext_resource type="AudioStream" uid="uid://ilv8wche6ogg" path="res://assets_folder/audio/sound/bubble_pop.ogg" id="12_byugn"]
 [ext_resource type="Resource" uid="uid://cmu8ym7sj4467" path="res://resources/level_10.tres" id="13_8mt6m"]
+[ext_resource type="PackedScene" uid="uid://b7gmc4lxc2tys" path="res://scenes_game/death_screen.tscn" id="22_b30va"]
+[ext_resource type="AudioStream" uid="uid://d1rhinjnocqo0" path="res://assets_folder/audio/sound/out_of_moves.ogg" id="23_627i3"]
 
 [sub_resource type="Environment" id="Environment_35ju6"]
 background_mode = 3
@@ -32,7 +34,7 @@ glow_blend_mode = 0
 adjustment_brightness = 0.92
 adjustment_contrast = 1.08
 
-[node name="game" type="Node2D" unique_id=923579984 node_paths=PackedStringArray("ui", "level_sounds", "level_urchin_sounds", "death_timer", "death_rect", "pop_sound", "ui_in_game", "start_timer", "player_sounds", "fish_sounds")]
+[node name="game" type="Node2D" unique_id=923579984 node_paths=PackedStringArray("ui", "level_sounds", "level_urchin_sounds", "death_timer", "death_rect", "pop_sound", "ui_in_game", "start_timer", "player_sounds", "fish_sounds", "reset_screen", "level_out_of_moves_sound")]
 script = ExtResource("1_qxrlw")
 level_set = Array[ExtResource("2_3dryh")]([ExtResource("3_i6g32"), ExtResource("3_wowpa"), ExtResource("5_6omba"), ExtResource("6_5pp3u"), ExtResource("7_meg4t"), ExtResource("8_sgqkm"), ExtResource("9_05h0w"), ExtResource("10_0kj0c"), ExtResource("11_b30va"), ExtResource("12_627i3"), ExtResource("13_8mt6m")])
 ui = NodePath("UI")
@@ -45,6 +47,8 @@ ui_in_game = NodePath("UI_in_game")
 start_timer = NodePath("StartTimer")
 player_sounds = NodePath("PlayerSounds")
 fish_sounds = NodePath("FishSounds")
+reset_screen = NodePath("ResetScreen")
+level_out_of_moves_sound = NodePath("LevelOutOfMovesSound")
 
 [node name="MusicPlayer" parent="." unique_id=441910514 instance=ExtResource("1_ebmjs")]
 
@@ -104,6 +108,18 @@ bus = &"SFX"
 [node name="FishSounds" type="AudioStreamPlayer2D" parent="." unique_id=126123798]
 process_mode = 3
 max_polyphony = 5
+bus = &"SFX"
+
+[node name="ResetScreen" parent="." unique_id=1795033551 instance=ExtResource("22_b30va")]
+visible = false
+z_index = 26
+offset_left = -368.0
+offset_top = -224.0
+offset_right = 368.0
+offset_bottom = 288.0
+
+[node name="LevelOutOfMovesSound" type="AudioStreamPlayer2D" parent="." unique_id=734620812]
+stream = ExtResource("23_627i3")
 bus = &"SFX"
 
 [connection signal="timeout" from="DeathTimer" to="." method="_on_death_timer_timeout"]

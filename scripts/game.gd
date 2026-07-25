@@ -12,10 +12,15 @@ extends Node2D
 @export var start_timer: Timer
 @export var player_sounds: AudioStreamPlayer2D
 @export var fish_sounds: AudioStreamPlayer2D
+@export var reset_screen: ColorRect
+@export var level_out_of_moves_sound: AudioStreamPlayer2D
+
 
 
 func ResetLevel():
 	LoadSceneFromResource(G.level_index)
+	reset_screen.visible=false
+	G.out_of_moves=false
 
 func LoadSceneFromResource(index):
 	if current_level:
@@ -69,4 +74,12 @@ func _on_death_timer_timeout() -> void:
 
 func _on_start_timer_timeout() -> void:
 	G.started=true
+	pass # Replace with function body.
+
+
+func OutOfMoves():
+	G.out_of_moves=true
+	reset_screen.visible=true
+	level_out_of_moves_sound.play()
+	
 	pass # Replace with function body.

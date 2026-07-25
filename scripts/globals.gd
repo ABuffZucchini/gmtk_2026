@@ -11,6 +11,7 @@ const NORMAL = 0
 @onready var credits:bool=false
 @onready var dead:bool=false
 @onready var started:bool=true
+@onready var out_of_moves:bool=false
 
 
 

@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://b7gmc4lxc2tys"]
+
+[ext_resource type="FontFile" uid="uid://db5seoh7hn4tb" path="res://assets_folder/fonts/PressStart2P.ttf" id="1_bcfna"]
+
+[node name="ColorRect" type="ColorRect" unique_id=1795033551]
+offset_left = -376.0
+offset_top = -232.0
+offset_right = 360.0
+offset_bottom = 280.0
+color = Color(0, 0, 0, 0.14901961)
+
+[node name="LevelText" type="Label" parent="." unique_id=648427521]
+z_index = 111
+layout_mode = 0
+offset_left = 64.0
+offset_top = 96.0
+offset_right = 688.0
+offset_bottom = 112.0
+theme_override_colors/font_color = Color(1, 1, 1, 0.5254902)
+theme_override_fonts/font = ExtResource("1_bcfna")
+text = "(Press R to Reset)"
+horizontal_alignment = 1
+vertical_alignment = 1

@@ -144,6 +144,7 @@ scale = Vector2(2.647556, -1.3673139)
 
 [node name="caustics" parent="Node/Decorations" unique_id=1221341095 instance=ExtResource("16_54nuv")]
 modulate = Color(1, 1, 1, 0.12941177)
+z_index = -1
 
 [node name="rays" parent="Node/Decorations" unique_id=253563273 instance=ExtResource("17_seunm")]
 z_index = 24

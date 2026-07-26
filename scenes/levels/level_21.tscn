@@ -256,6 +256,7 @@ position = Vector2(-40, -56)
 
 [node name="caustics" parent="Node/Tiles" unique_id=1221341095 instance=ExtResource("14_8wsex")]
 modulate = Color(1, 1, 1, 0.09803922)
+z_index = -1
 
 [node name="rays" parent="Node/Tiles" unique_id=253563273 instance=ExtResource("15_uskbl")]
 z_index = 20

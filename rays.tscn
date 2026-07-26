@@ -23,8 +23,8 @@ colors = PackedColorArray(0, 0, 0, 0, 13.588667, 13.588667, 13.588667, 1)
 
 [sub_resource type="GradientTexture2D" id="GradientTexture2D_1ol56"]
 gradient = SubResource("Gradient_hry4e")
-width = 5
-height = 5
+width = 2
+height = 2
 
 [sub_resource type="Gradient" id="Gradient_bs805"]
 offsets = PackedFloat32Array(0, 0.121875, 1)
@@ -51,7 +51,7 @@ direction = Vector3(1.84, 3.465, 0)
 spread = 53.82
 radial_velocity_min = -19.230022
 radial_velocity_max = 67.309975
-gravity = Vector3(0, 90, 0)
+gravity = Vector3(0, 30, 0)
 tangential_accel_min = -2.2351742e-06
 tangential_accel_max = -2.2351742e-06
 scale_over_velocity_curve = SubResource("CurveTexture_s26cy")
@@ -74,6 +74,6 @@ position = Vector2(15.323579, 0.074371345)
 amount = 10
 sub_emitter = NodePath(".")
 texture = SubResource("GradientTexture2D_1ol56")
-lifetime = 3.0
+lifetime = 5.0
 trail_lifetime = 0.86
 process_material = SubResource("ParticleProcessMaterial_yr122")

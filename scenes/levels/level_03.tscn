@@ -106,6 +106,7 @@ scale = Vector2(1.8113834, 19.489752)
 position = Vector2(-96, -8)
 
 [node name="shark" parent="Node/Decorations" unique_id=1144552742 instance=ExtResource("12_1uqhn")]
+z_index = -1
 position = Vector2(-304, -64)
 
 [node name="PlayerSpawn" parent="." unique_id=838411621 instance=ExtResource("9_7oqvy")]

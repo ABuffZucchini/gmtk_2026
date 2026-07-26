@@ -112,6 +112,7 @@ scale = Vector2(0.764355, 23.428875)
 
 [node name="caustics" parent="Node/Decorations" unique_id=1221341095 instance=ExtResource("13_qoua7")]
 modulate = Color(1, 1, 1, 0.12156863)
+z_index = -1
 
 [node name="FishSpawn" parent="Node" unique_id=838411621 instance=ExtResource("12_k2qmd")]
 position = Vector2(-8, -24)

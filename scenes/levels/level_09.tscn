@@ -148,6 +148,7 @@ flip_h = true
 
 [node name="caustics" parent="Node/Decorations" unique_id=1221341095 instance=ExtResource("13_vuyry")]
 modulate = Color(1, 1, 1, 0.13725491)
+z_index = -1
 
 [node name="rays" parent="Node/Decorations" unique_id=253563273 instance=ExtResource("14_qxsfx")]
 z_index = 22

@@ -122,7 +122,7 @@ position = Vector2(-106, 315)
 
 [node name="dirty water" parent="Node/Decorations" unique_id=1694025031 instance=ExtResource("15_6trqr")]
 modulate = Color(1, 1, 1, 0.08627451)
-z_index = 25
+z_index = -1
 scale = Vector2(1.290067, 1.0394777)
 
 [node name="PlayerSpawn" parent="." unique_id=838411621 instance=ExtResource("9_c66uu")]

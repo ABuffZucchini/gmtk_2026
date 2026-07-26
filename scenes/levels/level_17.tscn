@@ -133,6 +133,7 @@ scale = Vector2(1.0074425, 22.683651)
 
 [node name="caustics" parent="Node/Decorations" unique_id=1221341095 instance=ExtResource("15_2ig8n")]
 modulate = Color(1, 1, 1, 0.12941177)
+z_index = -1
 
 [node name="Sprite2D" parent="Node/Decorations" unique_id=528317873 instance=ExtResource("16_6mlu0")]
 scale = Vector2(1.4665865, 1.1673002)

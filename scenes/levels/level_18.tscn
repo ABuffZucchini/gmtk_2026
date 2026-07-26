@@ -15,6 +15,13 @@
 [ext_resource type="PackedScene" uid="uid://dlebcef8rkaya" path="res://scenes/level_objects/pushable_bubble.tscn" id="13_gtxpi"]
 [ext_resource type="PackedScene" uid="uid://c1m4qoly8rtu7" path="res://scenes/level_objects/fish_spawn_point.tscn" id="14_n4g13"]
 [ext_resource type="PackedScene" uid="uid://ckfoqvgpqnqw7" path="res://scenes/level_objects/player_spawn_point.tscn" id="15_xfkyc"]
+[ext_resource type="PackedScene" uid="uid://8utka7s2ach6" path="res://scenes/level_decoration/coral_red_stalk.tscn" id="16_eebtn"]
+[ext_resource type="PackedScene" uid="uid://d01ffqr3b4fb7" path="res://scenes/level_decoration/coral_yellow_holes.tscn" id="17_hntht"]
+[ext_resource type="PackedScene" uid="uid://ljbjmmfkiwgl" path="res://scenes/level_decoration/coral_pink_holes.tscn" id="18_2k1i6"]
+[ext_resource type="PackedScene" uid="uid://h1buup40yhvh" path="res://scenes/level_decoration/coral_pink_stalk.tscn" id="19_4nxe3"]
+[ext_resource type="PackedScene" uid="uid://csys1alryd6vc" path="res://scenes/level_decoration/seashell.tscn" id="20_gyibt"]
+[ext_resource type="PackedScene" uid="uid://dl445e0hfhttj" path="res://scenes/level_decoration/seaweed.tscn" id="21_fbno3"]
+[ext_resource type="PackedScene" uid="uid://ctico0rrbbr4p" path="res://scenes/level_decoration/coral_teal_stalk.tscn" id="22_gtxpi"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6444e"]
 texture = ExtResource("2_plykw")
@@ -143,3 +150,33 @@ position = Vector2(-56, -24)
 
 [node name="PlayerSpawn" parent="." unique_id=1660150397 instance=ExtResource("15_xfkyc")]
 position = Vector2(-24, 56)
+
+[node name="decal_coral_red_stalk" parent="." unique_id=1042929158 instance=ExtResource("16_eebtn")]
+position = Vector2(-216, 24)
+
+[node name="decal_coral_yellow_holes" parent="." unique_id=68256881 instance=ExtResource("17_hntht")]
+position = Vector2(-264, -24)
+
+[node name="decal_coral_yellow_holes2" parent="." unique_id=673410831 instance=ExtResource("17_hntht")]
+position = Vector2(232, -72)
+flip_h = true
+
+[node name="decal_coral_pink_holes" parent="." unique_id=1182344500 instance=ExtResource("18_2k1i6")]
+position = Vector2(152, 72)
+
+[node name="decal_coral_pink_stalk" parent="." unique_id=458985987 instance=ExtResource("19_4nxe3")]
+position = Vector2(-120, 136)
+flip_h = true
+
+[node name="decal_seashell" parent="." unique_id=1226406694 instance=ExtResource("20_gyibt")]
+position = Vector2(200, 88)
+
+[node name="decal_seashell2" parent="." unique_id=837162782 instance=ExtResource("20_gyibt")]
+position = Vector2(-136, -40)
+flip_h = true
+
+[node name="decal_seaweed" parent="." unique_id=1860631308 instance=ExtResource("21_fbno3")]
+position = Vector2(-72, 8)
+
+[node name="decal_coral_teal_stalk" parent="." unique_id=2110117623 instance=ExtResource("22_gtxpi")]
+position = Vector2(248, 40)

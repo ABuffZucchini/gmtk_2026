@@ -4,6 +4,7 @@
 [ext_resource type="Script" uid="uid://dpqc42svfk1xi" path="res://scripts/game.gd" id="1_qxrlw"]
 [ext_resource type="Script" uid="uid://ijqd43eqb2xr" path="res://scripts/level_resource.gd" id="2_3dryh"]
 [ext_resource type="Resource" uid="uid://b7lcbegfwek6y" path="res://resources/level_16.tres" id="3_f6bfc"]
+[ext_resource type="Resource" uid="uid://cmbfr17ru3ue1" path="res://resources/level_00.tres" id="3_hfwyh"]
 [ext_resource type="Resource" uid="uid://bmjg4nakw80fc" path="res://resources/level_21.tres" id="3_hm334"]
 [ext_resource type="Resource" uid="uid://iedyu6ar6kgr" path="res://resources/level_01.tres" id="3_wowpa"]
 [ext_resource type="Resource" uid="uid://cm83tb1ptww6y" path="res://resources/level_02.tres" id="5_6omba"]
@@ -47,7 +48,7 @@ adjustment_contrast = 1.08
 
 [node name="game" type="Node2D" unique_id=923579984 node_paths=PackedStringArray("ui", "level_sounds", "level_urchin_sounds", "death_timer", "death_rect", "pop_sound", "ui_in_game", "start_timer", "player_sounds", "fish_sounds", "reset_screen", "level_out_of_moves_sound")]
 script = ExtResource("1_qxrlw")
-level_set = Array[ExtResource("2_3dryh")]([ExtResource("16_7mjf2"), ExtResource("3_wowpa"), ExtResource("5_6omba"), ExtResource("6_5pp3u"), ExtResource("7_meg4t"), ExtResource("8_sgqkm"), ExtResource("9_05h0w"), ExtResource("10_0kj0c"), ExtResource("11_b30va"), ExtResource("12_627i3"), ExtResource("13_8mt6m"), ExtResource("14_f6bfc"), ExtResource("15_pl10d"), ExtResource("18_f1e7r"), ExtResource("17_0rkho"), ExtResource("16_7mjf2"), ExtResource("3_f6bfc"), ExtResource("20_v4a3m"), ExtResource("21_hfwyh"), ExtResource("22_3lb01"), ExtResource("23_ivpdr"), ExtResource("3_hm334")])
+level_set = Array[ExtResource("2_3dryh")]([ExtResource("3_hfwyh"), ExtResource("3_wowpa"), ExtResource("5_6omba"), ExtResource("6_5pp3u"), ExtResource("7_meg4t"), ExtResource("8_sgqkm"), ExtResource("9_05h0w"), ExtResource("10_0kj0c"), ExtResource("11_b30va"), ExtResource("12_627i3"), ExtResource("13_8mt6m"), ExtResource("14_f6bfc"), ExtResource("15_pl10d"), ExtResource("18_f1e7r"), ExtResource("17_0rkho"), ExtResource("16_7mjf2"), ExtResource("3_f6bfc"), ExtResource("20_v4a3m"), ExtResource("21_hfwyh"), ExtResource("22_3lb01"), ExtResource("23_ivpdr"), ExtResource("3_hm334")])
 ui = NodePath("UI")
 level_sounds = NodePath("LevelWinSound")
 level_urchin_sounds = NodePath("LevelUrchinSound")

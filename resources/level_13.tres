@@ -5,7 +5,7 @@
 
 [resource]
 script = ExtResource("2_4quf4")
-moves = 11
+moves = 10
 level_name = "Teamwork"
 level = ExtResource("1_27lk5")
 layers = Array[bool]([true, true, true, false, true, true])

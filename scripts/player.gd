@@ -17,7 +17,7 @@ extends CharacterBody2D
 
 
 const GRID_SIZE = 16
-const MOVE_SPEED = 26
+const MOVE_SPEED = 27
 
 
 

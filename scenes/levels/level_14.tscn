@@ -15,6 +15,11 @@
 [ext_resource type="PackedScene" uid="uid://c1m4qoly8rtu7" path="res://scenes/level_objects/fish_spawn_point.tscn" id="12_4qnux"]
 [ext_resource type="PackedScene" uid="uid://ckfoqvgpqnqw7" path="res://scenes/level_objects/player_spawn_point.tscn" id="13_4ubua"]
 [ext_resource type="PackedScene" uid="uid://dlebcef8rkaya" path="res://scenes/level_objects/pushable_bubble.tscn" id="13_w0qkw"]
+[ext_resource type="PackedScene" uid="uid://8utka7s2ach6" path="res://scenes/level_decoration/coral_red_stalk.tscn" id="15_b2233"]
+[ext_resource type="PackedScene" uid="uid://ctico0rrbbr4p" path="res://scenes/level_decoration/coral_teal_stalk.tscn" id="16_rfrxc"]
+[ext_resource type="PackedScene" uid="uid://devigby11s16p" path="res://scenes/level_decoration/coral_yellow_stalk.tscn" id="17_3cpn8"]
+[ext_resource type="PackedScene" uid="uid://cqms0ddv5x5jc" path="res://scenes/level_decoration/starfish.tscn" id="19_8fg8a"]
+[ext_resource type="PackedScene" uid="uid://dtxcna6j7rt75" path="res://scenes/level_decoration/rocks.tscn" id="20_4qnux"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6444e"]
 texture = ExtResource("2_5muy6")
@@ -120,5 +125,35 @@ position = Vector2(152, 56)
 [node name="FishSpawn" parent="Node" unique_id=838411621 instance=ExtResource("12_4qnux")]
 position = Vector2(248, 56)
 
+[node name="decal_coral_red_stalk" parent="Node" unique_id=1042929158 instance=ExtResource("15_b2233")]
+position = Vector2(72, -24)
+
+[node name="decal_coral_teal_stalk" parent="Node" unique_id=859035999 instance=ExtResource("16_rfrxc")]
+position = Vector2(8, 24)
+flip_h = true
+
+[node name="decal_coral_yellow_stalk" parent="Node" unique_id=1967132378 instance=ExtResource("17_3cpn8")]
+position = Vector2(40, -56)
+
 [node name="PlayerSpawn" parent="." unique_id=1660150397 instance=ExtResource("13_4ubua")]
 position = Vector2(200, 56)
+
+[node name="decal_starfish" parent="." unique_id=525738055 instance=ExtResource("19_8fg8a")]
+position = Vector2(184, 88)
+
+[node name="decal_starfish2" parent="." unique_id=1828400470 instance=ExtResource("19_8fg8a")]
+position = Vector2(232, -120)
+flip_h = true
+
+[node name="decal_rocks" parent="." unique_id=905677711 instance=ExtResource("20_4qnux")]
+position = Vector2(248, -40)
+
+[node name="decal_rocks2" parent="." unique_id=2124298121 instance=ExtResource("20_4qnux")]
+position = Vector2(40, 104)
+
+[node name="decal_rocks3" parent="." unique_id=1152433995 instance=ExtResource("20_4qnux")]
+position = Vector2(24, 120)
+flip_h = true
+
+[node name="decal_rocks4" parent="." unique_id=1848156516 instance=ExtResource("20_4qnux")]
+position = Vector2(200, 136)

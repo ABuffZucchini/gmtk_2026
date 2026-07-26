@@ -15,6 +15,8 @@
 [ext_resource type="PackedScene" uid="uid://ckfoqvgpqnqw7" path="res://scenes/level_objects/player_spawn_point.tscn" id="13_ladkm"]
 [ext_resource type="PackedScene" uid="uid://dlebcef8rkaya" path="res://scenes/level_objects/pushable_bubble.tscn" id="14_5iydt"]
 [ext_resource type="PackedScene" uid="uid://cdjj3mj2iatuo" path="res://scenes/level_objects/urchin.tscn" id="15_5fbrw"]
+[ext_resource type="PackedScene" uid="uid://dl445e0hfhttj" path="res://scenes/level_decoration/seaweed.tscn" id="16_v43uy"]
+[ext_resource type="PackedScene" uid="uid://dtxcna6j7rt75" path="res://scenes/level_decoration/rocks.tscn" id="17_bhehy"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6444e"]
 texture = ExtResource("2_omrdx")
@@ -128,3 +130,28 @@ position = Vector2(104, -72)
 
 [node name="Urchin7" parent="." unique_id=4835123 instance=ExtResource("15_5fbrw")]
 position = Vector2(104, -88)
+
+[node name="decal_seaweed" parent="." unique_id=1042929158 instance=ExtResource("16_v43uy")]
+position = Vector2(88, 40)
+
+[node name="decal_seaweed2" parent="." unique_id=271451844 instance=ExtResource("16_v43uy")]
+position = Vector2(-24, -56)
+flip_h = true
+
+[node name="decal_seaweed3" parent="." unique_id=389670185 instance=ExtResource("16_v43uy")]
+position = Vector2(-72, -72)
+
+[node name="decal_seaweed4" parent="." unique_id=1411362904 instance=ExtResource("16_v43uy")]
+position = Vector2(-56, -8)
+flip_h = true
+
+[node name="decal_seaweed5" parent="." unique_id=450165442 instance=ExtResource("16_v43uy")]
+position = Vector2(88, -104)
+flip_h = true
+
+[node name="decal_rocks" parent="." unique_id=1022233237 instance=ExtResource("17_bhehy")]
+position = Vector2(72, 24)
+
+[node name="decal_rocks2" parent="." unique_id=2055436482 instance=ExtResource("17_bhehy")]
+position = Vector2(-56, -88)
+flip_h = true

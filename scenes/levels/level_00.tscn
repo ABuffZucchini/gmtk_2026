@@ -12,6 +12,7 @@
 [ext_resource type="PackedScene" uid="uid://ckfoqvgpqnqw7" path="res://scenes/level_objects/player_spawn_point.tscn" id="11_fsoq6"]
 [ext_resource type="Texture2D" uid="uid://cx5gmj7iwwdx4" path="res://assets_folder/sprites/borders.png" id="12_gfjph"]
 [ext_resource type="PackedScene" uid="uid://c28xyd5ye5sda" path="res://scenes/level_objects/complete_square.tscn" id="12_okio2"]
+[ext_resource type="Texture2D" uid="uid://ici84w4a3ha2" path="res://assets_folder/sprites/objects/wasd.png" id="13_7smhd"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6444e"]
 texture = ExtResource("6_e44cy")
@@ -102,3 +103,7 @@ texture = ExtResource("12_gfjph")
 
 [node name="PlayerSpawn" parent="." unique_id=1025526845 instance=ExtResource("11_fsoq6")]
 position = Vector2(-88, 40)
+
+[node name="Wasd" type="Sprite2D" parent="." unique_id=1357065207]
+position = Vector2(88, -32)
+texture = ExtResource("13_7smhd")

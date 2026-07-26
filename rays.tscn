@@ -1,22 +1,6 @@
 [gd_scene format=3 uid="uid://bn6d0hy8ipc1m"]
 
-[ext_resource type="Shader" path="res://rays_shader.gdshader" id="1_bs805"]
-
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_yr122"]
-shader = ExtResource("1_bs805")
-shader_parameter/ray_angle = -0.02
-shader_parameter/ray_position = 0.15
-shader_parameter/spread = 0.858000040755
-shader_parameter/cutoff = -0.04699995473249996
-shader_parameter/falloff = 0.390000018525
-shader_parameter/edge_fade = 0.3750000178125
-shader_parameter/speed = 2.585
-shader_parameter/ray1_density = 12.52
-shader_parameter/ray2_density = 31.44
-shader_parameter/ray2_intensity = 0.5050000239875
-shader_parameter/color = Vector4(1, 0.9, 0.65, 0.8)
-shader_parameter/hdr = false
-shader_parameter/seed = 5.0
+[ext_resource type="Shader" uid="uid://nc121upd7yah" path="res://rays.gdshader" id="1_bs805"]
 
 [sub_resource type="Gradient" id="Gradient_bs805"]
 colors = PackedColorArray(1, 1, 1, 0, 1, 1, 1, 1)
@@ -54,17 +38,25 @@ color_initial_ramp = SubResource("GradientTexture1D_3lxlv")
 hue_variation_min = -0.17000002
 hue_variation_max = -0.100000024
 
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ke4ki"]
+shader = ExtResource("1_bs805")
+shader_parameter/ray_angle = -0.01
+shader_parameter/ray_position = -0.2
+shader_parameter/spread = 0.5
+shader_parameter/cutoff = 0.1
+shader_parameter/falloff = 0.2
+shader_parameter/edge_fade = 0.15
+shader_parameter/speed = 1.0
+shader_parameter/ray1_density = 8.0
+shader_parameter/ray2_density = 30.0
+shader_parameter/ray2_intensity = 0.3
+shader_parameter/color = Vector4(1, 0.9, 0.65, 0.8)
+shader_parameter/hdr = false
+shader_parameter/seed = 5.0
+
 [node name="Sprite2D" type="Sprite2D" unique_id=253563273]
 modulate = Color(0.13682577, 0.13682574, 0.13682571, 1)
 scale = Vector2(124.644516, 94.12228)
-
-[node name="ColorRect" type="ColorRect" parent="." unique_id=738579686]
-material = SubResource("ShaderMaterial_yr122")
-offset_left = -0.565
-offset_top = -0.42
-offset_right = 39.435
-offset_bottom = 39.58
-scale = Vector2(0.19917536, 0.34790748)
 
 [node name="GPUParticles2D" type="GPUParticles2D" parent="." unique_id=1106901890]
 position = Vector2(2.7518258, -0.031873524)
@@ -73,7 +65,12 @@ amount = 10
 sub_emitter = NodePath(".")
 texture = SubResource("GradientTexture2D_hry4e")
 lifetime = 3.0
-preprocess = 1.6400000000000001
+preprocess = 1.64
 randomness = 0.3
 trail_lifetime = 1.39
 process_material = SubResource("ParticleProcessMaterial_d8s6g")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1436908620]
+material = SubResource("ShaderMaterial_ke4ki")
+offset_right = 40.0
+offset_bottom = 40.0

@@ -10,7 +10,9 @@
 [ext_resource type="PackedScene" uid="uid://v8c1eog2wryf" path="res://scenes/level_decoration/coral_teal_holes.tscn" id="10_gfjph"]
 [ext_resource type="PackedScene" uid="uid://ctico0rrbbr4p" path="res://scenes/level_decoration/coral_teal_stalk.tscn" id="11_7smhd"]
 [ext_resource type="PackedScene" uid="uid://ckfoqvgpqnqw7" path="res://scenes/level_objects/player_spawn_point.tscn" id="11_fsoq6"]
+[ext_resource type="PackedScene" uid="uid://bn6d0hy8ipc1m" path="res://rays.tscn" id="11_lq0d2"]
 [ext_resource type="Texture2D" uid="uid://cx5gmj7iwwdx4" path="res://assets_folder/sprites/borders.png" id="12_gfjph"]
+[ext_resource type="PackedScene" uid="uid://c8bs4esnfafwf" path="res://manta_rays.tscn" id="12_lq0d2"]
 [ext_resource type="PackedScene" uid="uid://c28xyd5ye5sda" path="res://scenes/level_objects/complete_square.tscn" id="12_okio2"]
 [ext_resource type="Texture2D" uid="uid://ici84w4a3ha2" path="res://assets_folder/sprites/objects/wasd.png" id="13_7smhd"]
 
@@ -85,18 +87,23 @@ position = Vector2(-24, 8)
 
 [node name="Decorations" type="Node" parent="Node" unique_id=1235809323]
 
-[node name="decal_coral_pink_stalk" parent="." unique_id=1042929158 instance=ExtResource("9_j6jkn")]
+[node name="decal_coral_pink_stalk" parent="Node/Decorations" unique_id=1042929158 instance=ExtResource("9_j6jkn")]
 position = Vector2(-56, 56)
 
-[node name="decal_coral_teal_holes" parent="." unique_id=1170172405 instance=ExtResource("10_gfjph")]
+[node name="decal_coral_teal_holes" parent="Node/Decorations" unique_id=1170172405 instance=ExtResource("10_gfjph")]
 position = Vector2(-24, 40)
 
-[node name="decal_coral_teal_stalk" parent="." unique_id=1438125611 instance=ExtResource("11_7smhd")]
+[node name="decal_coral_teal_stalk" parent="Node/Decorations" unique_id=1438125611 instance=ExtResource("11_7smhd")]
 position = Vector2(-72, -8)
 
-[node name="decal_coral_pink_stalk2" parent="." unique_id=953928904 instance=ExtResource("9_j6jkn")]
+[node name="decal_coral_pink_stalk2" parent="Node/Decorations" unique_id=953928904 instance=ExtResource("9_j6jkn")]
 position = Vector2(8, -24)
 flip_h = true
+
+[node name="Sprite2D" parent="Node/Decorations" unique_id=253563273 instance=ExtResource("11_lq0d2")]
+
+[node name="manta_rays" parent="Node/Decorations" unique_id=2063016311 instance=ExtResource("12_lq0d2")]
+position = Vector2(120, 288)
 
 [node name="Borders" type="Sprite2D" parent="." unique_id=1086904654]
 texture = ExtResource("12_gfjph")

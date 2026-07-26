@@ -1,11 +1,12 @@
 [gd_scene format=3 uid="uid://c8bs4esnfafwf"]
 
-[ext_resource type="Texture2D" path="res://assets_folder/sprites/decoration/bg/manta_rays.png" id="1_nbb6n"]
-[ext_resource type="Script" path="res://manta_rays.gd" id="2_pgrln"]
+[ext_resource type="Texture2D" uid="uid://cbvol1k405oho" path="res://assets_folder/sprites/decoration/decals/manta_rays.png" id="1_4der1"]
+[ext_resource type="Script" uid="uid://cii8xrfuo50ks" path="res://manta_rays.gd" id="2_pgrln"]
 [ext_resource type="PackedScene" uid="uid://ck4gnekao5gdq" path="res://scenes/particles/bubbles.tscn" id="3_4der1"]
 
 [node name="manta_rays" type="Sprite2D" unique_id=2063016311]
-texture = ExtResource("1_nbb6n")
+z_index = 22
+texture = ExtResource("1_4der1")
 script = ExtResource("2_pgrln")
 
 [node name="BubbleParticles" parent="." unique_id=846339583 instance=ExtResource("3_4der1")]

@@ -1,4 +1,7 @@
 [gd_scene format=3 uid="uid://bljnrpxaltra8"]
 
+[ext_resource type="Texture2D" uid="uid://j7c51vrsiy0o" path="res://assets_folder/sprites/decoration/decals/caustics.png" id="1_put4s"]
+
 [node name="caustics" type="Sprite2D" unique_id=1221341095]
 scale = Vector2(0.4, 0.4)
+texture = ExtResource("1_put4s")

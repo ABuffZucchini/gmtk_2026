@@ -104,5 +104,8 @@ one_shot = true
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1044389775]
 z_index = 13
 sprite_frames = SubResource("SpriteFrames_cvnsp")
+autoplay = "default"
+frame = 11
+frame_progress = 0.76689976
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

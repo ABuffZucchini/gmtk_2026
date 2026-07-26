@@ -14,7 +14,16 @@
 [ext_resource type="PackedScene" uid="uid://ljbjmmfkiwgl" path="res://scenes/level_decoration/coral_pink_holes.tscn" id="10_m2jhg"]
 [ext_resource type="PackedScene" uid="uid://h1buup40yhvh" path="res://scenes/level_decoration/coral_pink_stalk.tscn" id="11_q6ljp"]
 [ext_resource type="PackedScene" uid="uid://dtxcna6j7rt75" path="res://scenes/level_decoration/rocks.tscn" id="12_4dr30"]
+[ext_resource type="Texture2D" uid="uid://q5frujt5qbsy" path="res://assets_folder/sprites/tiles/grass.png" id="13_lky54"]
+[ext_resource type="Texture2D" uid="uid://4p8gwuit64bj" path="res://assets_folder/sprites/tiles/someplant5.png" id="14_ies7a"]
 [ext_resource type="PackedScene" uid="uid://cqms0ddv5x5jc" path="res://scenes/level_decoration/starfish.tscn" id="15_dscar"]
+[ext_resource type="Texture2D" uid="uid://pqgkdmul2un8" path="res://assets_folder/sprites/tiles/someplant4.png" id="15_kx1rr"]
+[ext_resource type="Texture2D" uid="uid://b7344u05ymhr1" path="res://assets_folder/sprites/tiles/someplant3.png" id="16_gus8w"]
+[ext_resource type="Texture2D" uid="uid://cla233ltbxyo8" path="res://assets_folder/sprites/tiles/rok2.png" id="17_xwa1x"]
+[ext_resource type="Texture2D" uid="uid://cx87rdcd0xtv3" path="res://assets_folder/sprites/tiles/ro.png" id="18_6ms8u"]
+[ext_resource type="Texture2D" uid="uid://dofcur6m3irmr" path="res://assets_folder/sprites/tiles/rok4.png" id="19_r2xis"]
+[ext_resource type="PackedScene" uid="uid://bn6d0hy8ipc1m" path="res://rays.tscn" id="21_cu4fk"]
+[ext_resource type="PackedScene" uid="uid://bljnrpxaltra8" path="res://caustics.tscn" id="22_ies7a"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6444e"]
 texture = ExtResource("2_yklhy")
@@ -57,6 +66,83 @@ texture = ExtResource("3_o4ql5")
 [sub_resource type="TileSet" id="TileSet_cvnsp"]
 sources/0 = SubResource("TileSetAtlasSource_6444e")
 sources/1 = SubResource("TileSetAtlasSource_evi0p")
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_fsjua"]
+texture = ExtResource("13_lky54")
+0:0/animation_columns = 19
+0:0/0 = 0
+1:0/animation_columns = 19
+1:0/0 = 0
+2:0/animation_columns = 19
+2:0/0 = 0
+3:0/animation_columns = 19
+3:0/0 = 0
+4:0/animation_columns = 19
+4:0/0 = 0
+5:0/animation_columns = 19
+5:0/0 = 0
+6:0/animation_columns = 19
+6:0/0 = 0
+7:0/animation_columns = 19
+7:0/0 = 0
+8:0/animation_columns = 19
+8:0/0 = 0
+9:0/animation_columns = 19
+9:0/0 = 0
+10:0/animation_columns = 19
+10:0/0 = 0
+11:0/animation_columns = 19
+11:0/0 = 0
+12:0/animation_columns = 19
+12:0/0 = 0
+13:0/animation_columns = 19
+13:0/0 = 0
+14:0/animation_columns = 19
+14:0/0 = 0
+15:0/animation_columns = 19
+15:0/0 = 0
+16:0/animation_columns = 19
+16:0/0 = 0
+17:0/animation_columns = 19
+17:0/0 = 0
+18:0/animation_columns = 19
+18:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_x7wv7"]
+texture = ExtResource("14_ies7a")
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7873c"]
+texture = ExtResource("15_kx1rr")
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ymej5"]
+texture = ExtResource("16_gus8w")
+0:0/0 = 0
+1:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8orqj"]
+texture = ExtResource("17_xwa1x")
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lcydj"]
+texture = ExtResource("18_6ms8u")
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qfl0r"]
+texture = ExtResource("19_r2xis")
+0:0/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_r1j2e"]
+sources/0 = SubResource("TileSetAtlasSource_fsjua")
+sources/1 = SubResource("TileSetAtlasSource_x7wv7")
+sources/2 = SubResource("TileSetAtlasSource_7873c")
+sources/3 = SubResource("TileSetAtlasSource_ymej5")
+sources/4 = SubResource("TileSetAtlasSource_8orqj")
+sources/5 = SubResource("TileSetAtlasSource_lcydj")
+sources/6 = SubResource("TileSetAtlasSource_qfl0r")
 
 [node name="level" type="Node2D" unique_id=528149217]
 script = ExtResource("1_c6rld")
@@ -139,12 +225,24 @@ position = Vector2(8, 8)
 position = Vector2(24, -24)
 flip_h = true
 
+[node name="foregroud" type="TileMapLayer" parent="Node/Tiles" unique_id=2054244381]
+tile_map_data = PackedByteArray("AAD2/wUABAAAAAAAAAD2/wYABAAAAAAAAAD0/wUAAwAAAAAAAAD0/wYAAwAAAAEAAAD1/wUAAwABAAAAAAD1/wYAAwABAAEAAAA=")
+tile_set = SubResource("TileSet_r1j2e")
+
 [node name="Entities" type="Node" parent="Node" unique_id=341219396]
 
 [node name="CompleteSquare" parent="Node/Entities" unique_id=7729194 instance=ExtResource("8_q6ljp")]
 position = Vector2(-104, -40)
 
 [node name="Decorations" type="Node" parent="Node" unique_id=1235809323]
+
+[node name="rays" parent="Node/Decorations" unique_id=253563273 instance=ExtResource("21_cu4fk")]
+z_index = 22
+position = Vector2(-120, -245.00002)
+scale = Vector2(1.6596808, 17.718775)
+
+[node name="caustics" parent="Node/Decorations" unique_id=1221341095 instance=ExtResource("22_ies7a")]
+modulate = Color(1, 1, 1, 0.15294118)
 
 [node name="PlayerSpawn" parent="." unique_id=838411621 instance=ExtResource("9_4dr30")]
 position = Vector2(-56, -56)

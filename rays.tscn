@@ -2,42 +2,6 @@
 
 [ext_resource type="Shader" uid="uid://nc121upd7yah" path="res://rays.gdshader" id="1_bs805"]
 
-[sub_resource type="Gradient" id="Gradient_bs805"]
-colors = PackedColorArray(1, 1, 1, 0, 1, 1, 1, 1)
-
-[sub_resource type="GradientTexture2D" id="GradientTexture2D_hry4e"]
-gradient = SubResource("Gradient_bs805")
-width = 2
-height = 2
-
-[sub_resource type="Gradient" id="Gradient_s26cy"]
-
-[sub_resource type="GradientTexture1D" id="GradientTexture1D_3lxlv"]
-gradient = SubResource("Gradient_s26cy")
-
-[sub_resource type="Gradient" id="Gradient_jmy4k"]
-colors = PackedColorArray(0, 0, 0, 0, 1, 1, 1, 1)
-
-[sub_resource type="GradientTexture1D" id="GradientTexture1D_2krj6"]
-gradient = SubResource("Gradient_jmy4k")
-
-[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_d8s6g"]
-lifetime_randomness = 0.16
-particle_flag_disable_z = true
-emission_shape = 2
-emission_sphere_radius = 1.0
-spread = 174.49
-angular_velocity_min = 186.91998
-angular_velocity_max = 186.91998
-orbit_velocity_min = 9.49949e-08
-orbit_velocity_max = 9.49949e-08
-gravity = Vector3(0, 32.667, 0)
-color = Color(6.4870505, 6.38978, 6.4870505, 1)
-color_ramp = SubResource("GradientTexture1D_2krj6")
-color_initial_ramp = SubResource("GradientTexture1D_3lxlv")
-hue_variation_min = -0.17000002
-hue_variation_max = -0.100000024
-
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_ke4ki"]
 shader = ExtResource("1_bs805")
 shader_parameter/ray_angle = -0.01
@@ -54,23 +18,62 @@ shader_parameter/color = Vector4(1, 0.9, 0.65, 0.8)
 shader_parameter/hdr = false
 shader_parameter/seed = 5.0
 
-[node name="Sprite2D" type="Sprite2D" unique_id=253563273]
+[sub_resource type="Gradient" id="Gradient_hry4e"]
+colors = PackedColorArray(0, 0, 0, 0, 13.588667, 13.588667, 13.588667, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_1ol56"]
+gradient = SubResource("Gradient_hry4e")
+width = 5
+height = 5
+
+[sub_resource type="Gradient" id="Gradient_bs805"]
+offsets = PackedFloat32Array(0, 0.121875, 1)
+colors = PackedColorArray(0, 0, 0, 0, 0.565625, 0.565625, 0.565625, 1, 1, 1, 1, 0)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_jmy4k"]
+gradient = SubResource("Gradient_bs805")
+
+[sub_resource type="Curve" id="Curve_s26cy"]
+_limits = [0.0, 3.0, 0.0, 1.0]
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(1, 1), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="CurveTexture" id="CurveTexture_s26cy"]
+curve = SubResource("Curve_s26cy")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_yr122"]
+lifetime_randomness = 0.85
+particle_flag_disable_z = true
+angle_min = 1.0728835e-05
+angle_max = 1.0728835e-05
+velocity_pivot = Vector3(1.735, 0.785, 0)
+direction = Vector3(1.84, 3.465, 0)
+spread = 53.82
+radial_velocity_min = -19.230022
+radial_velocity_max = 67.309975
+gravity = Vector3(0, 90, 0)
+tangential_accel_min = -2.2351742e-06
+tangential_accel_max = -2.2351742e-06
+scale_over_velocity_curve = SubResource("CurveTexture_s26cy")
+color = Color(12.893768, 12.893768, 12.893768, 1)
+color_ramp = SubResource("GradientTexture1D_jmy4k")
+
+[node name="rays" type="Sprite2D" unique_id=253563273]
 modulate = Color(0.13682577, 0.13682574, 0.13682571, 1)
 scale = Vector2(124.644516, 94.12228)
 
-[node name="GPUParticles2D" type="GPUParticles2D" parent="." unique_id=1106901890]
-position = Vector2(2.7518258, -0.031873524)
-scale = Vector2(-1.657193, 1.8707926)
-amount = 10
-sub_emitter = NodePath(".")
-texture = SubResource("GradientTexture2D_hry4e")
-lifetime = 3.0
-preprocess = 1.64
-randomness = 0.3
-trail_lifetime = 1.39
-process_material = SubResource("ParticleProcessMaterial_d8s6g")
-
 [node name="ColorRect" type="ColorRect" parent="." unique_id=1436908620]
+z_index = 2
 material = SubResource("ShaderMaterial_ke4ki")
 offset_right = 40.0
 offset_bottom = 40.0
+scale = Vector2(0.46523592, 0.32574567)
+
+[node name="GPUParticles2D2" type="GPUParticles2D" parent="." unique_id=98577922]
+position = Vector2(15.323579, 0.074371345)
+amount = 10
+sub_emitter = NodePath(".")
+texture = SubResource("GradientTexture2D_1ol56")
+lifetime = 3.0
+trail_lifetime = 0.86
+process_material = SubResource("ParticleProcessMaterial_yr122")

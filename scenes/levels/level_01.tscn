@@ -4,15 +4,24 @@
 [ext_resource type="Texture2D" uid="uid://mi343ajpq62h" path="res://assets_folder/sprites/tiles/blue_coral.png" id="3_jqcbt"]
 [ext_resource type="Texture2D" uid="uid://bx8sulydlpqkj" path="res://assets_folder/sprites/base_grid_blue.png" id="4_oxqq7"]
 [ext_resource type="Texture2D" uid="uid://cx5gmj7iwwdx4" path="res://assets_folder/sprites/borders.png" id="7_kfebt"]
+[ext_resource type="Texture2D" uid="uid://q5frujt5qbsy" path="res://assets_folder/sprites/tiles/grass.png" id="8_svp4f"]
+[ext_resource type="Texture2D" uid="uid://4p8gwuit64bj" path="res://assets_folder/sprites/tiles/someplant5.png" id="9_1b0o8"]
 [ext_resource type="PackedScene" uid="uid://ckfoqvgpqnqw7" path="res://scenes/level_objects/player_spawn_point.tscn" id="9_ijn0p"]
 [ext_resource type="PackedScene" uid="uid://ljbjmmfkiwgl" path="res://scenes/level_decoration/coral_pink_holes.tscn" id="9_jmes4"]
 [ext_resource type="Script" uid="uid://yridvtxo1s15" path="res://scripts/make_visible_on_ready.gd" id="9_jqcbt"]
 [ext_resource type="PackedScene" uid="uid://cvu6th43hbq1y" path="res://scenes/tiles_pink.tscn" id="9_r72dd"]
+[ext_resource type="PackedScene" uid="uid://bljnrpxaltra8" path="res://caustics.tscn" id="10_07lms"]
 [ext_resource type="PackedScene" uid="uid://b13yyvg60vma5" path="res://scenes/tiles_green.tscn" id="10_ijn0p"]
 [ext_resource type="PackedScene" uid="uid://dtxcna6j7rt75" path="res://scenes/level_decoration/rocks.tscn" id="10_tyxjt"]
+[ext_resource type="Texture2D" uid="uid://pqgkdmul2un8" path="res://assets_folder/sprites/tiles/someplant4.png" id="10_w4kkx"]
 [ext_resource type="PackedScene" uid="uid://c28xyd5ye5sda" path="res://scenes/level_objects/complete_square.tscn" id="11_ijn0p"]
+[ext_resource type="Texture2D" uid="uid://b7344u05ymhr1" path="res://assets_folder/sprites/tiles/someplant3.png" id="11_mhiu8"]
 [ext_resource type="PackedScene" uid="uid://dlebcef8rkaya" path="res://scenes/level_objects/pushable_bubble.tscn" id="12_07lms"]
+[ext_resource type="PackedScene" uid="uid://bn6d0hy8ipc1m" path="res://rays.tscn" id="12_gi8m4"]
+[ext_resource type="Texture2D" uid="uid://cla233ltbxyo8" path="res://assets_folder/sprites/tiles/rok2.png" id="12_lswbx"]
 [ext_resource type="Texture2D" uid="uid://yghvjvw47woa" path="res://assets_folder/sprites/objects/pause reset.png" id="13_tyxjt"]
+[ext_resource type="Texture2D" uid="uid://cx87rdcd0xtv3" path="res://assets_folder/sprites/tiles/ro.png" id="13_uujh0"]
+[ext_resource type="Texture2D" uid="uid://dofcur6m3irmr" path="res://assets_folder/sprites/tiles/rok4.png" id="14_3t34l"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6444e"]
 texture = ExtResource("3_jqcbt")
@@ -56,6 +65,83 @@ texture = ExtResource("4_oxqq7")
 sources/0 = SubResource("TileSetAtlasSource_6444e")
 sources/1 = SubResource("TileSetAtlasSource_evi0p")
 
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qy4h0"]
+texture = ExtResource("8_svp4f")
+0:0/animation_columns = 19
+0:0/0 = 0
+1:0/animation_columns = 19
+1:0/0 = 0
+2:0/animation_columns = 19
+2:0/0 = 0
+3:0/animation_columns = 19
+3:0/0 = 0
+4:0/animation_columns = 19
+4:0/0 = 0
+5:0/animation_columns = 19
+5:0/0 = 0
+6:0/animation_columns = 19
+6:0/0 = 0
+7:0/animation_columns = 19
+7:0/0 = 0
+8:0/animation_columns = 19
+8:0/0 = 0
+9:0/animation_columns = 19
+9:0/0 = 0
+10:0/animation_columns = 19
+10:0/0 = 0
+11:0/animation_columns = 19
+11:0/0 = 0
+12:0/animation_columns = 19
+12:0/0 = 0
+13:0/animation_columns = 19
+13:0/0 = 0
+14:0/animation_columns = 19
+14:0/0 = 0
+15:0/animation_columns = 19
+15:0/0 = 0
+16:0/animation_columns = 19
+16:0/0 = 0
+17:0/animation_columns = 19
+17:0/0 = 0
+18:0/animation_columns = 19
+18:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_e5bmj"]
+texture = ExtResource("9_1b0o8")
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_iqf6e"]
+texture = ExtResource("10_w4kkx")
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_stkom"]
+texture = ExtResource("11_mhiu8")
+0:0/0 = 0
+1:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5t8rk"]
+texture = ExtResource("12_lswbx")
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_cag23"]
+texture = ExtResource("13_uujh0")
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3pila"]
+texture = ExtResource("14_3t34l")
+0:0/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_d86x1"]
+sources/0 = SubResource("TileSetAtlasSource_qy4h0")
+sources/1 = SubResource("TileSetAtlasSource_e5bmj")
+sources/2 = SubResource("TileSetAtlasSource_iqf6e")
+sources/3 = SubResource("TileSetAtlasSource_stkom")
+sources/4 = SubResource("TileSetAtlasSource_5t8rk")
+sources/5 = SubResource("TileSetAtlasSource_cag23")
+sources/6 = SubResource("TileSetAtlasSource_3pila")
+
 [node name="level01" type="Node2D" unique_id=528149217]
 script = ExtResource("1_iex00")
 level_name = "level_1"
@@ -81,6 +167,10 @@ tile_map_data = PackedByteArray("AAAUAAsAAQACAAIAAAAUAAoAAQACAAIAAAATAAsAAQACAAI
 [node name="Borders" type="Sprite2D" parent="Node/Tiles" unique_id=1330939778]
 texture = ExtResource("7_kfebt")
 
+[node name="foregroud" type="TileMapLayer" parent="Node/Tiles" unique_id=214857227]
+tile_map_data = PackedByteArray("AAAAAAgAAwAAAAAAAAAAAAkAAwAAAAEAAAABAAgAAwABAAAAAAABAAkAAwABAAEAAAD//wQABAAAAAAAAAD//wMABQAAAAAAAAD+/wQABgAAAAAAAAA=")
+tile_set = SubResource("TileSet_d86x1")
+
 [node name="Entities" type="Node" parent="Node" unique_id=341219396]
 
 [node name="CompleteSquare" parent="Node/Entities" unique_id=7729194 instance=ExtResource("11_ijn0p")]
@@ -88,22 +178,31 @@ position = Vector2(56, -56)
 
 [node name="Decorations" type="Node" parent="Node" unique_id=1235809323]
 
-[node name="decal_coral_pink_holes" parent="Node" unique_id=1042929158 instance=ExtResource("9_jmes4")]
+[node name="decal_coral_pink_holes" parent="Node/Decorations" unique_id=1042929158 instance=ExtResource("9_jmes4")]
 position = Vector2(24, 40)
 
-[node name="decal_coral_pink_holes2" parent="Node" unique_id=1970314382 instance=ExtResource("9_jmes4")]
+[node name="decal_coral_pink_holes2" parent="Node/Decorations" unique_id=1970314382 instance=ExtResource("9_jmes4")]
 position = Vector2(88, 56)
 
-[node name="decal_coral_pink_holes3" parent="Node" unique_id=29766773 instance=ExtResource("9_jmes4")]
+[node name="decal_coral_pink_holes3" parent="Node/Decorations" unique_id=29766773 instance=ExtResource("9_jmes4")]
 position = Vector2(40, 8)
 flip_h = true
 
-[node name="decal_rocks" parent="Node" unique_id=1209891785 instance=ExtResource("10_tyxjt")]
+[node name="decal_rocks" parent="Node/Decorations" unique_id=1209891785 instance=ExtResource("10_tyxjt")]
 position = Vector2(56, 88)
 
-[node name="decal_rocks2" parent="Node" unique_id=1752826437 instance=ExtResource("10_tyxjt")]
+[node name="decal_rocks2" parent="Node/Decorations" unique_id=1752826437 instance=ExtResource("10_tyxjt")]
 position = Vector2(88, 8)
 flip_h = true
+
+[node name="caustics" parent="Node/Decorations" unique_id=1221341095 instance=ExtResource("10_07lms")]
+modulate = Color(1, 1, 1, 0.16862746)
+z_index = -30
+position = Vector2(23, 16.000002)
+
+[node name="rays" parent="Node/Decorations" unique_id=253563273 instance=ExtResource("12_gi8m4")]
+position = Vector2(37.000004, -236)
+scale = Vector2(1.7740387, 15.252151)
 
 [node name="PlayerSpawn" parent="." unique_id=838411621 instance=ExtResource("9_ijn0p")]
 position = Vector2(72, 56)

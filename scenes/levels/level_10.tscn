@@ -11,9 +11,13 @@
 [ext_resource type="Texture2D" uid="uid://cx5gmj7iwwdx4" path="res://assets_folder/sprites/borders.png" id="7_ko8rk"]
 [ext_resource type="PackedScene" uid="uid://c28xyd5ye5sda" path="res://scenes/level_objects/complete_square.tscn" id="8_gttrq"]
 [ext_resource type="PackedScene" uid="uid://ckfoqvgpqnqw7" path="res://scenes/level_objects/player_spawn_point.tscn" id="9_n3gcc"]
+[ext_resource type="PackedScene" uid="uid://bn6d0hy8ipc1m" path="res://rays.tscn" id="12_omffp"]
 [ext_resource type="PackedScene" uid="uid://c1m4qoly8rtu7" path="res://scenes/level_objects/fish_spawn_point.tscn" id="12_r3n8r"]
+[ext_resource type="PackedScene" uid="uid://bljnrpxaltra8" path="res://caustics.tscn" id="13_7pxtr"]
 [ext_resource type="PackedScene" uid="uid://cdjj3mj2iatuo" path="res://scenes/level_objects/urchin.tscn" id="13_ko8rk"]
+[ext_resource type="PackedScene" uid="uid://qsaqt07ruams" path="res://scenes/level_decoration/turtle.tscn" id="14_7pxtr"]
 [ext_resource type="PackedScene" uid="uid://dlebcef8rkaya" path="res://scenes/level_objects/pushable_bubble.tscn" id="14_r3n8r"]
+[ext_resource type="PackedScene" uid="uid://dusryy0kldnd2" path="res://shark.tscn" id="15_ctyhw"]
 [ext_resource type="PackedScene" uid="uid://dl445e0hfhttj" path="res://scenes/level_decoration/seaweed.tscn" id="15_ilo0b"]
 [ext_resource type="PackedScene" uid="uid://d01ffqr3b4fb7" path="res://scenes/level_decoration/coral_yellow_holes.tscn" id="16_hl75t"]
 [ext_resource type="PackedScene" uid="uid://devigby11s16p" path="res://scenes/level_decoration/coral_yellow_stalk.tscn" id="17_omffp"]
@@ -102,6 +106,20 @@ texture = ExtResource("7_ko8rk")
 position = Vector2(184, 56)
 
 [node name="Decorations" type="Node" parent="Node" unique_id=1235809323]
+
+[node name="rays" parent="Node/Decorations" unique_id=253563273 instance=ExtResource("12_omffp")]
+position = Vector2(173, -283)
+scale = Vector2(1.1930796, 28.62537)
+
+[node name="caustics" parent="Node/Decorations" unique_id=1221341095 instance=ExtResource("13_7pxtr")]
+modulate = Color(1, 1, 1, 0.14509805)
+position = Vector2(0.99999994, 0)
+
+[node name="Turtle" parent="Node/Decorations" unique_id=1567539023 instance=ExtResource("14_7pxtr")]
+position = Vector2(280, 72)
+
+[node name="shark" parent="Node/Decorations" unique_id=1144552742 instance=ExtResource("15_ctyhw")]
+position = Vector2(248, 96)
 
 [node name="Urchin" parent="." unique_id=23606013 instance=ExtResource("13_ko8rk")]
 position = Vector2(-56, -152)

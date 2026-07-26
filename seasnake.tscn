@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dngl3j43jgx7u"]
 
-[ext_resource type="Texture2D" path="res://assets_folder/sprites/objects/seasnake.png" id="1_jeono"]
+[ext_resource type="Texture2D" uid="uid://clmekc1ytkb4g" path="res://assets_folder/sprites/tiles/seasnake.png" id="1_jeono"]
 
 [node name="seasnake" type="Sprite2D" unique_id=1905976829]
 texture = ExtResource("1_jeono")

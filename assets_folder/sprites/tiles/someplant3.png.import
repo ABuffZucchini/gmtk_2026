@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://pqgkdmul2un8"
-path="res://.godot/imported/someplant4.png-d1a896e950c29fd530c66e703142d594.ctex"
+uid="uid://b7344u05ymhr1"
+path="res://.godot/imported/someplant3.png-dbca736e72bae42ef5b9b2b048c65417.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets_folder/sprites/decoration/decals/someplant4.png"
-dest_files=["res://.godot/imported/someplant4.png-d1a896e950c29fd530c66e703142d594.ctex"]
+source_file="res://assets_folder/sprites/tiles/someplant3.png"
+dest_files=["res://.godot/imported/someplant3.png-dbca736e72bae42ef5b9b2b048c65417.ctex"]
 
 [params]
 

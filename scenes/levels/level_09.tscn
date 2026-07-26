@@ -15,6 +15,8 @@
 [ext_resource type="PackedScene" uid="uid://cqms0ddv5x5jc" path="res://scenes/level_decoration/starfish.tscn" id="12_0ot5m"]
 [ext_resource type="PackedScene" uid="uid://dlebcef8rkaya" path="res://scenes/level_objects/pushable_bubble.tscn" id="12_k1r5j"]
 [ext_resource type="PackedScene" uid="uid://qsaqt07ruams" path="res://scenes/level_decoration/turtle.tscn" id="13_k1r5j"]
+[ext_resource type="PackedScene" uid="uid://bljnrpxaltra8" path="res://caustics.tscn" id="13_vuyry"]
+[ext_resource type="PackedScene" uid="uid://bn6d0hy8ipc1m" path="res://rays.tscn" id="14_qxsfx"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6444e"]
 texture = ExtResource("2_ji8tr")
@@ -142,6 +144,14 @@ position = Vector2(-24, -72)
 flip_h = true
 
 [node name="Decorations" type="Node" parent="Node" unique_id=1235809323]
+
+[node name="caustics" parent="Node/Decorations" unique_id=1221341095 instance=ExtResource("13_vuyry")]
+modulate = Color(1, 1, 1, 0.13725491)
+
+[node name="rays" parent="Node/Decorations" unique_id=253563273 instance=ExtResource("14_qxsfx")]
+position = Vector2(-47.999996, -416.00003)
+rotation = 0.05841598
+scale = Vector2(1.2103667, 27.917995)
 
 [node name="PlayerSpawn" parent="." unique_id=838411621 instance=ExtResource("9_vuyry")]
 position = Vector2(72, 40)

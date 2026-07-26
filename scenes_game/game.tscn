@@ -114,6 +114,7 @@ wait_time = 0.2
 
 [node name="PlayerSounds" type="AudioStreamPlayer2D" parent="." unique_id=1359851843]
 process_mode = 3
+scale = Vector2(0.8594119, 0.85778713)
 max_polyphony = 3
 bus = &"SFX"
 

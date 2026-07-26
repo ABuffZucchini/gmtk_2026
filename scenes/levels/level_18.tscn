@@ -13,7 +13,9 @@
 [ext_resource type="PackedScene" uid="uid://c28xyd5ye5sda" path="res://scenes/level_objects/complete_square.tscn" id="11_gyibt"]
 [ext_resource type="PackedScene" uid="uid://cdjj3mj2iatuo" path="res://scenes/level_objects/urchin.tscn" id="12_fbno3"]
 [ext_resource type="PackedScene" uid="uid://dlebcef8rkaya" path="res://scenes/level_objects/pushable_bubble.tscn" id="13_gtxpi"]
+[ext_resource type="PackedScene" uid="uid://bljnrpxaltra8" path="res://caustics.tscn" id="14_2k1i6"]
 [ext_resource type="PackedScene" uid="uid://c1m4qoly8rtu7" path="res://scenes/level_objects/fish_spawn_point.tscn" id="14_n4g13"]
+[ext_resource type="PackedScene" uid="uid://bn6d0hy8ipc1m" path="res://rays.tscn" id="15_4nxe3"]
 [ext_resource type="PackedScene" uid="uid://ckfoqvgpqnqw7" path="res://scenes/level_objects/player_spawn_point.tscn" id="15_xfkyc"]
 [ext_resource type="PackedScene" uid="uid://8utka7s2ach6" path="res://scenes/level_decoration/coral_red_stalk.tscn" id="16_eebtn"]
 [ext_resource type="PackedScene" uid="uid://d01ffqr3b4fb7" path="res://scenes/level_decoration/coral_yellow_holes.tscn" id="17_hntht"]
@@ -144,6 +146,14 @@ position = Vector2(-24, 24)
 position = Vector2(-24, 8)
 
 [node name="Decorations" type="Node" parent="Node" unique_id=1235809323]
+
+[node name="caustics" parent="Node/Decorations" unique_id=1221341095 instance=ExtResource("14_2k1i6")]
+modulate = Color(1, 1, 1, 0.19607843)
+
+[node name="rays" parent="Node/Decorations" unique_id=253563273 instance=ExtResource("15_4nxe3")]
+z_index = 18
+position = Vector2(-32, -212)
+scale = Vector2(0.9495735, 14.913568)
 
 [node name="FishSpawn" parent="Node" unique_id=838411621 instance=ExtResource("14_n4g13")]
 position = Vector2(-56, -24)

@@ -11,7 +11,9 @@
 [ext_resource type="Texture2D" uid="uid://cx5gmj7iwwdx4" path="res://assets_folder/sprites/borders.png" id="9_nv72k"]
 [ext_resource type="PackedScene" uid="uid://bmhe7nttfnwef" path="res://scenes/tiles_red.tscn" id="10_mox4t"]
 [ext_resource type="PackedScene" uid="uid://c28xyd5ye5sda" path="res://scenes/level_objects/complete_square.tscn" id="11_47ywb"]
+[ext_resource type="PackedScene" uid="uid://bn6d0hy8ipc1m" path="res://rays.tscn" id="12_bhehy"]
 [ext_resource type="PackedScene" uid="uid://c1m4qoly8rtu7" path="res://scenes/level_objects/fish_spawn_point.tscn" id="12_i8ajp"]
+[ext_resource type="PackedScene" uid="uid://bljnrpxaltra8" path="res://caustics.tscn" id="13_l0fve"]
 [ext_resource type="PackedScene" uid="uid://ckfoqvgpqnqw7" path="res://scenes/level_objects/player_spawn_point.tscn" id="13_ladkm"]
 [ext_resource type="PackedScene" uid="uid://dlebcef8rkaya" path="res://scenes/level_objects/pushable_bubble.tscn" id="14_5iydt"]
 [ext_resource type="PackedScene" uid="uid://cdjj3mj2iatuo" path="res://scenes/level_objects/urchin.tscn" id="15_5fbrw"]
@@ -100,6 +102,13 @@ tile_map_data = PackedByteArray("AAAKAP//AQACAAIAAAAKAP7/AQACAAIAAAAKAP3/AQACAAI
 position = Vector2(24, 24)
 
 [node name="Decorations" type="Node" parent="Node" unique_id=1235809323]
+
+[node name="caustics" parent="Node/Decorations" unique_id=1221341095 instance=ExtResource("13_l0fve")]
+modulate = Color(1, 1, 1, 0.09411765)
+
+[node name="rays" parent="Node/Decorations" unique_id=253563273 instance=ExtResource("12_bhehy")]
+position = Vector2(14, -290)
+scale = Vector2(1.0462215, 26.176697)
 
 [node name="FishSpawn2" parent="Node" unique_id=676186546 instance=ExtResource("12_i8ajp")]
 position = Vector2(-40, -40)

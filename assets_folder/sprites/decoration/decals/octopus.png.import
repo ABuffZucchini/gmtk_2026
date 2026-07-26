@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://clmekc1ytkb4g"
-path="res://.godot/imported/seasnake.png-0e6f25126acf675fd2d1b9ad2d59ec01.ctex"
+uid="uid://xcvm4vqrosum"
+path="res://.godot/imported/octopus.png-2bc68d822e125329c20702e4d4c829cc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets_folder/sprites/decoration/decals/seasnake.png"
-dest_files=["res://.godot/imported/seasnake.png-0e6f25126acf675fd2d1b9ad2d59ec01.ctex"]
+source_file="res://assets_folder/sprites/decoration/decals/octopus.png"
+dest_files=["res://.godot/imported/octopus.png-2bc68d822e125329c20702e4d4c829cc.ctex"]
 
 [params]
 

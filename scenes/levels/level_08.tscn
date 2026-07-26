@@ -13,9 +13,13 @@
 [ext_resource type="PackedScene" uid="uid://ctico0rrbbr4p" path="res://scenes/level_decoration/coral_teal_stalk.tscn" id="9_od4je"]
 [ext_resource type="PackedScene" uid="uid://v8c1eog2wryf" path="res://scenes/level_decoration/coral_teal_holes.tscn" id="10_jvt0k"]
 [ext_resource type="PackedScene" uid="uid://dlebcef8rkaya" path="res://scenes/level_objects/pushable_bubble.tscn" id="11_llmnb"]
+[ext_resource type="PackedScene" uid="uid://bn6d0hy8ipc1m" path="res://rays.tscn" id="12_82nd4"]
 [ext_resource type="PackedScene" uid="uid://cdjj3mj2iatuo" path="res://scenes/level_objects/urchin.tscn" id="12_bxvfk"]
 [ext_resource type="PackedScene" uid="uid://h1buup40yhvh" path="res://scenes/level_decoration/coral_pink_stalk.tscn" id="13_c66uu"]
+[ext_resource type="PackedScene" uid="uid://bljnrpxaltra8" path="res://caustics.tscn" id="13_dlex5"]
+[ext_resource type="PackedScene" uid="uid://c8bs4esnfafwf" path="res://manta_rays.tscn" id="14_dokr0"]
 [ext_resource type="PackedScene" uid="uid://ljbjmmfkiwgl" path="res://scenes/level_decoration/coral_pink_holes.tscn" id="14_hycxa"]
+[ext_resource type="PackedScene" uid="uid://c15jl8q0xqw00" path="res://test_shader.tscn" id="15_6trqr"]
 [ext_resource type="PackedScene" uid="uid://qsaqt07ruams" path="res://scenes/level_decoration/turtle.tscn" id="15_od4je"]
 [ext_resource type="PackedScene" uid="uid://cqms0ddv5x5jc" path="res://scenes/level_decoration/starfish.tscn" id="16_jvt0k"]
 [ext_resource type="PackedScene" uid="uid://csys1alryd6vc" path="res://scenes/level_decoration/seashell.tscn" id="17_82nd4"]
@@ -104,6 +108,22 @@ flip_h = true
 position = Vector2(-104, 24)
 
 [node name="Decorations" type="Node" parent="Node" unique_id=1235809323]
+
+[node name="rays" parent="Node/Decorations" unique_id=253563273 instance=ExtResource("12_82nd4")]
+z_index = 18
+position = Vector2(-117, -326.99997)
+scale = Vector2(1.473239, 28.773829)
+
+[node name="caustics" parent="Node/Decorations" unique_id=1221341095 instance=ExtResource("13_dlex5")]
+modulate = Color(1, 1, 1, 0.15294118)
+
+[node name="manta_rays" parent="Node/Decorations" unique_id=2063016311 instance=ExtResource("14_dokr0")]
+position = Vector2(-106, 315)
+
+[node name="Sprite2D" parent="Node/Decorations" unique_id=1694025031 instance=ExtResource("15_6trqr")]
+modulate = Color(1, 1, 1, 0.08627451)
+z_index = 25
+scale = Vector2(1.290067, 1.0394777)
 
 [node name="PlayerSpawn" parent="." unique_id=838411621 instance=ExtResource("9_c66uu")]
 position = Vector2(-152, -88)

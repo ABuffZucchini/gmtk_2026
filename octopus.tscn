@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://deua1w0qbvwv5"]
 
-[ext_resource type="Texture2D" path="res://assets_folder/sprites/objects/octopus.png" id="1_o2tub"]
+[ext_resource type="Texture2D" uid="uid://xcvm4vqrosum" path="res://assets_folder/sprites/decoration/decals/octopus.png" id="1_o2tub"]
 
 [node name="octopus" type="Sprite2D" unique_id=1853433625]
 texture = ExtResource("1_o2tub")

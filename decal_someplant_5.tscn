@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://pd2pe0f84k6y"]
 
-[ext_resource type="Texture2D" uid="uid://4p8gwuit64bj" path="res://assets_folder/sprites/decoration/decals/someplant5.png" id="1_yteng"]
+[ext_resource type="Texture2D" uid="uid://4p8gwuit64bj" path="res://assets_folder/sprites/tiles/someplant5.png" id="1_yteng"]
 
 [node name="decal_someplant5" type="Sprite2D" unique_id=1696984765]
 texture = ExtResource("1_yteng")

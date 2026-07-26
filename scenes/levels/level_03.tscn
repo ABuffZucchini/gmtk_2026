@@ -9,6 +9,8 @@
 [ext_resource type="Texture2D" uid="uid://cx5gmj7iwwdx4" path="res://assets_folder/sprites/borders.png" id="7_xunku"]
 [ext_resource type="PackedScene" uid="uid://c28xyd5ye5sda" path="res://scenes/level_objects/complete_square.tscn" id="8_j33in"]
 [ext_resource type="PackedScene" uid="uid://ckfoqvgpqnqw7" path="res://scenes/level_objects/player_spawn_point.tscn" id="9_7oqvy"]
+[ext_resource type="PackedScene" uid="uid://bljnrpxaltra8" path="res://caustics.tscn" id="9_j33in"]
+[ext_resource type="PackedScene" uid="uid://bn6d0hy8ipc1m" path="res://rays.tscn" id="10_7oqvy"]
 [ext_resource type="PackedScene" uid="uid://dlebcef8rkaya" path="res://scenes/level_objects/pushable_bubble.tscn" id="10_foqc1"]
 [ext_resource type="PackedScene" uid="uid://cdjj3mj2iatuo" path="res://scenes/level_objects/urchin.tscn" id="11_dkd5g"]
 [ext_resource type="PackedScene" uid="uid://dtxcna6j7rt75" path="res://scenes/level_decoration/rocks.tscn" id="12_xunku"]
@@ -89,6 +91,13 @@ texture = ExtResource("7_xunku")
 position = Vector2(8, -72)
 
 [node name="Decorations" type="Node" parent="Node" unique_id=1235809323]
+
+[node name="caustics" parent="Node/Decorations" unique_id=1221341095 instance=ExtResource("9_j33in")]
+modulate = Color(1, 1, 1, 0.15686275)
+
+[node name="rays" parent="Node/Decorations" unique_id=253563273 instance=ExtResource("10_7oqvy")]
+position = Vector2(-9, -296)
+scale = Vector2(1.8113834, 19.489752)
 
 [node name="PlayerSpawn" parent="." unique_id=838411621 instance=ExtResource("9_7oqvy")]
 position = Vector2(8, 40)

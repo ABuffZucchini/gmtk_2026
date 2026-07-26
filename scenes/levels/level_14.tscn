@@ -15,7 +15,10 @@
 [ext_resource type="PackedScene" uid="uid://c1m4qoly8rtu7" path="res://scenes/level_objects/fish_spawn_point.tscn" id="12_4qnux"]
 [ext_resource type="PackedScene" uid="uid://ckfoqvgpqnqw7" path="res://scenes/level_objects/player_spawn_point.tscn" id="13_4ubua"]
 [ext_resource type="PackedScene" uid="uid://dlebcef8rkaya" path="res://scenes/level_objects/pushable_bubble.tscn" id="13_w0qkw"]
+[ext_resource type="PackedScene" uid="uid://bn6d0hy8ipc1m" path="res://rays.tscn" id="14_rfrxc"]
+[ext_resource type="PackedScene" uid="uid://bljnrpxaltra8" path="res://caustics.tscn" id="15_3cpn8"]
 [ext_resource type="PackedScene" uid="uid://8utka7s2ach6" path="res://scenes/level_decoration/coral_red_stalk.tscn" id="15_b2233"]
+[ext_resource type="PackedScene" uid="uid://dusryy0kldnd2" path="res://shark.tscn" id="16_8fg8a"]
 [ext_resource type="PackedScene" uid="uid://ctico0rrbbr4p" path="res://scenes/level_decoration/coral_teal_stalk.tscn" id="16_rfrxc"]
 [ext_resource type="PackedScene" uid="uid://devigby11s16p" path="res://scenes/level_decoration/coral_yellow_stalk.tscn" id="17_3cpn8"]
 [ext_resource type="PackedScene" uid="uid://cqms0ddv5x5jc" path="res://scenes/level_decoration/starfish.tscn" id="19_8fg8a"]
@@ -121,6 +124,22 @@ position = Vector2(136, 56)
 position = Vector2(152, 56)
 
 [node name="Decorations" type="Node" parent="Node" unique_id=1235809323]
+
+[node name="rays" parent="Node/Decorations" unique_id=253563273 instance=ExtResource("14_rfrxc")]
+position = Vector2(93.00001, -214)
+scale = Vector2(1.1105872, 23.223743)
+
+[node name="caustics" parent="Node/Decorations" unique_id=1221341095 instance=ExtResource("15_3cpn8")]
+modulate = Color(1, 1, 1, 0.14901961)
+
+[node name="shark" parent="Node/Decorations" unique_id=1144552742 instance=ExtResource("16_8fg8a")]
+position = Vector2(-255, 62)
+
+[node name="shark2" parent="Node/Decorations" unique_id=1675295110 instance=ExtResource("16_8fg8a")]
+position = Vector2(-273, 37)
+
+[node name="shark3" parent="Node/Decorations" unique_id=525192252 instance=ExtResource("16_8fg8a")]
+position = Vector2(-222, 46)
 
 [node name="FishSpawn" parent="Node" unique_id=838411621 instance=ExtResource("12_4qnux")]
 position = Vector2(248, 56)

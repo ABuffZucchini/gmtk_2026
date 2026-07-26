@@ -3,18 +3,25 @@
 [ext_resource type="Script" uid="uid://de276yjxo6ftp" path="res://scripts/Level.gd" id="1_dumt4"]
 [ext_resource type="Texture2D" uid="uid://mi343ajpq62h" path="res://assets_folder/sprites/tiles/blue_coral.png" id="6_e44cy"]
 [ext_resource type="Texture2D" uid="uid://bx8sulydlpqkj" path="res://assets_folder/sprites/base_grid_blue.png" id="7_c0l0g"]
+[ext_resource type="Texture2D" uid="uid://q5frujt5qbsy" path="res://assets_folder/sprites/tiles/grass.png" id="7_qj5lk"]
+[ext_resource type="Texture2D" uid="uid://4p8gwuit64bj" path="res://assets_folder/sprites/tiles/someplant5.png" id="8_7qmoy"]
 [ext_resource type="Script" uid="uid://yridvtxo1s15" path="res://scripts/make_visible_on_ready.gd" id="8_j7ex6"]
+[ext_resource type="Texture2D" uid="uid://pqgkdmul2un8" path="res://assets_folder/sprites/tiles/someplant4.png" id="9_e44cy"]
 [ext_resource type="PackedScene" uid="uid://h1buup40yhvh" path="res://scenes/level_decoration/coral_pink_stalk.tscn" id="9_j6jkn"]
 [ext_resource type="PackedScene" uid="uid://b13yyvg60vma5" path="res://scenes/tiles_green.tscn" id="9_xrglu"]
 [ext_resource type="PackedScene" uid="uid://cvu6th43hbq1y" path="res://scenes/tiles_pink.tscn" id="10_2ptqj"]
+[ext_resource type="Texture2D" uid="uid://b7344u05ymhr1" path="res://assets_folder/sprites/tiles/someplant3.png" id="10_c0l0g"]
 [ext_resource type="PackedScene" uid="uid://v8c1eog2wryf" path="res://scenes/level_decoration/coral_teal_holes.tscn" id="10_gfjph"]
 [ext_resource type="PackedScene" uid="uid://ctico0rrbbr4p" path="res://scenes/level_decoration/coral_teal_stalk.tscn" id="11_7smhd"]
+[ext_resource type="Texture2D" uid="uid://cla233ltbxyo8" path="res://assets_folder/sprites/tiles/rok2.png" id="11_c0l0g"]
 [ext_resource type="PackedScene" uid="uid://ckfoqvgpqnqw7" path="res://scenes/level_objects/player_spawn_point.tscn" id="11_fsoq6"]
 [ext_resource type="PackedScene" uid="uid://bn6d0hy8ipc1m" path="res://rays.tscn" id="11_lq0d2"]
 [ext_resource type="Texture2D" uid="uid://cx5gmj7iwwdx4" path="res://assets_folder/sprites/borders.png" id="12_gfjph"]
-[ext_resource type="PackedScene" uid="uid://c8bs4esnfafwf" path="res://manta_rays.tscn" id="12_lq0d2"]
+[ext_resource type="Texture2D" uid="uid://cx87rdcd0xtv3" path="res://assets_folder/sprites/tiles/ro.png" id="12_j7ex6"]
 [ext_resource type="PackedScene" uid="uid://c28xyd5ye5sda" path="res://scenes/level_objects/complete_square.tscn" id="12_okio2"]
+[ext_resource type="PackedScene" uid="uid://bljnrpxaltra8" path="res://caustics.tscn" id="13_7ehfh"]
 [ext_resource type="Texture2D" uid="uid://ici84w4a3ha2" path="res://assets_folder/sprites/objects/wasd.png" id="13_7smhd"]
+[ext_resource type="Texture2D" uid="uid://dofcur6m3irmr" path="res://assets_folder/sprites/tiles/rok4.png" id="13_xrglu"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6444e"]
 texture = ExtResource("6_e44cy")
@@ -58,6 +65,83 @@ texture = ExtResource("7_c0l0g")
 sources/0 = SubResource("TileSetAtlasSource_6444e")
 sources/1 = SubResource("TileSetAtlasSource_evi0p")
 
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_e44cy"]
+texture = ExtResource("7_qj5lk")
+0:0/animation_columns = 19
+0:0/0 = 0
+1:0/animation_columns = 19
+1:0/0 = 0
+2:0/animation_columns = 19
+2:0/0 = 0
+3:0/animation_columns = 19
+3:0/0 = 0
+4:0/animation_columns = 19
+4:0/0 = 0
+5:0/animation_columns = 19
+5:0/0 = 0
+6:0/animation_columns = 19
+6:0/0 = 0
+7:0/animation_columns = 19
+7:0/0 = 0
+8:0/animation_columns = 19
+8:0/0 = 0
+9:0/animation_columns = 19
+9:0/0 = 0
+10:0/animation_columns = 19
+10:0/0 = 0
+11:0/animation_columns = 19
+11:0/0 = 0
+12:0/animation_columns = 19
+12:0/0 = 0
+13:0/animation_columns = 19
+13:0/0 = 0
+14:0/animation_columns = 19
+14:0/0 = 0
+15:0/animation_columns = 19
+15:0/0 = 0
+16:0/animation_columns = 19
+16:0/0 = 0
+17:0/animation_columns = 19
+17:0/0 = 0
+18:0/animation_columns = 19
+18:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_c0l0g"]
+texture = ExtResource("8_7qmoy")
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_j7ex6"]
+texture = ExtResource("9_e44cy")
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_xrglu"]
+texture = ExtResource("10_c0l0g")
+0:0/0 = 0
+1:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2ptqj"]
+texture = ExtResource("11_c0l0g")
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5yeic"]
+texture = ExtResource("12_j7ex6")
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_okio2"]
+texture = ExtResource("13_xrglu")
+0:0/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_7ehfh"]
+sources/0 = SubResource("TileSetAtlasSource_e44cy")
+sources/1 = SubResource("TileSetAtlasSource_c0l0g")
+sources/2 = SubResource("TileSetAtlasSource_j7ex6")
+sources/3 = SubResource("TileSetAtlasSource_xrglu")
+sources/4 = SubResource("TileSetAtlasSource_2ptqj")
+sources/5 = SubResource("TileSetAtlasSource_5yeic")
+sources/6 = SubResource("TileSetAtlasSource_okio2")
+
 [node name="level00" type="Node2D" unique_id=528149217]
 script = ExtResource("1_dumt4")
 level_name = "level_1"
@@ -80,6 +164,10 @@ tile_map_data = PackedByteArray("AAD9/wYAAQACAAIAAAD9/wUAAQAFAAAAAAD9/wQAAQADAAE
 [node name="CoralTilesPink" parent="Node/Tiles" unique_id=1083934853 instance=ExtResource("10_2ptqj")]
 tile_map_data = PackedByteArray()
 
+[node name="foregroud" type="TileMapLayer" parent="Node/Tiles" unique_id=473759902]
+tile_map_data = PackedByteArray("AAD2/wUABAAAAAAAAAD2/wYABAAAAAAAAAD0/wUAAwAAAAAAAAD0/wYAAwAAAAEAAAD1/wUAAwABAAAAAAD1/wYAAwABAAEAAAA=")
+tile_set = SubResource("TileSet_7ehfh")
+
 [node name="Entities" type="Node" parent="Node" unique_id=341219396]
 
 [node name="CompleteSquare" parent="Node/Entities" unique_id=7729194 instance=ExtResource("12_okio2")]
@@ -100,10 +188,14 @@ position = Vector2(-72, -8)
 position = Vector2(8, -24)
 flip_h = true
 
-[node name="Sprite2D" parent="Node/Decorations" unique_id=253563273 instance=ExtResource("11_lq0d2")]
+[node name="caustics" parent="Node/Decorations" unique_id=1221341095 instance=ExtResource("13_7ehfh")]
+modulate = Color(1, 1, 1, 0.21960784)
+z_index = -1
 
-[node name="manta_rays" parent="Node/Decorations" unique_id=2063016311 instance=ExtResource("12_lq0d2")]
-position = Vector2(120, 288)
+[node name="rays" parent="Node/Decorations" unique_id=2144772117 instance=ExtResource("11_lq0d2")]
+z_index = 10
+position = Vector2(-39.999996, -280)
+scale = Vector2(1.8000481, 24.10989)
 
 [node name="Borders" type="Sprite2D" parent="." unique_id=1086904654]
 texture = ExtResource("12_gfjph")

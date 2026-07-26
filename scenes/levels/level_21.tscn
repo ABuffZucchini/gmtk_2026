@@ -26,6 +26,7 @@
 [ext_resource type="PackedScene" uid="uid://dl445e0hfhttj" path="res://scenes/level_decoration/seaweed.tscn" id="22_1hgpo"]
 [ext_resource type="PackedScene" uid="uid://qsaqt07ruams" path="res://scenes/level_decoration/turtle.tscn" id="23_qxhiv"]
 [ext_resource type="PackedScene" uid="uid://cqms0ddv5x5jc" path="res://scenes/level_decoration/starfish.tscn" id="24_m7gy1"]
+[ext_resource type="PackedScene" uid="uid://c8bs4esnfafwf" path="res://manta_rays.tscn" id="27_a0dhc"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6444e"]
 texture = ExtResource("2_qeely")
@@ -426,3 +427,42 @@ position = Vector2(184, 104)
 [node name="decal_starfish2" parent="." unique_id=272700707 instance=ExtResource("24_m7gy1")]
 position = Vector2(-280, -104)
 flip_h = true
+
+[node name="manta_rays" parent="." unique_id=2063016311 instance=ExtResource("27_a0dhc")]
+position = Vector2(-106, 315)
+
+[node name="manta_rays2" parent="." unique_id=199791622 instance=ExtResource("27_a0dhc")]
+position = Vector2(40, 568)
+
+[node name="manta_rays3" parent="." unique_id=163224091 instance=ExtResource("27_a0dhc")]
+position = Vector2(-24, 904)
+
+[node name="manta_rays5" parent="." unique_id=159587397 instance=ExtResource("27_a0dhc")]
+position = Vector2(344, 824)
+
+[node name="manta_rays7" parent="." unique_id=2087711391 instance=ExtResource("27_a0dhc")]
+position = Vector2(104, 1320)
+
+[node name="manta_rays8" parent="." unique_id=76768518 instance=ExtResource("27_a0dhc")]
+position = Vector2(-280, 1016)
+
+[node name="manta_rays9" parent="." unique_id=1319008167 instance=ExtResource("27_a0dhc")]
+position = Vector2(-504, 1208)
+
+[node name="manta_rays10" parent="." unique_id=726789183 instance=ExtResource("27_a0dhc")]
+position = Vector2(-120, 1640)
+
+[node name="manta_rays11" parent="." unique_id=1627329094 instance=ExtResource("27_a0dhc")]
+position = Vector2(72, 1960)
+
+[node name="manta_rays12" parent="." unique_id=1654599687 instance=ExtResource("27_a0dhc")]
+position = Vector2(-120, 2440)
+
+[node name="manta_rays13" parent="." unique_id=279290090 instance=ExtResource("27_a0dhc")]
+position = Vector2(40, 3656)
+
+[node name="manta_rays6" parent="." unique_id=246915282 instance=ExtResource("27_a0dhc")]
+position = Vector2(238, 1139)
+
+[node name="manta_rays4" parent="." unique_id=1828033105 instance=ExtResource("27_a0dhc")]
+position = Vector2(-130, 1219)

@@ -1,6 +1,21 @@
 [gd_scene format=3 uid="uid://c15jl8q0xqw00"]
 
+[ext_resource type="Shader" uid="uid://q3ypr8yyh2of" path="res://test_shader.gdshader" id="1_gi6pi"]
+
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_1ol56"]
+shader = ExtResource("1_gi6pi")
+shader_parameter/waveAmplitude = 0.25
+shader_parameter/correctVertex = true
+shader_parameter/waveFrequency = 10.0
+shader_parameter/verticalWave = true
+shader_parameter/keepTransparency = true
+shader_parameter/useTime = true
+shader_parameter/waveSpeed = 1.0
+shader_parameter/progress = 0.0
+shader_parameter/firstHalf = 0.5
+shader_parameter/secondHalf = 0.5
+shader_parameter/freezeFirstHalf = false
+shader_parameter/freezeSecondHalf = false
 
 [sub_resource type="Gradient" id="Gradient_5trlm"]
 colors = PackedColorArray(0, 0, 0, 0.047058824, 0.31071368, 0.49544615, 0.23014557, 0.85882354)

@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://b3x78uwls3ama"]
+
+[ext_resource type="Texture2D" path="res://assets_folder/sprites/decoration/bg/rock4.png" id="1_knt4r"]
+
+[node name="decal_rockface" type="Sprite2D" unique_id=568778129]
+texture = ExtResource("1_knt4r")

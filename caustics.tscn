@@ -1,0 +1,4 @@
+[gd_scene format=3 uid="uid://bljnrpxaltra8"]
+
+[node name="caustics" type="Sprite2D" unique_id=1221341095]
+scale = Vector2(0.4, 0.4)

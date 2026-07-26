@@ -1,0 +1,42 @@
+[gd_scene format=3 uid="uid://c8bs4esnfafwf"]
+
+[ext_resource type="Texture2D" path="res://assets_folder/sprites/decoration/bg/manta_rays.png" id="1_nbb6n"]
+[ext_resource type="Script" path="res://manta_rays.gd" id="2_pgrln"]
+[ext_resource type="PackedScene" uid="uid://ck4gnekao5gdq" path="res://scenes/particles/bubbles.tscn" id="3_4der1"]
+
+[node name="manta_rays" type="Sprite2D" unique_id=2063016311]
+texture = ExtResource("1_nbb6n")
+script = ExtResource("2_pgrln")
+
+[node name="BubbleParticles" parent="." unique_id=846339583 instance=ExtResource("3_4der1")]
+z_index = 12
+position = Vector2(88, -8.000002)
+rotation = 2.8567495
+lifetime = 1.3
+speed_scale = 7.95
+spread = 0.0
+gravity = Vector2(0, 10)
+initial_velocity_max = 2.0
+scale_amount_min = 0.0
+
+[node name="BubbleParticles2" parent="." unique_id=2008761849 instance=ExtResource("3_4der1")]
+z_index = 12
+position = Vector2(-96, -8.000002)
+rotation = 2.8567495
+lifetime = 1.3
+speed_scale = 7.95
+spread = 0.0
+gravity = Vector2(0, 10)
+initial_velocity_max = 2.0
+scale_amount_min = 0.0
+
+[node name="BubbleParticles3" parent="." unique_id=1433019448 instance=ExtResource("3_4der1")]
+z_index = 12
+position = Vector2(-24, 112.00001)
+rotation = 2.8567495
+lifetime = 1.3
+speed_scale = 7.95
+spread = 0.0
+gravity = Vector2(0, 10)
+initial_velocity_max = 2.0
+scale_amount_min = 0.0

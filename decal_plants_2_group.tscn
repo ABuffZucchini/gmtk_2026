@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://bsd7tb04gais5"]
+
+[ext_resource type="Texture2D" path="res://assets_folder/sprites/decoration/bg/someplant3.png" id="1_4j1ng"]
+
+[node name="decal_plants2_group" type="Sprite2D" unique_id=1553522580]
+texture = ExtResource("1_4j1ng")

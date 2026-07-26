@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://bl12olkwtudkv"]
+
+[ext_resource type="Texture2D" path="res://assets_folder/sprites/decoration/bg/someplant.png" id="1_52w4t"]
+
+[node name="decal_coral_plant" type="Sprite2D" unique_id=1688666580]
+texture = ExtResource("1_52w4t")

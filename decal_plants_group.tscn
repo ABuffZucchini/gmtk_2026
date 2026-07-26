@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://byf4dda5ccoxy"]
+
+[ext_resource type="PackedScene" uid="uid://bl12olkwtudkv" path="res://decal_coral_plant.tscn" id="1_pouu8"]
+
+[node name="decal_coral_plant_group" type="Node2D" unique_id=86509071]
+
+[node name="decal_coral_plant" parent="." unique_id=1688666580 instance=ExtResource("1_pouu8")]
+position = Vector2(0, 16)
+
+[node name="decal_coral_plant2" parent="." unique_id=624698303 instance=ExtResource("1_pouu8")]
+
+[node name="decal_coral_plant3" parent="." unique_id=1851505317 instance=ExtResource("1_pouu8")]
+position = Vector2(0, 32)
+
+[node name="decal_coral_plant4" parent="." unique_id=442779480 instance=ExtResource("1_pouu8")]
+position = Vector2(0, 48)

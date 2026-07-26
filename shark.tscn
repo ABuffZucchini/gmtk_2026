@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://dusryy0kldnd2"]
+
+[ext_resource type="Texture2D" path="res://assets_folder/sprites/objects/shark.png" id="1_rwmi6"]
+
+[node name="shark" type="Sprite2D" unique_id=1144552742]
+texture = ExtResource("1_rwmi6")

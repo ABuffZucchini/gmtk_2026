@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://c15jl8q0xqw00"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_1ol56"]
+
+[sub_resource type="Gradient" id="Gradient_5trlm"]
+colors = PackedColorArray(0, 0, 0, 0.047058824, 0.31071368, 0.49544615, 0.23014557, 0.85882354)
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_d8s6g"]
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_yr122"]
+noise = SubResource("FastNoiseLite_d8s6g")
+color_ramp = SubResource("Gradient_5trlm")
+
+[node name="Sprite2D" type="Sprite2D" unique_id=1694025031]
+modulate = Color(1, 1, 1, 0.20392157)
+self_modulate = Color(1, 1, 1, 0.1882353)
+material = SubResource("ShaderMaterial_1ol56")
+texture = SubResource("NoiseTexture2D_yr122")

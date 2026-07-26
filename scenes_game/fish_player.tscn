@@ -23,7 +23,7 @@
 [ext_resource type="Texture2D" uid="uid://bcxbb528y7xj8" path="res://assets_folder/sprites/objects/fish/untitled_0013.png" id="21_eouai"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_sh265"]
-size = Vector2(10.062893, 12.578616)
+size = Vector2(17.610062, 10.062893)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_cvnsp"]
 animations = [{
@@ -87,7 +87,7 @@ ray = NodePath("CollisionShape2D/RayCast2D")
 timer = NodePath("Timer")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=606723173 groups=["player"]]
-position = Vector2(5.9604645e-08, -5.9604645e-08)
+position = Vector2(0, -5.9604645e-08)
 scale = Vector2(0.795, 0.795)
 shape = SubResource("RectangleShape2D_sh265")
 debug_color = Color(0.17882031, 0.109327264, 0.057639055, 0.76862746)

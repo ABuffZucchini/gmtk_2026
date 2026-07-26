@@ -12,6 +12,7 @@ const NORMAL = 0
 @onready var dead:bool=false
 @onready var started:bool=true
 @onready var out_of_moves:bool=false
+@onready var move_dir:Vector2
 
 
 

@@ -104,6 +104,9 @@ position = Vector2(-88, -8)
 [node name="Urchin" parent="Node/Entities" unique_id=23606013 instance=ExtResource("10_6vksy")]
 position = Vector2(-40, 8)
 
+[node name="Urchin4" parent="Node/Entities" unique_id=1401294049 instance=ExtResource("10_6vksy")]
+position = Vector2(-40, 24)
+
 [node name="Urchin3" parent="Node/Entities" unique_id=1432786998 instance=ExtResource("10_6vksy")]
 position = Vector2(-104, -8)
 

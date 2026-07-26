@@ -97,7 +97,7 @@ texture = ExtResource("9_f1avo")
 tile_map_data = PackedByteArray()
 
 [node name="decal_coral_dead_stalk" parent="Node/Tiles" unique_id=1042929158 instance=ExtResource("11_pi8ry")]
-position = Vector2(-24, -56)
+position = Vector2(-104, -88)
 
 [node name="decal_coral_dead_holes" parent="Node/Tiles" unique_id=2112830310 instance=ExtResource("12_v72oy")]
 position = Vector2(-56, -88)
@@ -119,16 +119,19 @@ position = Vector2(-24, -88)
 [node name="Entities" type="Node" parent="Node" unique_id=341219396]
 
 [node name="CompleteSquare" parent="Node/Entities" unique_id=7729194 instance=ExtResource("11_28vuf")]
-position = Vector2(8, -40)
+position = Vector2(8, -24)
 
 [node name="PushableBubble" parent="Node/Entities" unique_id=770287474 instance=ExtResource("12_q2mgh")]
 position = Vector2(-40, -24)
 
 [node name="PushableBubble2" parent="Node/Entities" unique_id=33702591 instance=ExtResource("12_q2mgh")]
-position = Vector2(-24, -24)
+position = Vector2(-24, -40)
 
 [node name="Urchin" parent="Node/Entities" unique_id=23606013 instance=ExtResource("13_q0i62")]
 position = Vector2(-8, -8)
+
+[node name="Urchin3" parent="Node/Entities" unique_id=2014076617 instance=ExtResource("13_q0i62")]
+position = Vector2(-72, -40)
 
 [node name="Decorations" type="Node" parent="Node" unique_id=1235809323]
 

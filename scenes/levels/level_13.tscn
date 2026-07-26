@@ -147,7 +147,7 @@ position = Vector2(-8, -24)
 position = Vector2(-24, -56)
 
 [node name="PlayerSpawn" parent="." unique_id=1660150397 instance=ExtResource("13_kqp80")]
-position = Vector2(72, -40)
+position = Vector2(-8, -8)
 
 [node name="decal_coral_yellow_holes" parent="." unique_id=1997838287 instance=ExtResource("19_q3qkq")]
 position = Vector2(-200, -56)

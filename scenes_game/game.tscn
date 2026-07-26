@@ -5,7 +5,6 @@
 [ext_resource type="Script" uid="uid://ijqd43eqb2xr" path="res://scripts/level_resource.gd" id="2_3dryh"]
 [ext_resource type="Resource" uid="uid://b7lcbegfwek6y" path="res://resources/level_16.tres" id="3_f6bfc"]
 [ext_resource type="Resource" uid="uid://bmjg4nakw80fc" path="res://resources/level_21.tres" id="3_hm334"]
-[ext_resource type="Resource" uid="uid://cmbfr17ru3ue1" path="res://resources/level_00.tres" id="3_v4a3m"]
 [ext_resource type="Resource" uid="uid://iedyu6ar6kgr" path="res://resources/level_01.tres" id="3_wowpa"]
 [ext_resource type="Resource" uid="uid://cm83tb1ptww6y" path="res://resources/level_02.tres" id="5_6omba"]
 [ext_resource type="PackedScene" uid="uid://chjg06thubupt" path="res://scenes/ui/ui_in_game.tscn" id="5_wowpa"]
@@ -34,6 +33,7 @@
 [ext_resource type="PackedScene" uid="uid://b7gmc4lxc2tys" path="res://scenes_game/death_screen.tscn" id="22_b30va"]
 [ext_resource type="AudioStream" uid="uid://d1rhinjnocqo0" path="res://assets_folder/audio/sound/out_of_moves.ogg" id="23_627i3"]
 [ext_resource type="Resource" uid="uid://benxlimpt00sv" path="res://resources/level_20.tres" id="23_ivpdr"]
+[ext_resource type="Script" uid="uid://ch8b2yjbtb6yy" path="res://scenes_game/bullshit.gd" id="34_v4a3m"]
 
 [sub_resource type="Environment" id="Environment_35ju6"]
 background_mode = 3
@@ -47,7 +47,7 @@ adjustment_contrast = 1.08
 
 [node name="game" type="Node2D" unique_id=923579984 node_paths=PackedStringArray("ui", "level_sounds", "level_urchin_sounds", "death_timer", "death_rect", "pop_sound", "ui_in_game", "start_timer", "player_sounds", "fish_sounds", "reset_screen", "level_out_of_moves_sound")]
 script = ExtResource("1_qxrlw")
-level_set = Array[ExtResource("2_3dryh")]([ExtResource("3_v4a3m"), ExtResource("3_wowpa"), ExtResource("5_6omba"), ExtResource("6_5pp3u"), ExtResource("7_meg4t"), ExtResource("8_sgqkm"), ExtResource("9_05h0w"), ExtResource("10_0kj0c"), ExtResource("11_b30va"), ExtResource("12_627i3"), ExtResource("13_8mt6m"), ExtResource("14_f6bfc"), ExtResource("15_pl10d"), ExtResource("18_f1e7r"), ExtResource("17_0rkho"), ExtResource("16_7mjf2"), ExtResource("3_f6bfc"), ExtResource("20_v4a3m"), ExtResource("21_hfwyh"), ExtResource("22_3lb01"), ExtResource("23_ivpdr"), ExtResource("3_hm334")])
+level_set = Array[ExtResource("2_3dryh")]([ExtResource("16_7mjf2"), ExtResource("3_wowpa"), ExtResource("5_6omba"), ExtResource("6_5pp3u"), ExtResource("7_meg4t"), ExtResource("8_sgqkm"), ExtResource("9_05h0w"), ExtResource("10_0kj0c"), ExtResource("11_b30va"), ExtResource("12_627i3"), ExtResource("13_8mt6m"), ExtResource("14_f6bfc"), ExtResource("15_pl10d"), ExtResource("18_f1e7r"), ExtResource("17_0rkho"), ExtResource("16_7mjf2"), ExtResource("3_f6bfc"), ExtResource("20_v4a3m"), ExtResource("21_hfwyh"), ExtResource("22_3lb01"), ExtResource("23_ivpdr"), ExtResource("3_hm334")])
 ui = NodePath("UI")
 level_sounds = NodePath("LevelWinSound")
 level_urchin_sounds = NodePath("LevelUrchinSound")
@@ -132,6 +132,13 @@ offset_bottom = 288.0
 [node name="LevelOutOfMovesSound" type="AudioStreamPlayer2D" parent="." unique_id=734620812]
 stream = ExtResource("23_627i3")
 bus = &"SFX"
+
+[node name="InputManager" type="Node" parent="." unique_id=562115366 node_paths=PackedStringArray("timer")]
+script = ExtResource("34_v4a3m")
+timer = NodePath("Timer")
+
+[node name="Timer" type="Timer" parent="InputManager" unique_id=375689693]
+one_shot = true
 
 [connection signal="timeout" from="DeathTimer" to="." method="_on_death_timer_timeout"]
 [connection signal="timeout" from="StartTimer" to="." method="_on_start_timer_timeout"]

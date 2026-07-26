@@ -14,10 +14,7 @@
 [ext_resource type="PackedScene" uid="uid://c1m4qoly8rtu7" path="res://scenes/level_objects/fish_spawn_point.tscn" id="12_k2qmd"]
 [ext_resource type="PackedScene" uid="uid://ckfoqvgpqnqw7" path="res://scenes/level_objects/player_spawn_point.tscn" id="13_5m6w5"]
 [ext_resource type="PackedScene" uid="uid://cdjj3mj2iatuo" path="res://scenes/level_objects/urchin.tscn" id="13_n7mij"]
-[ext_resource type="PackedScene" uid="uid://dl445e0hfhttj" path="res://scenes/level_decoration/seaweed.tscn" id="14_uskyh"]
-[ext_resource type="PackedScene" uid="uid://cqms0ddv5x5jc" path="res://scenes/level_decoration/starfish.tscn" id="15_qoua7"]
 [ext_resource type="PackedScene" uid="uid://dtxcna6j7rt75" path="res://scenes/level_decoration/rocks.tscn" id="16_f7u74"]
-[ext_resource type="PackedScene" uid="uid://devigby11s16p" path="res://scenes/level_decoration/coral_yellow_stalk.tscn" id="17_yjm4e"]
 [ext_resource type="PackedScene" uid="uid://dlebcef8rkaya" path="res://scenes/level_objects/pushable_bubble.tscn" id="18_qoua7"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6444e"]
@@ -112,18 +109,8 @@ position = Vector2(-8, -24)
 [node name="Urchin" parent="Node" unique_id=23606013 instance=ExtResource("13_n7mij")]
 position = Vector2(40, -8)
 
-[node name="decal_seaweed" parent="Node" unique_id=1042929158 instance=ExtResource("14_uskyh")]
-position = Vector2(-24, 8)
-
-[node name="decal_starfish" parent="Node" unique_id=983364164 instance=ExtResource("15_qoua7")]
-position = Vector2(104, -24)
-
 [node name="decal_rocks" parent="Node" unique_id=603895584 instance=ExtResource("16_f7u74")]
 position = Vector2(40, -8)
-
-[node name="decal_coral_yellow_stalk" parent="Node" unique_id=46816176 instance=ExtResource("17_yjm4e")]
-position = Vector2(104, -8)
-flip_h = true
 
 [node name="PushableBubble" parent="Node" unique_id=770287474 instance=ExtResource("18_qoua7")]
 position = Vector2(88, -8)

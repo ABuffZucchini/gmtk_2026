@@ -142,13 +142,55 @@ position = Vector2(-120, -88)
 position = Vector2(-120, -104)
 
 [node name="Urchin2" parent="." unique_id=1449078070 instance=ExtResource("12_bxvfk")]
-position = Vector2(-168, -24)
+position = Vector2(-152, -40)
+
+[node name="Urchin6" parent="." unique_id=1305740311 instance=ExtResource("12_bxvfk")]
+position = Vector2(-168, -40)
+
+[node name="Urchin15" parent="." unique_id=426298153 instance=ExtResource("12_bxvfk")]
+position = Vector2(-184, -40)
+
+[node name="Urchin16" parent="." unique_id=1708926996 instance=ExtResource("12_bxvfk")]
+position = Vector2(-184, -56)
+
+[node name="Urchin17" parent="." unique_id=743679452 instance=ExtResource("12_bxvfk")]
+position = Vector2(-184, -72)
+
+[node name="Urchin18" parent="." unique_id=1451910033 instance=ExtResource("12_bxvfk")]
+position = Vector2(-184, -88)
+
+[node name="Urchin19" parent="." unique_id=2123514098 instance=ExtResource("12_bxvfk")]
+position = Vector2(-184, -104)
+
+[node name="Urchin7" parent="." unique_id=1580398929 instance=ExtResource("12_bxvfk")]
+position = Vector2(-104, -88)
+
+[node name="Urchin8" parent="." unique_id=1622784366 instance=ExtResource("12_bxvfk")]
+position = Vector2(-104, -104)
+
+[node name="Urchin9" parent="." unique_id=290120747 instance=ExtResource("12_bxvfk")]
+position = Vector2(-104, -120)
+
+[node name="Urchin10" parent="." unique_id=1584673101 instance=ExtResource("12_bxvfk")]
+position = Vector2(-120, -120)
+
+[node name="Urchin11" parent="." unique_id=753421661 instance=ExtResource("12_bxvfk")]
+position = Vector2(-136, -120)
+
+[node name="Urchin12" parent="." unique_id=754508370 instance=ExtResource("12_bxvfk")]
+position = Vector2(-152, -120)
+
+[node name="Urchin13" parent="." unique_id=712947031 instance=ExtResource("12_bxvfk")]
+position = Vector2(-168, -120)
+
+[node name="Urchin14" parent="." unique_id=1407966706 instance=ExtResource("12_bxvfk")]
+position = Vector2(-184, -120)
 
 [node name="Urchin3" parent="." unique_id=104011167 instance=ExtResource("12_bxvfk")]
 position = Vector2(-136, -40)
 
 [node name="Turtle" parent="." unique_id=1567539023 instance=ExtResource("15_od4je")]
-position = Vector2(264, -136)
+position = Vector2(264, -120)
 
 [node name="decal_starfish" parent="." unique_id=1245373673 instance=ExtResource("16_jvt0k")]
 position = Vector2(296, -104)

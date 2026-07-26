@@ -127,6 +127,10 @@ position = Vector2(232, -40)
 [node name="decal_seashell" parent="Node/Entities" unique_id=1042929158 instance=ExtResource("11_iupsi")]
 position = Vector2(-120, -8)
 
+[node name="decal_seashell4" parent="Node/Entities" unique_id=681981031 instance=ExtResource("11_iupsi")]
+position = Vector2(-248, -24)
+flip_h = true
+
 [node name="decal_seashell2" parent="Node/Entities" unique_id=321300225 instance=ExtResource("11_iupsi")]
 position = Vector2(56, 8)
 

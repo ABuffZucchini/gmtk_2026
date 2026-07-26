@@ -8,5 +8,5 @@ script = ExtResource("2_jlvv6")
 moves = 7
 level_name = "Ebb and Flow"
 level = ExtResource("1_sdkpg")
-layers = Array[bool]([false, false, false, false, true, true])
+layers = Array[bool]([false, true, true, false, true, true])
 metadata/_custom_type_script = "uid://ijqd43eqb2xr"

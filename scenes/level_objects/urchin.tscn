@@ -27,10 +27,12 @@ collision_mask = 2
 script = ExtResource("1_ua7ah")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1732108714]
+z_index = 20
 sprite_frames = SubResource("SpriteFrames_tc2o2")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1983224970 groups=["urchin"]]
 visible = false
+z_index = 24
 shape = SubResource("RectangleShape2D_ompvl")
 
 [node name="RayCast2D" type="RayCast2D" parent="CollisionShape2D" unique_id=36732324]

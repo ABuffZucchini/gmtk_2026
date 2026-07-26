@@ -17,6 +17,10 @@
 [ext_resource type="PackedScene" uid="uid://cdjj3mj2iatuo" path="res://scenes/level_objects/urchin.tscn" id="13_fo48u"]
 [ext_resource type="PackedScene" uid="uid://ckfoqvgpqnqw7" path="res://scenes/level_objects/player_spawn_point.tscn" id="13_tu8kv"]
 [ext_resource type="PackedScene" uid="uid://dlebcef8rkaya" path="res://scenes/level_objects/pushable_bubble.tscn" id="17_1p2lu"]
+[ext_resource type="PackedScene" uid="uid://h1buup40yhvh" path="res://scenes/level_decoration/coral_pink_stalk.tscn" id="18_1726b"]
+[ext_resource type="PackedScene" uid="uid://devigby11s16p" path="res://scenes/level_decoration/coral_yellow_stalk.tscn" id="19_igkd2"]
+[ext_resource type="PackedScene" uid="uid://d01ffqr3b4fb7" path="res://scenes/level_decoration/coral_yellow_holes.tscn" id="20_bif86"]
+[ext_resource type="PackedScene" uid="uid://csys1alryd6vc" path="res://scenes/level_decoration/seashell.tscn" id="21_igkd2"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6444e"]
 texture = ExtResource("2_y5vgi")
@@ -227,3 +231,31 @@ position = Vector2(-8, 40)
 
 [node name="PushableBubble3" parent="." unique_id=925453985 instance=ExtResource("17_1p2lu")]
 position = Vector2(-88, 88)
+
+[node name="decal_coral_pink_stalk" parent="." unique_id=716635747 instance=ExtResource("18_1726b")]
+position = Vector2(-56, 120)
+
+[node name="decal_coral_pink_stalk2" parent="." unique_id=1714906639 instance=ExtResource("18_1726b")]
+position = Vector2(-88, 104)
+flip_h = true
+
+[node name="decal_coral_yellow_stalk" parent="." unique_id=1335313006 instance=ExtResource("19_igkd2")]
+position = Vector2(40, 40)
+
+[node name="decal_coral_yellow_stalk2" parent="." unique_id=845719009 instance=ExtResource("19_igkd2")]
+position = Vector2(-72, -88)
+flip_h = true
+
+[node name="decal_coral_yellow_holes" parent="." unique_id=1545046560 instance=ExtResource("20_bif86")]
+position = Vector2(-104, -56)
+
+[node name="decal_seashell" parent="." unique_id=1191826205 instance=ExtResource("21_igkd2")]
+position = Vector2(8, 24)
+flip_h = true
+
+[node name="decal_seashell2" parent="." unique_id=853520318 instance=ExtResource("21_igkd2")]
+position = Vector2(264, 24)
+
+[node name="decal_seashell3" parent="." unique_id=1510162988 instance=ExtResource("21_igkd2")]
+position = Vector2(136, -104)
+flip_h = true

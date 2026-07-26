@@ -8,5 +8,5 @@ script = ExtResource("2_4quf4")
 moves = 8
 level_name = "Coral Corral"
 level = ExtResource("1_27lk5")
-layers = Array[bool]([false, false, false, false, true, true])
+layers = Array[bool]([true, false, false, true, true, true])
 metadata/_custom_type_script = "uid://ijqd43eqb2xr"

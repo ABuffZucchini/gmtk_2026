@@ -11,6 +11,10 @@
 [ext_resource type="PackedScene" uid="uid://dlebcef8rkaya" path="res://scenes/level_objects/pushable_bubble.tscn" id="8_yklhy"]
 [ext_resource type="PackedScene" uid="uid://ckfoqvgpqnqw7" path="res://scenes/level_objects/player_spawn_point.tscn" id="9_4dr30"]
 [ext_resource type="PackedScene" uid="uid://cdjj3mj2iatuo" path="res://scenes/level_objects/urchin.tscn" id="9_o4ql5"]
+[ext_resource type="PackedScene" uid="uid://ljbjmmfkiwgl" path="res://scenes/level_decoration/coral_pink_holes.tscn" id="10_m2jhg"]
+[ext_resource type="PackedScene" uid="uid://h1buup40yhvh" path="res://scenes/level_decoration/coral_pink_stalk.tscn" id="11_q6ljp"]
+[ext_resource type="PackedScene" uid="uid://dtxcna6j7rt75" path="res://scenes/level_decoration/rocks.tscn" id="12_4dr30"]
+[ext_resource type="PackedScene" uid="uid://cqms0ddv5x5jc" path="res://scenes/level_decoration/starfish.tscn" id="15_dscar"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6444e"]
 texture = ExtResource("2_yklhy")
@@ -109,6 +113,32 @@ position = Vector2(88, 120)
 [node name="Urchin8" parent="Node/Tiles" unique_id=1960536154 instance=ExtResource("9_o4ql5")]
 position = Vector2(184, 72)
 
+[node name="decal_coral_pink_holes" parent="Node/Tiles" unique_id=1042929158 instance=ExtResource("10_m2jhg")]
+position = Vector2(168, -72)
+
+[node name="decal_coral_pink_holes2" parent="Node/Tiles" unique_id=2139027653 instance=ExtResource("10_m2jhg")]
+position = Vector2(88, -104)
+flip_h = true
+
+[node name="decal_coral_pink_stalk" parent="Node/Tiles" unique_id=1933386337 instance=ExtResource("11_q6ljp")]
+position = Vector2(168, 24)
+
+[node name="decal_coral_pink_stalk2" parent="Node/Tiles" unique_id=188113372 instance=ExtResource("11_q6ljp")]
+position = Vector2(56, 104)
+
+[node name="decal_coral_pink_stalk3" parent="Node/Tiles" unique_id=1802166369 instance=ExtResource("11_q6ljp")]
+position = Vector2(168, -120)
+
+[node name="decal_rocks" parent="Node/Tiles" unique_id=10908871 instance=ExtResource("12_4dr30")]
+position = Vector2(40, -8)
+
+[node name="decal_rocks2" parent="Node/Tiles" unique_id=455515464 instance=ExtResource("12_4dr30")]
+position = Vector2(8, 8)
+
+[node name="decal_rocks3" parent="Node/Tiles" unique_id=1532314304 instance=ExtResource("12_4dr30")]
+position = Vector2(24, -24)
+flip_h = true
+
 [node name="Entities" type="Node" parent="Node" unique_id=341219396]
 
 [node name="CompleteSquare" parent="Node/Entities" unique_id=7729194 instance=ExtResource("8_q6ljp")]
@@ -118,3 +148,6 @@ position = Vector2(-104, -40)
 
 [node name="PlayerSpawn" parent="." unique_id=838411621 instance=ExtResource("9_4dr30")]
 position = Vector2(-56, -56)
+
+[node name="decal_starfish" parent="." unique_id=965038178 instance=ExtResource("15_dscar")]
+position = Vector2(-24, -40)

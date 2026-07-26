@@ -20,6 +20,7 @@
 [ext_resource type="PackedScene" uid="uid://cdjj3mj2iatuo" path="res://scenes/level_objects/urchin.tscn" id="15_f63os"]
 [ext_resource type="PackedScene" uid="uid://bljnrpxaltra8" path="res://caustics.tscn" id="17_p1gnp"]
 [ext_resource type="PackedScene" uid="uid://bn6d0hy8ipc1m" path="res://rays.tscn" id="18_q3qkq"]
+[ext_resource type="PackedScene" uid="uid://cqrpmifebbns8" path="res://texture_top.tscn" id="19_njti2"]
 [ext_resource type="PackedScene" uid="uid://d01ffqr3b4fb7" path="res://scenes/level_decoration/coral_yellow_holes.tscn" id="19_q3qkq"]
 [ext_resource type="PackedScene" uid="uid://devigby11s16p" path="res://scenes/level_decoration/coral_yellow_stalk.tscn" id="20_njti2"]
 [ext_resource type="PackedScene" uid="uid://dtxcna6j7rt75" path="res://scenes/level_decoration/rocks.tscn" id="21_whoer"]
@@ -151,8 +152,12 @@ position = Vector2(56, 56)
 modulate = Color(1, 1, 1, 0.16078432)
 
 [node name="rays" parent="Node/Decorations" unique_id=253563273 instance=ExtResource("18_q3qkq")]
+z_index = 24
 position = Vector2(-193, -307)
 scale = Vector2(0.8589889, 19.43987)
+
+[node name="Sprite2D" parent="Node/Decorations" unique_id=528317873 instance=ExtResource("19_njti2")]
+scale = Vector2(1.3745122, 1.1756635)
 
 [node name="FishSpawn" parent="Node" unique_id=838411621 instance=ExtResource("12_6nrbv")]
 position = Vector2(-56, -40)

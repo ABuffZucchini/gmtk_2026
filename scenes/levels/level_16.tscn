@@ -22,6 +22,7 @@
 [ext_resource type="PackedScene" uid="uid://bljnrpxaltra8" path="res://caustics.tscn" id="18_66u3y"]
 [ext_resource type="PackedScene" uid="uid://bn6d0hy8ipc1m" path="res://rays.tscn" id="19_ksd87"]
 [ext_resource type="PackedScene" uid="uid://deua1w0qbvwv5" path="res://octopus.tscn" id="20_ksd87"]
+[ext_resource type="PackedScene" uid="uid://cqrpmifebbns8" path="res://texture_top.tscn" id="21_f1avo"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6444e"]
 texture = ExtResource("2_82kun")
@@ -141,11 +142,15 @@ position = Vector2(-72, -40)
 modulate = Color(1, 1, 1, 0.13725491)
 
 [node name="rays" parent="Node/Decorations" unique_id=253563273 instance=ExtResource("19_ksd87")]
+z_index = 24
 position = Vector2(-1.9999995, -229.99998)
 scale = Vector2(1.0197053, 17.825384)
 
 [node name="octopus" parent="Node/Decorations" unique_id=1853433625 instance=ExtResource("20_ksd87")]
 position = Vector2(29, -85)
+
+[node name="Sprite2D" parent="Node/Decorations" unique_id=528317873 instance=ExtResource("21_f1avo")]
+scale = Vector2(1.8385185, -1.7505378)
 
 [node name="FishSpawn" parent="Node" unique_id=838411621 instance=ExtResource("14_3xmig")]
 position = Vector2(-8, -40)

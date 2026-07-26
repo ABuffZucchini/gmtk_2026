@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://cqrpmifebbns8"]
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_yr122"]
+noise_type = 0
+frequency = 0.03
+domain_warp_enabled = true
+domain_warp_fractal_octaves = 1
+domain_warp_fractal_lacunarity = 5.965
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_1ol56"]
+noise = SubResource("FastNoiseLite_yr122")
+
+[node name="texture_top" type="Sprite2D" unique_id=528317873]
+modulate = Color(1, 1, 1, 0.09019608)
+z_index = 25
+texture = SubResource("NoiseTexture2D_1ol56")

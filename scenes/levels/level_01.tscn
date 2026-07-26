@@ -168,6 +168,7 @@ tile_map_data = PackedByteArray("AAAUAAsAAQACAAIAAAAUAAoAAQACAAIAAAATAAsAAQACAAI
 texture = ExtResource("7_kfebt")
 
 [node name="foregroud" type="TileMapLayer" parent="Node/Tiles" unique_id=214857227]
+z_index = 1
 tile_map_data = PackedByteArray("AAAAAAgAAwAAAAAAAAAAAAkAAwAAAAEAAAABAAgAAwABAAAAAAABAAkAAwABAAEAAAD//wQABAAAAAAAAAD//wMABQAAAAAAAAD+/wQABgAAAAAAAAA=")
 tile_set = SubResource("TileSet_d86x1")
 
@@ -196,7 +197,7 @@ position = Vector2(88, 8)
 flip_h = true
 
 [node name="caustics" parent="Node/Decorations" unique_id=1221341095 instance=ExtResource("10_07lms")]
-modulate = Color(1, 1, 1, 0.16862746)
+modulate = Color(1, 1, 1, 0.11372549)
 z_index = -30
 position = Vector2(23, 16.000002)
 

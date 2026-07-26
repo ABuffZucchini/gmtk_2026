@@ -17,6 +17,7 @@
 [ext_resource type="PackedScene" uid="uid://bn6d0hy8ipc1m" path="res://rays.tscn" id="14_gibxv"]
 [ext_resource type="PackedScene" uid="uid://bljnrpxaltra8" path="res://caustics.tscn" id="15_2ig8n"]
 [ext_resource type="PackedScene" uid="uid://ckfoqvgpqnqw7" path="res://scenes/level_objects/player_spawn_point.tscn" id="15_3ajmv"]
+[ext_resource type="PackedScene" uid="uid://cqrpmifebbns8" path="res://texture_top.tscn" id="16_6mlu0"]
 [ext_resource type="PackedScene" uid="uid://qsaqt07ruams" path="res://scenes/level_decoration/turtle.tscn" id="16_h4856"]
 [ext_resource type="PackedScene" uid="uid://8utka7s2ach6" path="res://scenes/level_decoration/coral_red_stalk.tscn" id="17_cebcq"]
 [ext_resource type="PackedScene" uid="uid://ctico0rrbbr4p" path="res://scenes/level_decoration/coral_teal_stalk.tscn" id="18_gibxv"]
@@ -126,12 +127,15 @@ position = Vector2(-120, 88)
 [node name="Decorations" type="Node" parent="Node" unique_id=1235809323]
 
 [node name="rays" parent="Node/Decorations" unique_id=253563273 instance=ExtResource("14_gibxv")]
-z_index = 18
+z_index = 24
 position = Vector2(-225, -305.00003)
 scale = Vector2(1.0074425, 22.683651)
 
 [node name="caustics" parent="Node/Decorations" unique_id=1221341095 instance=ExtResource("15_2ig8n")]
 modulate = Color(1, 1, 1, 0.12941177)
+
+[node name="Sprite2D" parent="Node/Decorations" unique_id=528317873 instance=ExtResource("16_6mlu0")]
+scale = Vector2(1.4665865, 1.1673002)
 
 [node name="FishSpawn" parent="Node" unique_id=838411621 instance=ExtResource("14_bub51")]
 position = Vector2(-136, 104)

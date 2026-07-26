@@ -13,6 +13,7 @@
 [ext_resource type="PackedScene" uid="uid://bljnrpxaltra8" path="res://caustics.tscn" id="10_p8tmb"]
 [ext_resource type="PackedScene" uid="uid://dlebcef8rkaya" path="res://scenes/level_objects/pushable_bubble.tscn" id="11_18kj7"]
 [ext_resource type="PackedScene" uid="uid://bn6d0hy8ipc1m" path="res://rays.tscn" id="11_bg08u"]
+[ext_resource type="PackedScene" uid="uid://cqrpmifebbns8" path="res://texture_top.tscn" id="12_3lj0t"]
 [ext_resource type="PackedScene" uid="uid://cdjj3mj2iatuo" path="res://scenes/level_objects/urchin.tscn" id="12_p8tmb"]
 [ext_resource type="PackedScene" uid="uid://lljaemws3lhc" path="res://scenes/level_decoration/coral_dead_stalk.tscn" id="13_bg08u"]
 [ext_resource type="PackedScene" uid="uid://dtxcna6j7rt75" path="res://scenes/level_decoration/rocks.tscn" id="14_3lj0t"]
@@ -99,9 +100,12 @@ position = Vector2(8, 24)
 modulate = Color(1, 1, 1, 0.26666668)
 
 [node name="rays" parent="Node/Decorations" unique_id=253563273 instance=ExtResource("11_bg08u")]
-z_index = 22
+z_index = 24
 position = Vector2(-3, -466.00003)
 scale = Vector2(1.1941694, 41.416782)
+
+[node name="Sprite2D" parent="Node/Decorations" unique_id=528317873 instance=ExtResource("12_3lj0t")]
+scale = Vector2(1.338457, -571.37744)
 
 [node name="PlayerSpawn" parent="." unique_id=838411621 instance=ExtResource("9_bg08u")]
 position = Vector2(8, -72)

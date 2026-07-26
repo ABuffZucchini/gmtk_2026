@@ -17,6 +17,7 @@
 [ext_resource type="PackedScene" uid="uid://qsaqt07ruams" path="res://scenes/level_decoration/turtle.tscn" id="13_k1r5j"]
 [ext_resource type="PackedScene" uid="uid://bljnrpxaltra8" path="res://caustics.tscn" id="13_vuyry"]
 [ext_resource type="PackedScene" uid="uid://bn6d0hy8ipc1m" path="res://rays.tscn" id="14_qxsfx"]
+[ext_resource type="PackedScene" uid="uid://c15jl8q0xqw00" path="res://test_shader.tscn" id="15_qxsfx"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6444e"]
 texture = ExtResource("2_ji8tr")
@@ -149,9 +150,14 @@ flip_h = true
 modulate = Color(1, 1, 1, 0.13725491)
 
 [node name="rays" parent="Node/Decorations" unique_id=253563273 instance=ExtResource("14_qxsfx")]
+z_index = 22
 position = Vector2(-47.999996, -416.00003)
 rotation = 0.05841598
 scale = Vector2(1.2103667, 27.917995)
+
+[node name="Sprite2D" parent="Node/Decorations" unique_id=1694025031 instance=ExtResource("15_qxsfx")]
+modulate = Color(1, 1, 1, 0.09411765)
+scale = Vector2(1.3281039, 0.8965755)
 
 [node name="PlayerSpawn" parent="." unique_id=838411621 instance=ExtResource("9_vuyry")]
 position = Vector2(72, 40)

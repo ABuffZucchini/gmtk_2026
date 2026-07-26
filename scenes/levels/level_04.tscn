@@ -14,6 +14,7 @@
 [ext_resource type="PackedScene" uid="uid://dlebcef8rkaya" path="res://scenes/level_objects/pushable_bubble.tscn" id="11_76vq8"]
 [ext_resource type="PackedScene" uid="uid://bljnrpxaltra8" path="res://caustics.tscn" id="11_vmerw"]
 [ext_resource type="PackedScene" uid="uid://ctico0rrbbr4p" path="res://scenes/level_decoration/coral_teal_stalk.tscn" id="12_o3rdr"]
+[ext_resource type="PackedScene" uid="uid://cqrpmifebbns8" path="res://texture_top.tscn" id="12_x1re1"]
 [ext_resource type="PackedScene" uid="uid://v8c1eog2wryf" path="res://scenes/level_decoration/coral_teal_holes.tscn" id="13_lr2mp"]
 [ext_resource type="PackedScene" uid="uid://dtxcna6j7rt75" path="res://scenes/level_decoration/rocks.tscn" id="14_vmerw"]
 [ext_resource type="PackedScene" uid="uid://dl445e0hfhttj" path="res://scenes/level_decoration/seaweed.tscn" id="15_x1re1"]
@@ -112,11 +113,14 @@ position = Vector2(232, -8)
 [node name="Decorations" type="Node" parent="Node" unique_id=1235809323]
 
 [node name="rays" parent="Node/Decorations" unique_id=253563273 instance=ExtResource("10_lr2mp")]
+z_index = 24
 position = Vector2(219.00002, -224)
 scale = Vector2(1.381523, 18.052187)
 
 [node name="caustics" parent="Node/Decorations" unique_id=1221341095 instance=ExtResource("11_vmerw")]
 modulate = Color(1, 1, 1, 0.18039216)
+
+[node name="Sprite2D" parent="Node/Decorations" unique_id=528317873 instance=ExtResource("12_x1re1")]
 
 [node name="PlayerSpawn" parent="." unique_id=838411621 instance=ExtResource("9_lr2mp")]
 position = Vector2(8, -8)

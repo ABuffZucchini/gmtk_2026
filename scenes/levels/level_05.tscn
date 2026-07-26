@@ -17,6 +17,7 @@
 [ext_resource type="PackedScene" uid="uid://bljnrpxaltra8" path="res://caustics.tscn" id="14_27puk"]
 [ext_resource type="PackedScene" uid="uid://bn6d0hy8ipc1m" path="res://rays.tscn" id="15_kkx70"]
 [ext_resource type="PackedScene" uid="uid://dngl3j43jgx7u" path="res://seasnake.tscn" id="16_6shqt"]
+[ext_resource type="PackedScene" uid="uid://cqrpmifebbns8" path="res://texture_top.tscn" id="17_de7pb"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6444e"]
 texture = ExtResource("2_ywrx1")
@@ -152,12 +153,16 @@ position = Vector2(-104, -88)
 modulate = Color(1, 1, 1, 0.2509804)
 
 [node name="rays" parent="Node/Decorations" unique_id=253563273 instance=ExtResource("15_kkx70")]
+z_index = 22
 position = Vector2(104, -222)
 scale = Vector2(1.6380211, 16.271734)
 
 [node name="seasnake" parent="Node/Decorations" unique_id=1905976829 instance=ExtResource("16_6shqt")]
 position = Vector2(213, 51)
 texture = null
+
+[node name="Sprite2D" parent="Node/Decorations" unique_id=528317873 instance=ExtResource("17_de7pb")]
+scale = Vector2(1.3042467, 1.3684846)
 
 [node name="PlayerSpawn" parent="." unique_id=838411621 instance=ExtResource("9_6shqt")]
 position = Vector2(-232, -8)

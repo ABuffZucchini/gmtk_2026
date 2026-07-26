@@ -189,11 +189,11 @@ position = Vector2(8, -24)
 flip_h = true
 
 [node name="caustics" parent="Node/Decorations" unique_id=1221341095 instance=ExtResource("13_7ehfh")]
-modulate = Color(1, 1, 1, 0.21960784)
+modulate = Color(1, 1, 1, 0.11372549)
 z_index = -1
 
 [node name="rays" parent="Node/Decorations" unique_id=2144772117 instance=ExtResource("11_lq0d2")]
-z_index = 10
+z_index = 24
 position = Vector2(-39.999996, -280)
 scale = Vector2(1.8000481, 24.10989)
 

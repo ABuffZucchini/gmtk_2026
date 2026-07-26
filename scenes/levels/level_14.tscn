@@ -21,6 +21,7 @@
 [ext_resource type="PackedScene" uid="uid://dusryy0kldnd2" path="res://shark.tscn" id="16_8fg8a"]
 [ext_resource type="PackedScene" uid="uid://ctico0rrbbr4p" path="res://scenes/level_decoration/coral_teal_stalk.tscn" id="16_rfrxc"]
 [ext_resource type="PackedScene" uid="uid://devigby11s16p" path="res://scenes/level_decoration/coral_yellow_stalk.tscn" id="17_3cpn8"]
+[ext_resource type="PackedScene" uid="uid://cqrpmifebbns8" path="res://texture_top.tscn" id="17_4qnux"]
 [ext_resource type="PackedScene" uid="uid://cqms0ddv5x5jc" path="res://scenes/level_decoration/starfish.tscn" id="19_8fg8a"]
 [ext_resource type="PackedScene" uid="uid://dtxcna6j7rt75" path="res://scenes/level_decoration/rocks.tscn" id="20_4qnux"]
 
@@ -126,6 +127,7 @@ position = Vector2(152, 56)
 [node name="Decorations" type="Node" parent="Node" unique_id=1235809323]
 
 [node name="rays" parent="Node/Decorations" unique_id=253563273 instance=ExtResource("14_rfrxc")]
+z_index = 24
 position = Vector2(93.00001, -214)
 scale = Vector2(1.1105872, 23.223743)
 
@@ -140,6 +142,9 @@ position = Vector2(-273, 37)
 
 [node name="shark3" parent="Node/Decorations" unique_id=525192252 instance=ExtResource("16_8fg8a")]
 position = Vector2(-222, 46)
+
+[node name="Sprite2D" parent="Node/Decorations" unique_id=528317873 instance=ExtResource("17_4qnux")]
+scale = Vector2(1.3338171, -0.6801487)
 
 [node name="FishSpawn" parent="Node" unique_id=838411621 instance=ExtResource("12_4qnux")]
 position = Vector2(248, 56)

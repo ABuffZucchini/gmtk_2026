@@ -13,6 +13,8 @@
 [ext_resource type="PackedScene" uid="uid://bn6d0hy8ipc1m" path="res://rays.tscn" id="10_7oqvy"]
 [ext_resource type="PackedScene" uid="uid://dlebcef8rkaya" path="res://scenes/level_objects/pushable_bubble.tscn" id="10_foqc1"]
 [ext_resource type="PackedScene" uid="uid://cdjj3mj2iatuo" path="res://scenes/level_objects/urchin.tscn" id="11_dkd5g"]
+[ext_resource type="PackedScene" uid="uid://dngl3j43jgx7u" path="res://seasnake.tscn" id="11_ghs8o"]
+[ext_resource type="PackedScene" uid="uid://dusryy0kldnd2" path="res://shark.tscn" id="12_1uqhn"]
 [ext_resource type="PackedScene" uid="uid://dtxcna6j7rt75" path="res://scenes/level_decoration/rocks.tscn" id="12_xunku"]
 [ext_resource type="PackedScene" uid="uid://dl445e0hfhttj" path="res://scenes/level_decoration/seaweed.tscn" id="13_j33in"]
 [ext_resource type="PackedScene" uid="uid://cqms0ddv5x5jc" path="res://scenes/level_decoration/starfish.tscn" id="14_7oqvy"]
@@ -96,8 +98,15 @@ position = Vector2(8, -72)
 modulate = Color(1, 1, 1, 0.15686275)
 
 [node name="rays" parent="Node/Decorations" unique_id=253563273 instance=ExtResource("10_7oqvy")]
+z_index = 24
 position = Vector2(-9, -296)
 scale = Vector2(1.8113834, 19.489752)
+
+[node name="seasnake" parent="Node/Decorations" unique_id=1905976829 instance=ExtResource("11_ghs8o")]
+position = Vector2(-96, -8)
+
+[node name="shark" parent="Node/Decorations" unique_id=1144552742 instance=ExtResource("12_1uqhn")]
+position = Vector2(-304, -64)
 
 [node name="PlayerSpawn" parent="." unique_id=838411621 instance=ExtResource("9_7oqvy")]
 position = Vector2(8, 40)
